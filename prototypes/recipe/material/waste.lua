@@ -212,7 +212,9 @@ for _, r in ipairs(void_recipes) do
 	local void_result = {
 		type = ingredients[1].type or "item",
 		name = ingredients[1].name or ingredients[1][1],
-		amount = 0
+		amount_min = 0,
+		amount_max = 0,
+		probability = 0,
 	}
 	data:extend{
 		{
@@ -220,7 +222,7 @@ for _, r in ipairs(void_recipes) do
 			name = name,
 			localised_name = {"recipe-name."..name},
 			category = "sluice",
-			{
+			crafting_machine_tint = {
 				primary =   {r = 0.000, g = 0.110, b = 0.588},
 				secondary = {r = 0.564, g = 0.795, b = 0.000},
 				tertiary =  {r = 0.678, g = 0.565, b = 0.478},
