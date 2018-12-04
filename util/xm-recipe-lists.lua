@@ -149,13 +149,13 @@ end
 --Assembly
 xm_assembly_recipes = {}
 do
-	local names = {"mechanical-steam-engine", "piston-cylinder", "mechanism-0", "mechanism-1", "mechanism-2", "mechanism-3", "engine-unit", "wheel-1", "wheel-2", "flying-robot-frame", "flying-robot-frame-2",
+	local names = {"mechanical-steam-engine", "mechanical-steam-engine-b", "piston-cylinder", "mechanism-0", "mechanism-1", "mechanism-2", "mechanism-3", "engine-unit", "wheel-1", "wheel-2", "flying-robot-frame", "flying-robot-frame-2",
 		"tooling-1-a", "tooling-1-b", "tooling-1-c", "tooling-2", "tooling-3", "control-1", "control-2", "control-3", "lasing-1", "lasing-2", "lasing-3"}
-	local categories = {"basic-crafting", "basic-crafting", "basic-crafting", "crafting", "crafting-with-fluid", "crafting-with-fluid", "crafting", "crafting", "forge", "crafting", "crafting-with-fluid",
+	local categories = {"basic-crafting", "crafting", "basic-crafting", "basic-crafting", "crafting", "crafting-with-fluid", "crafting-with-fluid", "crafting", "crafting", "forge", "crafting", "crafting-with-fluid",
 		"basic-machine", "machine", "machine", "machine", "machine", "crafting", "advanced-crafting", "advanced-crafting", "crafting", "advanced-crafting", "advanced-crafting"}
-	local times = {1, 2, 1, 4, 4, 5, 5, 4, 4, 10, 20, 2, 4, 5, 4, 5, 2, 4, 5, 5, 8, 10}
-	local enableds = {true, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false}
-	local ingredients = {{{"mechanism-0", 1}, {"pipe-copper", 2}, {"forging-iron", 1}}, {{"forging-iron", 1}, {"pipe-steel", 2}}, {{"forging-iron", 1}, {"shaft-0", 1}, {"iron-gear-wheel", 2}, {"bronze-plate", 2}},
+	local times = {1, 1, 2, 1, 4, 4, 5, 5, 4, 4, 10, 20, 2, 4, 5, 4, 5, 2, 4, 5, 5, 8, 10}
+	local enableds = {true, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false}
+	local ingredients = {{{"mechanism-0", 1}, {"pipe-copper", 2}, {"forging-iron", 1}}, {{"mechanism-1", 1}, {"pipe-copper", 2}, {"forging-iron", 1}}, {{"forging-iron", 1}, {"pipe-steel", 2}}, {{"forging-iron", 1}, {"shaft-0", 1}, {"iron-gear-wheel", 2}, {"bronze-plate", 2}},
 		{{"forging-iron", 1}, {"shaft-1", 2}, {"iron-gear-wheel", 1}, {"gear-3", 1}}, {{"forging-aluminum", 1}, {"shaft-2", 2}, {"gear-2", 2}, {"gear-3", 2}, {type = "fluid", name = "lubricant", amount = 10}},
 		{{"forging-titanium", 1}, {"shaft-3", 2}, {"gear-4", 4}, {"plastic-bar", 2}, {type = "fluid", name = "lubricant", amount = 10}}, {{"piston-cylinder", 1}, {"mechanism-1", 1}, {"rubber", 2}},
 		{{"forging-steel", 1}, {"forging-iron", 1}, {"steel-plate", 2}, {"bearing-1", 4}}, {{"forging-alloy", 1}, {"steel-plate", 1}, {"silicon-carbide", 1}, {"bearing-2", 2}},
@@ -169,7 +169,7 @@ do
 		{{"crystal-ruby", 1}, {"crystal-quartz", 5}, {"small-lamp", 2}, {"control-2", 2}, {"forging-stainless", 2}, {"aluminum-ingot", 5}},
 		{{type = "fluid", name = "carbon-dioxide", amount = 50}, {"crystal-corundum", 5}, {"lamp-2", 2}, {"control-3", 2}, {"forging-alloy", 2}, {"copper-plate", 5}},
 		{{"crystal-yag", 1}, {"crystal-diamond", 5}, {"lamp-2", 4}, {"control-3", 4}, {"forging-titanium", 4}, {"silver-ingot", 10}}}
-	local results = {{{"mechanical-steam-engine", 1}}, {{"piston-cylinder", 1}}, {{"mechanism-0", 1}}, {{"mechanism-1", 1}}, {{"mechanism-2", 1}}, {{"mechanism-3", 1}}, {{"engine-unit", 1}}, {{"wheel-1", 2}},
+	local results = {{{"mechanical-steam-engine", 1}}, {{"mechanical-steam-engine", 1}}, {{"piston-cylinder", 1}}, {{"mechanism-0", 1}}, {{"mechanism-1", 1}}, {{"mechanism-2", 1}}, {{"mechanism-3", 1}}, {{"engine-unit", 1}}, {{"wheel-1", 2}},
 		{{"wheel-2", 1}}, {{"flying-robot-frame", 1}}, {{"flying-robot-frame-2", 1}}, {{"tooling-1", 1}}, {{"tooling-1", 1}}, {{"tooling-1", 1}}, {{"tooling-2", 1}}, {{"tooling-3", 1}}, {{"control-1", 1}}, {{"control-2", 1}},
 		{{"control-3", 1}}, {{"lasing-1", 1}}, {{"lasing-2", 1}}, {{"lasing-3", 1}}}
 	--Load all of the single-parameter lists into one big list of recipes, where each entry has the parameters for one complete recipe
