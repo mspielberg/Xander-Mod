@@ -4,4 +4,9 @@ for _, f in pairs(game.forces) do
       f.recipes["calcium-chloride-venting"].enabled = true
     end
   end
+  if f.technologies["forging-iron"] and f.technologies["forging-iron"].researched then
+    if f.recipes["pipe-iron-b"] then
+      f.recipes["pipe-iron-b"].enabled = true
+    end
+  end
 end
