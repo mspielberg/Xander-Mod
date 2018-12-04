@@ -1516,7 +1516,7 @@ data:extend(
 			recipe = "slag-burial"
 		}
 	},
-	prerequisites = {"mining-drill_2", "slag-use"},
+	prerequisites = {"mining-drill_2"},
 	unit =
 	{
 		count = 500,
