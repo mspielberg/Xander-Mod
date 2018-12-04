@@ -198,11 +198,13 @@ local void_recipes = {
 	{ "slag-burial",            {{"slag",            1}               } },
 	--
 	--VENTING
-	{ "nitrogen-venting",       {                        {type = "fluid", name = "nitrogen",       amount = 10}} },
-	{ "oxygen-venting",         {                        {type = "fluid", name = "oxygen",         amount = 10}} },
-	{ "co2-venting",            {                        {type = "fluid", name = "carbon-dioxide", amount = 10}} },
-	{ "water-venting",          {                        {type = "fluid", name = "water",          amount = 10}} },
-	{ "salt-water-venting",     {{"sodium-chloride", 1}, {type = "fluid", name = "water",          amount = 10}} },
+	{ "nitrogen-venting",         {                         {type = "fluid", name = "nitrogen",        amount = 100}} },
+	{ "oxygen-venting",           {                         {type = "fluid", name = "oxygen",          amount = 100}} },
+	{ "co2-venting",              {                         {type = "fluid", name = "carbon-dioxide",  amount = 100}} },
+	{ "water-venting",            {                         {type = "fluid", name = "water",           amount = 100}} },
+	{ "distilled-water-venting",  {                         {type = "fluid", name = "distilled-water", amount = 100}} },
+	{ "salt-water-venting",       {{"sodium-chloride", 1},  {type = "fluid", name = "water",           amount = 10}} },
+	{ "calcium-chloride-venting", {{"calcium-chloride", 1}, {type = "fluid", name = "water",           amount = 10}} },
 }
 
 for _, r in ipairs(void_recipes) do

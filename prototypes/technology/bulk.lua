@@ -1552,7 +1552,11 @@ data:extend(
 		{
 			type = "unlock-recipe",
 			recipe = "salt-water-venting"
-		}
+		},
+		{
+			type = "unlock-recipe",
+			recipe = "calcium-chloride-venting"
+		},
 	},
 	prerequisites = {"waste-burial"},
 	unit =
