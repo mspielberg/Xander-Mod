@@ -59,8 +59,8 @@ xm_organic_items_names = {"wood-resin", "phenol", "solder-flux", "surfactant", "
 for i, name in ipairs(xm_organic_items_names) do table.insert(xm_organic_items, {name, true, false}) end
 --Polymer: organic polymers, usually for mechanical structure, but some for chemical reactivity & structure too
 xm_polymer_items = {}
-xm_polymer_items_names = {"raw-wood", "wood", "cotton", "latex", "sbr", "rubber", "plastic-pellets", "plastic-bar", "plastic-fiber", "carbon-fiber"}
-xm_polymer_items_news = {false, false, true, true, true, true, true, false, true, true}
+xm_polymer_items_names = {"wood", "cotton", "latex", "sbr", "rubber", "plastic-pellets", "plastic-bar", "plastic-fiber", "carbon-fiber"}
+xm_polymer_items_news = {false, true, true, true, true, true, false, true, true}
 for i, name in ipairs(xm_polymer_items_names) do table.insert(xm_polymer_items, {name, xm_polymer_items_news[i], false}) end
 --Energetic: fuels, explosives, and the like
 xm_energetic_items = {}

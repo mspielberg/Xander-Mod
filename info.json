@@ -1,10 +1,10 @@
 {
-  "name": "xander-mod",
+  "name": "xander-mod-th",
   "version": "2.2.0",
-  "factorio_version": "0.16",
-  "title": "Xander Mod",
-  "author": "Repofme1",
+  "factorio_version": "0.17",
+  "title": "Xander Mod (Therax)",
+  "author": "Therax",
   "homepage": "https://forums.factorio.com/viewtopic.php?f=97&t=51868",
-  "dependencies": ["base", "xander-mod-graphics-0 >= 0.2.0", "xander-mod-graphics-1 >= 0.1.0", "? LoaderRedux", "? rso-mod"],
-  "description": "An extensive overhaul, emphasizing detailed and realistic chemistry, materials, and production.  Extends the base game to marathon-style scope and difficulty."
+  "dependencies": ["base", "xander-mod-th-graphics-0 >= 0.2.0", "xander-mod-th-graphics-1 >= 0.1.0", "? LoaderRedux", "? rso-mod"],
+  "description": "A fork of Repofme1's Xander Mod."
 }

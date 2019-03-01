@@ -212,8 +212,6 @@ for i, entry in ipairs(xm_polymer_items) do
 		xm_modify_base_item(entry[1], 3, 14, i - 1)
 	end
 end
---Raw Wood
-data.raw.item["raw-wood"].fuel_category = "crude"
 --Wood
 data.raw.item["wood"].fuel_category = "crude"
 
