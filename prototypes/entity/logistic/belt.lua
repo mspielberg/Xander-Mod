@@ -3,14 +3,14 @@ local xmutil = require("xmutil")
 --Slow Belt Animation Stuff
 slow_belt_horizontal =
 {
-	filename = "__xander-mod-graphics-0__/graphics/entity/logistic/slow-transport-belt/belt.png",
+	filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/belt.png",
 	priority = "extra-high",
 	width = 40,
 	height = 40,
 	frame_count = 16,
 	hr_version =
 	{
-		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-belt.png",
+		filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-belt.png",
 		priority = "extra-high",
 		width = 80,
 		height = 80,
@@ -20,7 +20,7 @@ slow_belt_horizontal =
 }
 slow_belt_vertical =
 {
-	filename = "__xander-mod-graphics-0__/graphics/entity/logistic/slow-transport-belt/belt.png",
+	filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/belt.png",
 	priority = "extra-high",
 	width = 40,
 	height = 40,
@@ -28,7 +28,7 @@ slow_belt_vertical =
 	y = 40,
 	hr_version =
 	{
-		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-belt.png",
+		filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-belt.png",
 		priority = "extra-high",
 		width = 80,
 		height = 80,
@@ -39,7 +39,7 @@ slow_belt_vertical =
 }
 slow_belt_ending_top =
 {
-	filename = "__xander-mod-graphics-0__/graphics/entity/logistic/slow-transport-belt/belt.png",
+	filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/belt.png",
 	priority = "extra-high",
 	width = 40,
 	height = 40,
@@ -47,7 +47,7 @@ slow_belt_ending_top =
 	y = 80,
 	hr_version =
 	{
-		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-belt.png",
+		filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-belt.png",
 		priority = "extra-high",
 		width = 80,
 		height = 80,
@@ -58,7 +58,7 @@ slow_belt_ending_top =
 }
 slow_belt_ending_bottom =
 {
-	filename = "__xander-mod-graphics-0__/graphics/entity/logistic/slow-transport-belt/belt.png",
+	filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/belt.png",
 	priority = "extra-high",
 	width = 40,
 	height = 40,
@@ -66,7 +66,7 @@ slow_belt_ending_bottom =
 	y = 120,
 	hr_version =
 	{
-		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-belt.png",
+		filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-belt.png",
 		priority = "extra-high",
 		width = 80,
 		height = 80,
@@ -77,7 +77,7 @@ slow_belt_ending_bottom =
 }
 slow_belt_ending_side =
 {
-	filename = "__xander-mod-graphics-0__/graphics/entity/logistic/slow-transport-belt/belt.png",
+	filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/belt.png",
 	priority = "extra-high",
 	width = 40,
 	height = 40,
@@ -85,7 +85,7 @@ slow_belt_ending_side =
 	y = 160,
 	hr_version =
 	{
-		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-belt.png",
+		filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-belt.png",
 		priority = "extra-high",
 		width = 80,
 		height = 80,
@@ -96,7 +96,7 @@ slow_belt_ending_side =
 }
 slow_belt_starting_top =
 {
-	filename = "__xander-mod-graphics-0__/graphics/entity/logistic/slow-transport-belt/belt.png",
+	filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/belt.png",
 	priority = "extra-high",
 	width = 40,
 	height = 40,
@@ -104,7 +104,7 @@ slow_belt_starting_top =
 	y = 200,
 	hr_version =
 	{
-		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-belt.png",
+		filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-belt.png",
 		priority = "extra-high",
 		width = 80,
 		height = 80,
@@ -115,7 +115,7 @@ slow_belt_starting_top =
 }
 slow_belt_starting_bottom =
 {
-	filename = "__xander-mod-graphics-0__/graphics/entity/logistic/slow-transport-belt/belt.png",
+	filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/belt.png",
 	priority = "extra-high",
 	width = 40,
 	height = 40,
@@ -123,7 +123,7 @@ slow_belt_starting_bottom =
 	y = 240,
 	hr_version =
 	{
-		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-belt.png",
+		filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-belt.png",
 		priority = "extra-high",
 		width = 80,
 		height = 80,
@@ -134,7 +134,7 @@ slow_belt_starting_bottom =
 }
 slow_belt_starting_side =
 {
-	filename = "__xander-mod-graphics-0__/graphics/entity/logistic/slow-transport-belt/belt.png",
+	filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/belt.png",
 	priority = "extra-high",
 	width = 40,
 	height = 40,
@@ -142,7 +142,7 @@ slow_belt_starting_side =
 	y = 280,
 	hr_version =
 	{
-		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-belt.png",
+		filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-belt.png",
 		priority = "extra-high",
 		width = 80,
 		height = 80,
@@ -155,14 +155,14 @@ slow_belt_starting_side =
 --Expedited Belt Animation Stuff
 expedited_belt_horizontal =
 {
-	filename = "__xander-mod-graphics-0__/graphics/entity/logistic/expedited-transport-belt/belt.png",
+	filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/belt.png",
 	priority = "extra-high",
 	width = 40,
 	height = 40,
 	frame_count = 32,
 	hr_version =
 	{
-		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-belt.png",
+		filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-belt.png",
 		priority = "extra-high",
 		width = 80,
 		height = 80,
@@ -173,7 +173,7 @@ expedited_belt_horizontal =
 }
 expedited_belt_vertical =
 {
-	filename = "__xander-mod-graphics-0__/graphics/entity/logistic/expedited-transport-belt/belt.png",
+	filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/belt.png",
 	priority = "extra-high",
 	width = 40,
 	height = 40,
@@ -181,7 +181,7 @@ expedited_belt_vertical =
 	y = 40,
 	hr_version =
 	{
-		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-belt.png",
+		filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-belt.png",
 		priority = "extra-high",
 		width = 80,
 		height = 80,
@@ -193,7 +193,7 @@ expedited_belt_vertical =
 }
 expedited_belt_ending_top =
 {
-	filename = "__xander-mod-graphics-0__/graphics/entity/logistic/expedited-transport-belt/belt.png",
+	filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/belt.png",
 	priority = "extra-high",
 	width = 40,
 	height = 40,
@@ -201,7 +201,7 @@ expedited_belt_ending_top =
 	y = 80,
 	hr_version =
 	{
-		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-belt.png",
+		filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-belt.png",
 		priority = "extra-high",
 		width = 80,
 		height = 80,
@@ -213,7 +213,7 @@ expedited_belt_ending_top =
 }
 expedited_belt_ending_bottom =
 {
-	filename = "__xander-mod-graphics-0__/graphics/entity/logistic/expedited-transport-belt/belt.png",
+	filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/belt.png",
 	priority = "extra-high",
 	width = 40,
 	height = 40,
@@ -221,7 +221,7 @@ expedited_belt_ending_bottom =
 	y = 120,
 	hr_version =
 	{
-		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-belt.png",
+		filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-belt.png",
 		priority = "extra-high",
 		width = 80,
 		height = 80,
@@ -233,7 +233,7 @@ expedited_belt_ending_bottom =
 }
 expedited_belt_ending_side =
 {
-	filename = "__xander-mod-graphics-0__/graphics/entity/logistic/expedited-transport-belt/belt.png",
+	filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/belt.png",
 	priority = "extra-high",
 	width = 40,
 	height = 40,
@@ -241,7 +241,7 @@ expedited_belt_ending_side =
 	y = 160,
 	hr_version =
 	{
-		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-belt.png",
+		filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-belt.png",
 		priority = "extra-high",
 		width = 80,
 		height = 80,
@@ -253,7 +253,7 @@ expedited_belt_ending_side =
 }
 expedited_belt_starting_top =
 {
-	filename = "__xander-mod-graphics-0__/graphics/entity/logistic/expedited-transport-belt/belt.png",
+	filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/belt.png",
 	priority = "extra-high",
 	width = 40,
 	height = 40,
@@ -261,7 +261,7 @@ expedited_belt_starting_top =
 	y = 200,
 	hr_version =
 	{
-		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-belt.png",
+		filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-belt.png",
 		priority = "extra-high",
 		width = 80,
 		height = 80,
@@ -273,7 +273,7 @@ expedited_belt_starting_top =
 }
 expedited_belt_starting_bottom =
 {
-	filename = "__xander-mod-graphics-0__/graphics/entity/logistic/expedited-transport-belt/belt.png",
+	filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/belt.png",
 	priority = "extra-high",
 	width = 40,
 	height = 40,
@@ -281,7 +281,7 @@ expedited_belt_starting_bottom =
 	y = 240,
 	hr_version =
 	{
-		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-belt.png",
+		filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-belt.png",
 		priority = "extra-high",
 		width = 80,
 		height = 80,
@@ -293,7 +293,7 @@ expedited_belt_starting_bottom =
 }
 expedited_belt_starting_side =
 {
-	filename = "__xander-mod-graphics-0__/graphics/entity/logistic/expedited-transport-belt/belt.png",
+	filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/belt.png",
 	priority = "extra-high",
 	width = 40,
 	height = 40,
@@ -301,7 +301,7 @@ expedited_belt_starting_side =
 	y = 280,
 	hr_version =
 	{
-		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-belt.png",
+		filename = "__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-belt.png",
 		priority = "extra-high",
 		width = 80,
 		height = 80,
@@ -360,50 +360,43 @@ data:extend{
 
 --Slow Transport Belt
 xmutil.clone("transport-belt", "transport-belt",
-	{},
+	{
+		{
+			"__base__/graphics/entity/transport-belt/transport-belt.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/slow-transport-belt.png",
+		},
+		{
+			"__base__/graphics/entity/fast-transport-belt/hr-transport-belt.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-slow-transport-belt.png",
+		},
+	},
 	{
 		name = "slow-transport-belt",
-		icon = "__xander-mod__/graphics/item/logistic/belt/slow-transport-belt.png",
-		minable = {hardness = 0.2, mining_time = 0.3, result = "slow-transport-belt"},
+		icon = "__xander-mod-th__/graphics/item/logistic/belt/slow-transport-belt.png",
+		minable = {result = "slow-transport-belt"},
 		max_health = 100,
-		animations = {
-			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/slow-transport-belt/belt.png",
-			hr_version = { filename = "__xander-mod-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-belt.png" }
-		},
-		belt_horizontal = slow_belt_horizontal,
-		belt_vertical = slow_belt_vertical,
-		ending_top = slow_belt_ending_top,
-		ending_bottom = slow_belt_ending_bottom,
-		ending_side = slow_belt_ending_side,
-		starting_top = slow_belt_starting_top,
-		starting_bottom = slow_belt_starting_bottom,
-		starting_side = slow_belt_starting_side,
 		speed = 0.015625,
 	}
 ),
 --Base "transport-belt" placeholder
 --Base "fast-transport-belt" placeholder
 --Expedited Transport Belt
-xmutil.clone("transport-belt", "fast-transport-belt",
-	{},
+xmutil.clone("transport-belt", "transport-belt",
+	{
+		{
+			"__base__/graphics/entity/transport-belt/transport-belt.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/expedited-transport-belt.png",
+		},
+		{
+			"__base__/graphics/entity/transport-belt/hr-transport-belt.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-expedited-transport-belt.png",
+		},
+	},
 	{
 		name = "expedited-transport-belt",
-		icon = "__xander-mod__/graphics/item/logistic/belt/expedited-transport-belt.png",
-		minable = {hardness = 0.2, mining_time = 0.3, result = "expedited-transport-belt"},
+		icon = "__xander-mod-th__/graphics/item/logistic/belt/expedited-transport-belt.png",
+		minable = {result = "expedited-transport-belt"},
 		max_health = 160,
-		animations = {
-			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/expedited-transport-belt/belt.png",
-			hr_version = { filename = "__xander-mod-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-belt.png" }
-		},
-		speed = 0.015625,
-		belt_horizontal = expedited_belt_horizontal,
-		belt_vertical = expedited_belt_vertical,
-		ending_top = expedited_belt_ending_top,
-		ending_bottom = expedited_belt_ending_bottom,
-		ending_side = expedited_belt_ending_side,
-		starting_top = expedited_belt_starting_top,
-		starting_bottom = expedited_belt_starting_bottom,
-		starting_side = expedited_belt_starting_side,
 		speed = 0.09375,
 	}
 ),
@@ -413,51 +406,59 @@ xmutil.clone("transport-belt", "fast-transport-belt",
 xmutil.clone("underground-belt", "underground-belt",
 	{
 		{
-			"__base__/graphics/entity/underground-belt/(h?r?-?)underground-belt-",
-			"__xander-mod-graphics-0__/graphics/entity/logistic/slow-underground-belt/%1",
+			"__base__/graphics/entity/transport-belt/transport-belt.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/slow-transport-belt.png",
+		},
+		{
+			"__base__/graphics/entity/fast-transport-belt/hr-transport-belt.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-slow-transport-belt.png",
+		},
+		{
+			"__base__/graphics/entity/underground-belt/underground-belt-structure.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-underground-belt/slow-underground-belt-structure.png",
+		},
+		{
+			"__base__/graphics/entity/underground-belt/hr-underground-belt-structure.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-underground-belt/hr-slow-underground-belt-structure.png",
 		}
 	},
 	{
 		name = "slow-underground-belt",
-		icon = "__xander-mod__/graphics/item/logistic/belt/slow-underground-belt.png",
-		minable = {hardness = 0.2, mining_time = 0.5, result = "slow-underground-belt"},
+		icon = "__xander-mod-th__/graphics/item/logistic/belt/slow-underground-belt.png",
+		minable = {result = "slow-underground-belt"},
 		max_health = 100,
 		max_distance = 3,
-		belt_horizontal = slow_belt_horizontal,
-		belt_vertical = slow_belt_vertical,
-		ending_top = slow_belt_ending_top,
-		ending_bottom = slow_belt_ending_bottom,
-		ending_side = slow_belt_ending_side,
-		starting_top = slow_belt_starting_top,
-		starting_bottom = slow_belt_starting_bottom,
-		starting_side = slow_belt_starting_side,
 		speed = 0.015625,
 	}
 ),
 --Base "underground-belt" placeholder
 --Base "fast-underground-belt" placeholder
 --Expedited Underground Belt
-xmutil.clone("underground-belt", "fast-underground-belt",
+xmutil.clone("underground-belt", "underground-belt",
 	{
 		{
-			"__base__/graphics/entity/fast-underground-belt/fast-underground-belt-",
-			"__xander-mod-graphics-0__/graphics/entity/logistic/expedited-underground-belt/",
+			"__base__/graphics/entity/transport-belt/transport-belt.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/expedited-transport-belt.png",
+		},
+		{
+			"__base__/graphics/entity/transport-belt/hr-transport-belt.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-expedited-transport-belt.png",
+		},
+		{
+			"__base__/graphics/entity/underground-belt/underground-belt-structure.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-underground-belt/expedited-underground-belt-structure.png",
+		},
+		{
+			"__base__/graphics/entity/underground-belt/hr-underground-belt-structure.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-underground-belt/hr-expedited-underground-belt-structure.png",
 		}
 	},
 	{
 		name = "expedited-underground-belt",
-		icon = "__xander-mod__/graphics/item/logistic/belt/expedited-underground-belt.png",
-		minable = {hardness = 0.2, mining_time = 0.5, result = "expedited-underground-belt"},
+		icon = "__xander-mod-th__/graphics/item/logistic/belt/expedited-underground-belt.png",
+		minable = {result = "expedited-underground-belt"},
 		max_health = 160,
 		max_distance = 9,
-		belt_horizontal = expedited_belt_horizontal,
-		belt_vertical = expedited_belt_vertical,
-		ending_top = expedited_belt_ending_top,
-		ending_bottom = expedited_belt_ending_bottom,
-		ending_side = expedited_belt_ending_side,
-		starting_top = expedited_belt_starting_top,
-		starting_bottom = expedited_belt_starting_bottom,
-		starting_side = expedited_belt_starting_side,
 		speed = 0.09375,
 	}
 ),
@@ -467,50 +468,58 @@ xmutil.clone("underground-belt", "fast-underground-belt",
 xmutil.clone("splitter", "splitter",
 	{
 		{
+			"__base__/graphics/entity/transport-belt/transport-belt.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/slow-transport-belt.png",
+		},
+		{
+			"__base__/graphics/entity/fast-transport-belt/hr-transport-belt.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-transport-belt/hr-slow-transport-belt.png",
+		},
+		{
 			"__base__/graphics/entity/splitter/splitter-",
-			"__xander-mod-graphics-0__/graphics/entity/logistic/slow-splitter/",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-splitter/slow-splitter-",
+		},
+		{
+			"__base__/graphics/entity/splitter/hr-splitter-",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/slow-splitter/hr-slow-splitter-",
 		}
 	},
 	{
 		name = "slow-splitter",
-		icon = "__xander-mod__/graphics/item/logistic/belt/slow-splitter.png",
+		icon = "__xander-mod-th__/graphics/item/logistic/belt/slow-splitter.png",
 		flags = {"placeable-neutral", "player-creation"},
-		minable = {hardness = 0.2, mining_time = 0.5, result = "slow-splitter"},
+		minable = {result = "slow-splitter"},
 		max_health = 200,
-		belt_horizontal = slow_belt_horizontal,
-		belt_vertical = slow_belt_vertical,
-		ending_top = slow_belt_ending_top,
-		ending_bottom = slow_belt_ending_bottom,
-		ending_side = slow_belt_ending_side,
-		starting_top = slow_belt_starting_top,
-		starting_bottom = slow_belt_starting_bottom,
-		starting_side = slow_belt_starting_side,
 		speed = 0.015625,
 	}
 ),
 --Base "splitter" placeholder
 --Base "fast-splitter" placeholder
 --Expedited Splitter
-xmutil.clone("splitter", "fast-splitter",
+xmutil.clone("splitter", "splitter",
 	{
 		{
-			"__base__/graphics/entity/fast-splitter/fast-splitter-",
-			"__xander-mod-graphics-0__/graphics/entity/logistic/expedited-splitter/",
-		}
+			"__base__/graphics/entity/transport-belt/transport-belt.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/expedited-transport-belt.png",
+		},
+		{
+			"__base__/graphics/entity/transport-belt/hr-transport-belt.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-expedited-transport-belt.png",
+		},
+		{
+			"__base__/graphics/entity/splitter/splitter-",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-splitter/expedited-splitter-",
+		},
+		{
+			"__base__/graphics/entity/splitter/hr-splitter-",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-splitter/hr-expedited-splitter-",
+		},
 	},
 	{
 		name = "expedited-splitter",
-		icon = "__xander-mod__/graphics/item/logistic/belt/expedited-splitter.png",
-		minable = {hardness = 0.2, mining_time = 0.5, result = "expedited-splitter"},
+		icon = "__xander-mod-th__/graphics/item/logistic/belt/expedited-splitter.png",
+		minable = {result = "expedited-splitter"},
 		max_health = 320,
-		belt_horizontal = expedited_belt_horizontal,
-		belt_vertical = expedited_belt_vertical,
-		ending_top = expedited_belt_ending_top,
-		ending_bottom = expedited_belt_ending_bottom,
-		ending_side = expedited_belt_ending_side,
-		starting_top = expedited_belt_starting_top,
-		starting_bottom = expedited_belt_starting_bottom,
-		starting_side = expedited_belt_starting_side,
 		speed = 0.09375,
 	}
 ),
@@ -519,23 +528,24 @@ xmutil.clone("splitter", "fast-splitter",
 --Base "loader" placeholder
 --Base "fast-loader" placeholder
 --Expedited Loader
-xmutil.clone("loader", "fast-loader",
-	{},
+xmutil.clone("loader", "loader",
+	{
+		{
+			"__base__/graphics/entity/transport-belt/transport-belt.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/expedited-transport-belt.png",
+		},
+		{
+			"__base__/graphics/entity/transport-belt/hr-transport-belt.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/logistic/expedited-transport-belt/hr-expedited-transport-belt.png",
+		},
+	},
 	{
 		name = "expedited-loader",
-		icon = "__xander-mod__/graphics/item/logistic/belt/expedited-loader.png",
-		minable = {hardness = 0.2, mining_time = 0.5, result = "expedited-loader"},
+		icon = "__xander-mod-th__/graphics/item/logistic/belt/expedited-loader.png",
+		minable = {result = "expedited-loader"},
 		max_health = 250,
 		filter_count = 5,
 		animation_speed_coefficient = 32,
-		belt_horizontal = expedited_belt_horizontal,
-		belt_vertical = expedited_belt_vertical,
-		ending_top = expedited_belt_ending_top,
-		ending_bottom = expedited_belt_ending_bottom,
-		ending_side = expedited_belt_ending_side,
-		starting_top = expedited_belt_starting_top,
-		starting_bottom = expedited_belt_starting_bottom,
-		starting_side = expedited_belt_starting_side,
 		speed = 0.09375,
 	}
 ),

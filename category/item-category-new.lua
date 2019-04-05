@@ -76,7 +76,7 @@ data:extend(
 	name = "material",
 	order = "02",
 	inventory_order = "02",
-	icon = "__xander-mod__/graphics/category/material.png",
+	icon = "__xander-mod-th__/graphics/category/material.png",
 	icon_size = 64
 },
 --==========

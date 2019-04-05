@@ -2,10 +2,10 @@
 --Base Overrides
 
 --Base "solar-panel-equipment"
-data.raw["solar-panel-equipment"]["solar-panel-equipment"].sprite.filename = "__xander-mod__/graphics/equipment/solar-panel-equipment-1.png"
+data.raw["solar-panel-equipment"]["solar-panel-equipment"].sprite.filename = "__xander-mod-th__/graphics/equipment/solar-panel-equipment-1.png"
 
 --Personal Roboport Mark 2
-data.raw["roboport-equipment"]["personal-roboport-mk2-equipment"].sprite.filename = "__xander-mod__/graphics/equipment/personal-roboport-mk2-equipment.png"
+data.raw["roboport-equipment"]["personal-roboport-mk2-equipment"].sprite.filename = "__xander-mod-th__/graphics/equipment/personal-roboport-mk2-equipment.png"
 
 
 data:extend(
@@ -42,7 +42,7 @@ data:extend(
 	name = "fission-reactor-equipment",
 	sprite =
 	{
-		filename = "__xander-mod__/graphics/equipment/fission-reactor-equipment.png",
+		filename = "__xander-mod-th__/graphics/equipment/fission-reactor-equipment.png",
 		width = 128,
 		height = 128,
 		priority = "medium"
@@ -67,7 +67,7 @@ data:extend(
 	name = "energy-shield-mk3-equipment",
 	sprite =
 	{
-		filename = "__xander-mod__/graphics/equipment/energy-shield-mk3-equipment.png",
+		filename = "__xander-mod-th__/graphics/equipment/energy-shield-mk3-equipment.png",
 		width = 64,
 		height = 64,
 		priority = "medium"
@@ -95,7 +95,7 @@ data:extend(
 	name = "energy-shield-mk4-equipment",
 	sprite =
 	{
-		filename = "__xander-mod__/graphics/equipment/energy-shield-mk4-equipment.png",
+		filename = "__xander-mod-th__/graphics/equipment/energy-shield-mk4-equipment.png",
 		width = 64,
 		height = 64,
 		priority = "medium"
@@ -123,7 +123,7 @@ data:extend(
 	name = "battery-mk3-equipment",
 	sprite =
 	{
-		filename = "__xander-mod__/graphics/equipment/battery-mk3-equipment.png",
+		filename = "__xander-mod-th__/graphics/equipment/battery-mk3-equipment.png",
 		width = 32,
 		height = 64,
 		priority = "medium"
@@ -140,7 +140,7 @@ data:extend(
 		buffer_capacity = "500MJ",
 		input_flow_limit = "5GW",
 		output_flow_limit = "5GW",
-		usage_priority = "terciary"
+		usage_priority = "tertiary"
 	},
 	categories = {"armor"}
 },
@@ -150,7 +150,7 @@ data:extend(
 	name = "personal-laser-defense-mk2-equipment",
 	sprite =
 	{
-		filename = "__xander-mod__/graphics/equipment/personal-laser-defense-mk2-equipment.png",
+		filename = "__xander-mod-th__/graphics/equipment/personal-laser-defense-mk2-equipment.png",
 		width = 64,
 		height = 64,
 		priority = "medium"
@@ -209,7 +209,7 @@ data:extend(
 	name = "personal-laser-defense-mk3-equipment",
 	sprite =
 	{
-		filename = "__xander-mod__/graphics/equipment/personal-laser-defense-mk3-equipment.png",
+		filename = "__xander-mod-th__/graphics/equipment/personal-laser-defense-mk3-equipment.png",
 		width = 64,
 		height = 64,
 		priority = "medium"
@@ -268,7 +268,7 @@ data:extend(
 	name = "exoskeleton-mk2-equipment",
 	sprite =
 	{
-		filename = "__xander-mod__/graphics/equipment/exoskeleton-mk2-equipment.png",
+		filename = "__xander-mod-th__/graphics/equipment/exoskeleton-mk2-equipment.png",
 		width = 64,
 		height = 128,
 		priority = "medium"

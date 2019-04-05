@@ -5,6 +5,7 @@ local xmutil = require("xmutil")
 --Base "stone-furnace"
 data.raw.furnace["stone-furnace"].flags = {"player-creation"}
 data.raw.furnace["stone-furnace"].crafting_categories = {"empty"}
+data.raw.furnace["stone-furnace"].next_upgrade = nil
 
 --Base "steel-furnace"
 data.raw.furnace["steel-furnace"].flags = {"player-creation"}
@@ -24,17 +25,17 @@ xmutil.clone("furnace", "stone-furnace",
 	{
 		{
 			"__base__/graphics/entity/stone-furnace/stone-furnace.png",
-			"__xander-mod-graphics-0__/graphics/entity/production/furnace-1/1.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/production/furnace-1/1.png",
 		},
 		{
 			"__base__/graphics/entity/stone-furnace/hr-stone-furnace.png",
-			"__xander-mod-graphics-0__/graphics/entity/production/furnace-1/hr-1.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/production/furnace-1/hr-1.png",
 		},
 	},
 	{
 		type = "assembling-machine",
 		name = "furnace-1",
-		icon = "__xander-mod__/graphics/item/production/smelting-machine/furnace-1.png",
+		icon = "__xander-mod-th__/graphics/item/production/smelting-machine/furnace-1.png",
 		minable = {mining_time = 1, result = "stone-furnace"},
 		max_health = 50,
 		crafting_categories = {"kiln"},
@@ -49,17 +50,17 @@ xmutil.clone("furnace", "stone-furnace",
 	{
 		{
 			"__base__/graphics/entity/stone-furnace/stone-furnace.png",
-			"__xander-mod-graphics-0__/graphics/entity/production/furnace-2/2.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/production/furnace-2/2.png",
 		},
 		{
 			"__base__/graphics/entity/stone-furnace/hr-stone-furnace.png",
-			"__xander-mod-graphics-0__/graphics/entity/production/furnace-2/hr-2.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/production/furnace-2/hr-2.png",
 		},
 	},
 	{
 		type = "assembling-machine",
 		name = "furnace-2",
-		icon = "__xander-mod__/graphics/item/production/smelting-machine/furnace-2.png",
+		icon = "__xander-mod-th__/graphics/item/production/smelting-machine/furnace-2.png",
 		minable = {mining_time = 1, result = "furnace-2"},
 		max_health = 100,
 		crafting_categories = {"kiln", "smelting"},
@@ -90,17 +91,17 @@ xmutil.clone("furnace", "electric-furnace",
 	{
 		{
 			"__base__/graphics/entity/electric-furnace/electric-furnace-base.png",
-			"__xander-mod-graphics-0__/graphics/entity/production/furnace-4/4.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/production/furnace-4/4.png",
 		},
 		{
 			"__base__/graphics/entity/electric-furnace/hr-electric-furnace-base.png",
-			"__xander-mod-graphics-0__/graphics/entity/production/furnace-4/hr-4.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/production/furnace-4/hr-4.png",
 		},
 	},
 	{
 		type = "assembling-machine",
 		name = "furnace-4",
-		icon = "__xander-mod__/graphics/item/production/smelting-machine/furnace-4.png",
+		icon = "__xander-mod-th__/graphics/item/production/smelting-machine/furnace-4.png",
 		minable = {mining_time = 1, result = "furnace-4"},
 		max_health = 500,
 		fluid_boxes = xmutil.assembler_fluid_boxes("assembling-machine-3"),
@@ -135,21 +136,21 @@ xmutil.clone("furnace", "electric-furnace",
 	{
 		{
 			"__base__/graphics/entity/electric-furnace/electric-furnace-base.png",
-			"__xander-mod-graphics-0__/graphics/entity/production/furnace-6/6.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/production/furnace-6/6.png",
 		},
 		{
 			"__base__/graphics/entity/electric-furnace/hr-electric-furnace-base.png",
-			"__xander-mod-graphics-0__/graphics/entity/production/furnace-6/hr-6.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/production/furnace-6/hr-6.png",
 		},
 		{
 			"__base__/graphics/entity/electric-furnace/electric-furnace-heater.png",
-			"__xander-mod-graphics-0__/graphics/entity/production/furnace-6/heater.png",
+			"__xander-mod-th-graphics-0__/graphics/entity/production/furnace-6/heater.png",
 		},
 	},
 	{
 		type = "assembling-machine",
 		name = "furnace-6",
-		icon = "__xander-mod__/graphics/item/production/smelting-machine/furnace-6.png",
+		icon = "__xander-mod-th__/graphics/item/production/smelting-machine/furnace-6.png",
 		minable = {mining_time = 1, result = "furnace-6"},
 		max_health = 1000,
 		fluid_boxes = xmutil.assembler_fluid_boxes("assembling-machine-3"),

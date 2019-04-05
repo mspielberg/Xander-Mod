@@ -7,7 +7,7 @@ data:extend(
 {
 	type = "recipe",
 	name = "recycle-slow-transport-belt",
-	icon = "__xander-mod__/graphics/recipe/waste/recycle-slow-transport-belt.png",
+	icon = "__xander-mod-th__/graphics/recipe/waste/recycle-slow-transport-belt.png",
 	icon_size = 32,
 	category = "smelting",
 	energy_required = 8,
@@ -20,7 +20,7 @@ data:extend(
 {
 	type = "recipe",
 	name = "recycle-slow-underground-belt",
-	icon = "__xander-mod__/graphics/recipe/waste/recycle-slow-underground-belt.png",
+	icon = "__xander-mod-th__/graphics/recipe/waste/recycle-slow-underground-belt.png",
 	icon_size = 32,
 	category = "smelting",
 	energy_required = 8,
@@ -33,7 +33,7 @@ data:extend(
 {
 	type = "recipe",
 	name = "recycle-slow-splitter",
-	icon = "__xander-mod__/graphics/recipe/waste/recycle-slow-splitter.png",
+	icon = "__xander-mod-th__/graphics/recipe/waste/recycle-slow-splitter.png",
 	icon_size = 32,
 	category = "smelting",
 	energy_required = 40,
@@ -46,7 +46,7 @@ data:extend(
 {
 	type = "recipe",
 	name = "recycle-burner-inserter",
-	icon = "__xander-mod__/graphics/recipe/waste/recycle-burner-inserter.png",
+	icon = "__xander-mod-th__/graphics/recipe/waste/recycle-burner-inserter.png",
 	icon_size = 32,
 	category = "smelting",
 	energy_required = 24,
@@ -62,7 +62,7 @@ data:extend(
 {
 	type = "recipe",
   name = "gray-water-clarifying",
-	icon = "__xander-mod__/graphics/recipe/waste/gray-water-clarifying.png",
+	icon = "__xander-mod-th__/graphics/recipe/waste/gray-water-clarifying.png",
 	icon_size = 32,
 	category = "chemistry",
 	crafting_machine_tint =
@@ -81,7 +81,7 @@ data:extend(
 {
 	type = "recipe",
   name = "waste-water-clarifying-a",
-	icon = "__xander-mod__/graphics/recipe/waste/waste-water-clarifying-a.png",
+	icon = "__xander-mod-th__/graphics/recipe/waste/waste-water-clarifying-a.png",
 	icon_size = 32,
 	category = "basic-chemistry",
 	crafting_machine_tint =
@@ -102,7 +102,7 @@ data:extend(
 {
 	type = "recipe",
   name = "waste-water-clarifying-b",
-	icon = "__xander-mod__/graphics/recipe/waste/waste-water-clarifying-b.png",
+	icon = "__xander-mod-th__/graphics/recipe/waste/waste-water-clarifying-b.png",
 	icon_size = 32,
 	category = "chemistry",
 	crafting_machine_tint =
@@ -121,7 +121,7 @@ data:extend(
 {
 	type = "recipe",
   name = "waste-slurry-clarifying",
-	icon = "__xander-mod__/graphics/recipe/waste/waste-slurry-clarifying.png",
+	icon = "__xander-mod-th__/graphics/recipe/waste/waste-slurry-clarifying.png",
 	icon_size = 32,
 	category = "chemistry",
 	crafting_machine_tint =
@@ -140,7 +140,7 @@ data:extend(
 {
 	type = "recipe",
     name = "gas-scrubbing",
-	icon = "__xander-mod__/graphics/recipe/waste/gas-scrubbing.png",
+	icon = "__xander-mod-th__/graphics/recipe/waste/gas-scrubbing.png",
 	icon_size = 32,
 	category = "chemistry",
 	crafting_machine_tint =
@@ -159,7 +159,7 @@ data:extend(
 {
 	type = "recipe",
     name = "sulfate-cracking",
-	icon = "__xander-mod__/graphics/recipe/waste/sulfate-cracking.png",
+	icon = "__xander-mod-th__/graphics/recipe/waste/sulfate-cracking.png",
 	icon_size = 32,
 	category = "refining",
 	energy_required = 100,
@@ -172,7 +172,7 @@ data:extend(
 {
 	type = "recipe",
     name = "slag-cracking",
-	icon = "__xander-mod__/graphics/recipe/waste/slag-cracking.png",
+	icon = "__xander-mod-th__/graphics/recipe/waste/slag-cracking.png",
 	icon_size = 32,
 	category = "chemical-plant",
 	energy_required = 200,
@@ -210,18 +210,30 @@ local void_recipes = {
 for _, r in ipairs(void_recipes) do
 	local name = r[1]
 	local ingredients = r[2]
-	-- determines the icon used for the recipe
-	local void_result = {
-		type = ingredients[1].type or "item",
-		name = ingredients[1].name or ingredients[1][1],
-		amount_min = 0,
-		amount_max = 0,
-		probability = 0,
-	}
+	-- determine the icon used for the recipe
+	local main_ingredient = ingredients[1]
+	local icon
+	if main_ingredient.type then
+		icon = data.raw.fluid[main_ingredient.name].icon
+	else
+		icon = data.raw.item[main_ingredient[1]].icon
+	end
+
 	data:extend{
 		{
 			type = "recipe",
 			name = name,
+			subgroup = "waste",
+			icons = {
+				{
+					icon = "__core__/graphics/remove-icon.png",
+					icon_size = 64,
+				},
+				{
+					icon = icon,
+					icon_size = 32,
+				},
+			},
 			localised_name = {"recipe-name."..name},
 			category = "sluice",
 			crafting_machine_tint = {
@@ -232,7 +244,7 @@ for _, r in ipairs(void_recipes) do
 			energy_required = 1,
 			enabled = false,
 			ingredients = ingredients,
-			results = {void_result},
+			results = {},
 			show_amount_in_title = false,
 		}
 	}

@@ -11,12 +11,12 @@ for index, force in pairs(game.forces) do
 		recipes["steel-charge-a"].enabled = technologies["steel-processing"].researched
 	end
 
-	if recipes["science-pack-1"] and technologies["electricity"] then
-		recipes["science-pack-1"].enabled = technologies["electricity"].researched
+	if recipes["automation-science-pack"] and technologies["electricity"] then
+		recipes["automation-science-pack"].enabled = technologies["electricity"].researched
 	end
 
-	if recipes["science-pack-1"] and technologies["inserter-a"] then
-		recipes["science-pack-1"].enabled = technologies["inserter-a"].researched
+	if recipes["automation-science-pack"] and technologies["inserter-a"] then
+		recipes["automation-science-pack"].enabled = technologies["inserter-a"].researched
 	end
   
 end

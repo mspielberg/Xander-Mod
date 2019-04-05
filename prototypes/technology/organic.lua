@@ -10,13 +10,13 @@ data.raw.technology["plastics"].order = "03-06"
 --Base "explosives"
 data.raw.technology["explosives"].prerequisites = {"nitrocellulose", "heavy-reforming", "flammables"}
 data.raw.technology["explosives"].effects = {{type = "unlock-recipe", recipe = "unstable-explosives"}, {type = "unlock-recipe", recipe = "explosives"}}
-data.raw.technology["explosives"].unit = {count = 200, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}}, time = 30}
+data.raw.technology["explosives"].unit = {count = 200, ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}}, time = 30}
 data.raw.technology["explosives"].order = "03-08"
 
 --Base "flammables" placeholder
 data.raw.technology["flammables"].effects = {{type = "unlock-recipe", recipe = "solid-fuel-from-light-oil"}, 
 	{type = "unlock-recipe", recipe = "solid-fuel-from-petroleum-gas"}, {type = "unlock-recipe", recipe = "solid-fuel-from-heavy-oil"}}
-data.raw.technology["flammables"].unit = {count = 150, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}}, time = 30}
+data.raw.technology["flammables"].unit = {count = 150, ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}}, time = 30}
 data.raw.technology["flammables"].order = "03-12"
 
 
@@ -27,7 +27,7 @@ data:extend(
 {
 	type = "technology",
 	name = "phenol-a",
-	icon = "__xander-mod__/graphics/technology/organic/phenol-a.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/phenol-a.png",
 	icon_size = 128,
 	effects =
 	{
@@ -52,7 +52,7 @@ data:extend(
 {
 	type = "technology",
 	name = "flotation_1",
-	icon = "__xander-mod__/graphics/technology/organic/flotation_1.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/flotation_1.png",
 	icon_size = 128,
 	effects =
 	{
@@ -67,8 +67,8 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 15
 	},
@@ -78,7 +78,7 @@ data:extend(
 {
 	type = "technology",
 	name = "flotation_2",
-	icon = "__xander-mod__/graphics/technology/organic/flotation_2.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/flotation_2.png",
 	icon_size = 128,
 	effects =
 	{
@@ -93,8 +93,8 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 15
 	},
@@ -104,7 +104,7 @@ data:extend(
 {
 	type = "technology",
 	name = "organics_1",
-	icon = "__base__/graphics/technology/chemistry.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/organics-1.png",
 	icon_size = 128,
 	effects =
 	{
@@ -131,7 +131,7 @@ data:extend(
 		count = 50,
 		ingredients =
 		{
-			{"science-pack-1", 1}
+			{"automation-science-pack", 1}
 		},
 		time = 10
 	},
@@ -141,7 +141,7 @@ data:extend(
 {
 	type = "technology",
 	name = "organics_2",
-	icon = "__base__/graphics/technology/advanced-chemistry.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/organics-2.png",
 	icon_size = 128,
 	effects =
 	{
@@ -160,8 +160,8 @@ data:extend(
 		count = 400,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -171,7 +171,7 @@ data:extend(
 {
 	type = "technology",
 	name = "organics_3",
-	icon = "__base__/graphics/technology/advanced-chemistry.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/organics-3.png",
 	icon_size = 128,
 	effects =
 	{
@@ -190,9 +190,9 @@ data:extend(
 		count = 800,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -203,7 +203,7 @@ data:extend(
 {
 	type = "technology",
 	name = "rubber-a",
-	icon = "__xander-mod__/graphics/technology/organic/rubber-a.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/rubber-a.png",
 	icon_size = 128,
 	effects =
 	{
@@ -226,7 +226,7 @@ data:extend(
 		count = 30,
 		ingredients =
 		{
-			{"science-pack-1", 1}
+			{"automation-science-pack", 1}
 		},
 		time = 15
 	},
@@ -236,7 +236,7 @@ data:extend(
 {
 	type = "technology",
 	name = "rubber-b",
-	icon = "__xander-mod__/graphics/technology/organic/rubber-b.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/rubber-b.png",
 	icon_size = 128,
 	effects =
 	{
@@ -259,9 +259,9 @@ data:extend(
 		count = 350,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 30
 	},
@@ -273,7 +273,7 @@ data:extend(
 {
 	type = "technology",
 	name = "nitrocellulose",
-	icon = "__xander-mod__/graphics/technology/organic/nitrocellulose.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/nitrocellulose.png",
 	icon_size = 128,
 	effects =
 	{
@@ -288,8 +288,8 @@ data:extend(
 		count = 100,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 15
 	},
@@ -301,7 +301,7 @@ data:extend(
 {
 	type = "technology",
 	name = "powder_2",
-	icon = "__xander-mod__/graphics/technology/organic/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -316,8 +316,8 @@ data:extend(
 		count = 300,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -327,7 +327,7 @@ data:extend(
 {
 	type = "technology",
 	name = "blasting",
-	icon = "__xander-mod__/graphics/technology/organic/blasting.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/blasting.png",
 	icon_size = 128,
 	effects =
 	{
@@ -342,8 +342,8 @@ data:extend(
 		count = 150,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 10
 	},
@@ -353,7 +353,7 @@ data:extend(
 {
 	type = "technology",
 	name = "hydrocarbon-chlorination",
-	icon = "__xander-mod__/graphics/technology/organic/hydrocarbon-chlorination.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/hydrocarbon-chlorination.png",
 	icon_size = 128,
 	effects =
 	{
@@ -380,8 +380,8 @@ data:extend(
 		count = 150,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 45
 	},
@@ -393,7 +393,7 @@ data:extend(
 {
 	type = "technology",
 	name = "lubricant-b",
-	icon = "__xander-mod__/graphics/technology/organic/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -408,8 +408,8 @@ data:extend(
 		count = 150,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 30
@@ -420,7 +420,7 @@ data:extend(
 {
 	type = "technology",
 	name = "phenolic-resin",
-	icon = "__xander-mod__/graphics/technology/organic/phenolic-resin.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/phenolic-resin.png",
 	icon_size = 128,
 	effects =
 	{
@@ -435,8 +435,8 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 45
 	},
@@ -446,7 +446,7 @@ data:extend(
 {
 	type = "technology",
 	name = "naptha-processing",
-	icon = "__xander-mod__/graphics/technology/organic/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -465,9 +465,9 @@ data:extend(
 		count = 300,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 30
 	},
@@ -477,7 +477,7 @@ data:extend(
 {
 	type = "technology",
 	name = "heavy-cracking",
-	icon = "__xander-mod__/graphics/technology/organic/heavy-cracking.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/heavy-cracking.png",
 	icon_size = 128,
 	effects =
 	{
@@ -496,8 +496,8 @@ data:extend(
 		count = 100,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -507,7 +507,7 @@ data:extend(
 {
 	type = "technology",
 	name = "light-cracking",
-	icon = "__xander-mod__/graphics/technology/organic/light-cracking.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/light-cracking.png",
 	icon_size = 128,
 	effects =
 	{
@@ -530,8 +530,8 @@ data:extend(
 		count = 100,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -541,7 +541,7 @@ data:extend(
 {
 	type = "technology",
 	name = "light-reforming",
-	icon = "__xander-mod__/graphics/technology/organic/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -560,8 +560,8 @@ data:extend(
 		count = 100,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -571,7 +571,7 @@ data:extend(
 {
 	type = "technology",
 	name = "heavy-reforming",
-	icon = "__xander-mod__/graphics/technology/organic/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -590,8 +590,8 @@ data:extend(
 		count = 100,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -601,7 +601,7 @@ data:extend(
 {
 	type = "technology",
 	name = "synthesis-gas",
-	icon = "__xander-mod__/graphics/technology/organic/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -620,9 +620,9 @@ data:extend(
 		count = 400,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 30
@@ -633,7 +633,7 @@ data:extend(
 {
 	type = "technology",
 	name = "methane-cracking",
-	icon = "__xander-mod__/graphics/technology/organic/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -648,9 +648,9 @@ data:extend(
 		count = 450,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 45
@@ -661,7 +661,7 @@ data:extend(
 {
 	type = "technology",
 	name = "epoxy-resin",
-	icon = "__xander-mod__/graphics/technology/organic/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/organic/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -684,9 +684,9 @@ data:extend(
 		count = 400,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 45

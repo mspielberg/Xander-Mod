@@ -4,7 +4,7 @@ function xm_technology(name_arg, recipe_unlocks, special_effects, prerequisites_
 	--Create an output array for the prototype, using a few standard technology parameters
 	local out = {type = "technology", name = name_arg}
 	--Set the icon path and size
-	out.icon = "__xander-mod__/graphics/technology/" .. xm_groups[group_no] .. "/" .. xm_all_subgroups[group_no][subgroup_no][1] .. "/" .. name_arg .. ".png"
+	out.icon = "__xander-mod-th__/graphics/technology/" .. xm_groups[group_no] .. "/" .. xm_all_subgroups[group_no][subgroup_no][1] .. "/" .. name_arg .. ".png"
 	out.icon_size = 128
 	--Create a list to store the effects of researching the current technology
 	local effects_build_list = {}

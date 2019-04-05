@@ -5,7 +5,7 @@ data.raw.technology["coal-liquefaction"].prerequisites = {"reactor_3", "naptha-p
 data.raw.technology["coal-liquefaction"].unit.count = 500
 data.raw.technology["coal-liquefaction"].order = "01-07"
 --Base "oil-processing"
-data.raw.technology["oil-processing"].icon = "__xander-mod__/graphics/technology/refining/oil-processing.png"
+data.raw.technology["oil-processing"].icon = "__xander-mod-th__/graphics/technology/refining/oil-processing.png"
 data.raw.technology["oil-processing"].icon_size = 128
 data.raw.technology["oil-processing"].prerequisites = {"pumpjack", "distillation-column"}
 data.raw.technology["oil-processing"].effects = {{type = "unlock-recipe", recipe = "basic-oil-processing"}, 
@@ -30,7 +30,7 @@ data:extend(
 {
 	type = "technology",
 	name = "fluorine-processing",
-	icon = "__xander-mod__/graphics/technology/refining/fluorine-processing.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/fluorine-processing.png",
 	icon_size = 128,
 	effects =
 	{
@@ -53,9 +53,9 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 60
 	},
@@ -65,7 +65,7 @@ data:extend(
 {
 	type = "technology",
 	name = "phosphorus-processing",
-	icon = "__xander-mod__/graphics/technology/refining/phosphorus-processing.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/phosphorus-processing.png",
 	icon_size = 128,
 	effects =
 	{
@@ -88,8 +88,8 @@ data:extend(
 		count = 150,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 20
 	},
@@ -99,7 +99,7 @@ data:extend(
 {
 	type = "technology",
 	name = "aluminum-refining",
-	icon = "__xander-mod__/graphics/technology/refining/aluminum-refining.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/aluminum-refining.png",
 	icon_size = 128,
 	effects =
 	{
@@ -122,9 +122,9 @@ data:extend(
 		count = 300,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 30
 	},
@@ -134,7 +134,7 @@ data:extend(
 {
 	type = "technology",
 	name = "bauxite-sediment",
-	icon = "__xander-mod__/graphics/technology/refining/bauxite-sediment.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/bauxite-sediment.png",
 	icon_size = 128,
 	effects =
 	{
@@ -149,7 +149,7 @@ data:extend(
 		count = 75,
 		ingredients =
 		{
-			{"science-pack-1", 1}
+			{"automation-science-pack", 1}
 		},
 		time = 15
 	},
@@ -159,7 +159,7 @@ data:extend(
 {
 	type = "technology",
 	name = "acheson-process",
-	icon = "__xander-mod__/graphics/technology/refining/acheson-process.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/acheson-process.png",
 	icon_size = 128,
 	effects =
 	{
@@ -186,8 +186,8 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -197,7 +197,7 @@ data:extend(
 {
 	type = "technology",
 	name = "glass-a",
-	icon = "__xander-mod__/graphics/technology/refining/glass-a.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/glass-a.png",
 	icon_size = 128,
 	effects =
 	{
@@ -230,7 +230,7 @@ data:extend(
 {
 	type = "technology",
 	name = "glass-b",
-	icon = "__xander-mod__/graphics/technology/refining/glass-b.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/glass-b.png",
 	icon_size = 128,
 	effects =
 	{
@@ -249,9 +249,9 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 45
 	},
@@ -263,7 +263,7 @@ data:extend(
 {
 	type = "technology",
 	name = "copper-refining",
-	icon = "__xander-mod__/graphics/technology/refining/copper-refining.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/copper-refining.png",
 	icon_size = 128,
 	effects =
 	{
@@ -286,8 +286,8 @@ data:extend(
 		count = 150,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -297,7 +297,7 @@ data:extend(
 {
 	type = "technology",
 	name = "cobalt-refining",
-	icon = "__xander-mod__/graphics/technology/refining/cobalt-refining.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/cobalt-refining.png",
 	icon_size = 128,
 	effects =
 	{
@@ -316,9 +316,9 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 45
 	},
@@ -328,7 +328,7 @@ data:extend(
 {
 	type = "technology",
 	name = "copper-cobalt",
-	icon = "__xander-mod__/graphics/technology/refining/copper-cobalt.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/copper-cobalt.png",
 	icon_size = 128,
 	effects =
 	{
@@ -343,9 +343,9 @@ data:extend(
 		count = 500,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -360,7 +360,7 @@ data:extend(
 {
 	type = "technology",
 	name = "nickel-smelting",
-	icon = "__xander-mod__/graphics/technology/refining/nickel-smelting.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/nickel-smelting.png",
 	icon_size = 128,
 	effects =
 	{
@@ -375,8 +375,8 @@ data:extend(
 		count = 100,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -386,7 +386,7 @@ data:extend(
 {
 	type = "technology",
 	name = "nickel-refining",
-	icon = "__xander-mod__/graphics/technology/refining/nickel-refining.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/nickel-refining.png",
 	icon_size = 128,
 	effects =
 	{
@@ -405,8 +405,8 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -416,7 +416,7 @@ data:extend(
 {
 	type = "technology",
 	name = "platinum-refining",
-	icon = "__xander-mod__/graphics/technology/refining/platinum-refining.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/platinum-refining.png",
 	icon_size = 128,
 	effects =
 	{
@@ -435,9 +435,9 @@ data:extend(
 		count = 300,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 45
 	},
@@ -447,7 +447,7 @@ data:extend(
 {
 	type = "technology",
 	name = "nickel-platinum",
-	icon = "__xander-mod__/graphics/technology/refining/nickel-platinum.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/nickel-platinum.png",
 	icon_size = 128,
 	effects =
 	{
@@ -462,9 +462,9 @@ data:extend(
 		count = 500,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -475,7 +475,7 @@ data:extend(
 {
 	type = "technology",
 	name = "tin-refining",
-	icon = "__xander-mod__/graphics/technology/refining/tin-refining.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/tin-refining.png",
 	icon_size = 128,
 	effects =
 	{
@@ -494,8 +494,8 @@ data:extend(
 		count = 150,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -505,7 +505,7 @@ data:extend(
 {
 	type = "technology",
 	name = "tungsten-refining",
-	icon = "__xander-mod__/graphics/technology/refining/tungsten-refining.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/tungsten-refining.png",
 	icon_size = 128,
 	effects =
 	{
@@ -532,8 +532,8 @@ data:extend(
 		count = 300,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -543,7 +543,7 @@ data:extend(
 {
 	type = "technology",
 	name = "gold-refining",
-	icon = "__xander-mod__/graphics/technology/refining/gold-refining.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/gold-refining.png",
 	icon_size = 128,
 	effects =
 	{
@@ -562,8 +562,8 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 45
 	},
@@ -573,7 +573,7 @@ data:extend(
 {
 	type = "technology",
 	name = "cassiterite-scheelite",
-	icon = "__xander-mod__/graphics/technology/refining/cassiterite-scheelite.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/cassiterite-scheelite.png",
 	icon_size = 128,
 	effects =
 	{
@@ -588,9 +588,9 @@ data:extend(
 		count = 350,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -601,7 +601,7 @@ data:extend(
 {
 	type = "technology",
 	name = "cassiterite-gold",
-	icon = "__xander-mod__/graphics/technology/refining/cassiterite-gold.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/cassiterite-gold.png",
 	icon_size = 128,
 	effects =
 	{
@@ -616,9 +616,9 @@ data:extend(
 		count = 500,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -629,7 +629,7 @@ data:extend(
 {
 	type = "technology",
 	name = "chromium-refining",
-	icon = "__xander-mod__/graphics/technology/refining/chromium-refining.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/chromium-refining.png",
 	icon_size = 128,
 	effects =
 	{
@@ -656,8 +656,8 @@ data:extend(
 		count = 400,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -667,7 +667,7 @@ data:extend(
 {
 	type = "technology",
 	name = "titanium-refining",
-	icon = "__xander-mod__/graphics/technology/refining/titanium-refining.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/titanium-refining.png",
 	icon_size = 128,
 	effects =
 	{
@@ -694,9 +694,9 @@ data:extend(
 		count = 500,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 45
 	},
@@ -706,7 +706,7 @@ data:extend(
 {
 	type = "technology",
 	name = "zirconium-refining",
-	icon = "__xander-mod__/graphics/technology/refining/zirconium-refining.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/zirconium-refining.png",
 	icon_size = 128,
 	effects =
 	{
@@ -733,9 +733,9 @@ data:extend(
 		count = 750,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -746,7 +746,7 @@ data:extend(
 {
 	type = "technology",
 	name = "forging-zirconium",
-	icon = "__xander-mod__/graphics/technology/refining/forging-zirconium.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/forging-zirconium.png",
 	icon_size = 128,
 	effects =
 	{
@@ -761,11 +761,11 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1},
-			{"high-tech-science-pack", 1}
+			{"utility-science-pack", 1}
 		},
 		time = 45
 	},
@@ -775,7 +775,7 @@ data:extend(
 {
 	type = "technology",
 	name = "iron-refining",
-	icon = "__xander-mod__/graphics/technology/refining/iron-refining.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/iron-refining.png",
 	icon_size = 128,
 	effects =
 	{
@@ -794,8 +794,8 @@ data:extend(
 		count = 75,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 15
 	},
@@ -805,7 +805,7 @@ data:extend(
 {
 	type = "technology",
 	name = "vanadium-refining",
-	icon = "__xander-mod__/graphics/technology/refining/vanadium-refining.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/vanadium-refining.png",
 	icon_size = 128,
 	effects =
 	{
@@ -836,8 +836,8 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -847,7 +847,7 @@ data:extend(
 {
 	type = "technology",
 	name = "iron-vanadium",
-	icon = "__xander-mod__/graphics/technology/refining/iron-vanadium.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/iron-vanadium.png",
 	icon_size = 128,
 	effects =
 	{
@@ -866,9 +866,9 @@ data:extend(
 		count = 500,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -879,7 +879,7 @@ data:extend(
 {
 	type = "technology",
 	name = "smelting-sulfur",
-	icon = "__xander-mod__/graphics/technology/refining/smelting-sulfur.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/smelting-sulfur.png",
 	icon_size = 128,
 	effects =
 	{
@@ -903,7 +903,7 @@ data:extend(
 {
 	type = "technology",
 	name = "lead-refining",
-	icon = "__xander-mod__/graphics/technology/refining/lead-refining.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/lead-refining.png",
 	icon_size = 128,
 	effects =
 	{
@@ -926,8 +926,8 @@ data:extend(
 		count = 150,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -937,7 +937,7 @@ data:extend(
 {
 	type = "technology",
 	name = "silver-refining",
-	icon = "__xander-mod__/graphics/technology/refining/silver-refining.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/silver-refining.png",
 	icon_size = 128,
 	effects =
 	{
@@ -956,8 +956,8 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 45
 	},
@@ -967,7 +967,7 @@ data:extend(
 {
 	type = "technology",
 	name = "parkes-process",
-	icon = "__xander-mod__/graphics/technology/refining/parkes-process.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/parkes-process.png",
 	icon_size = 128,
 	effects =
 	{
@@ -982,9 +982,9 @@ data:extend(
 		count = 500,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 60
 	},
@@ -994,7 +994,7 @@ data:extend(
 {
 	type = "technology",
 	name = "hand-saltpeter",
-	icon = "__xander-mod__/graphics/technology/refining/hand-saltpeter.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/hand-saltpeter.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1018,7 +1018,7 @@ data:extend(
 {
 	type = "technology",
 	name = "boron-processing",
-	icon = "__xander-mod__/graphics/technology/refining/boron-processing.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/boron-processing.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1037,8 +1037,8 @@ data:extend(
 		count = 150,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 45
 	},
@@ -1048,7 +1048,7 @@ data:extend(
 {
 	type = "technology",
 	name = "lithium-precipitation",
-	icon = "__xander-mod__/graphics/technology/refining/lithium-precipitation.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/lithium-precipitation.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1063,9 +1063,9 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 30
 	},
@@ -1075,7 +1075,7 @@ data:extend(
 {
 	type = "technology",
 	name = "gas-distillation",
-	icon = "__xander-mod__/graphics/technology/refining/gas-distillation.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/gas-distillation.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1090,9 +1090,9 @@ data:extend(
 		count = 100,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 30
 	},
@@ -1102,7 +1102,7 @@ data:extend(
 {
 	type = "technology",
 	name = "advanced-gas-distillation",
-	icon = "__xander-mod__/graphics/technology/refining/gas-distillation.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/gas-distillation.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1117,9 +1117,9 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 30
@@ -1130,7 +1130,7 @@ data:extend(
 {
 	type = "technology",
 	name = "calcium-processing",
-	icon = "__xander-mod__/graphics/technology/refining/calcium-processing.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/calcium-processing.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1149,8 +1149,8 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 20
 	},
@@ -1160,7 +1160,7 @@ data:extend(
 {
 	type = "technology",
 	name = "magnesium-processing",
-	icon = "__xander-mod__/graphics/technology/refining/magnesium-processing.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/magnesium-processing.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1175,8 +1175,8 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 20
 	},
@@ -1186,7 +1186,7 @@ data:extend(
 {
 	type = "technology",
 	name = "magnesium-refining",
-	icon = "__xander-mod__/graphics/technology/refining/magnesium-refining.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/magnesium-refining.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1205,8 +1205,8 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 45
 	},
@@ -1216,7 +1216,7 @@ data:extend(
 {
 	type = "technology",
 	name = "zinc-refining",
-	icon = "__xander-mod__/graphics/technology/refining/zinc-refining.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/zinc-refining.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1239,8 +1239,8 @@ data:extend(
 		count = 150,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -1250,7 +1250,7 @@ data:extend(
 {
 	type = "technology",
 	name = "chalcopyrite-processing",
-	icon = "__xander-mod__/graphics/technology/refining/chalcopyrite-processing.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/chalcopyrite-processing.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1273,9 +1273,9 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 45
 	},
@@ -1285,7 +1285,7 @@ data:extend(
 {
 	type = "technology",
 	name = "chalcopyrite-sphalerite",
-	icon = "__xander-mod__/graphics/technology/refining/chalcopyrite-sphalerite.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/chalcopyrite-sphalerite.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1300,9 +1300,9 @@ data:extend(
 		count = 500,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -1313,7 +1313,7 @@ data:extend(
 {
 	type = "technology",
 	name = "re-refining",
-	icon = "__xander-mod__/graphics/technology/refining/re-refining.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/re-refining.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1336,9 +1336,9 @@ data:extend(
 		count = 300,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -1349,7 +1349,7 @@ data:extend(
 {
 	type = "technology",
 	name = "uranium-refining",
-	icon = "__xander-mod__/graphics/technology/refining/uranium-refining.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/uranium-refining.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1368,9 +1368,9 @@ data:extend(
 		count = 300,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 45
@@ -1381,7 +1381,7 @@ data:extend(
 {
 	type = "technology",
 	name = "fuel-enrichment",
-	icon = "__xander-mod__/graphics/technology/refining/fuel-enrichment.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/fuel-enrichment.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1408,11 +1408,11 @@ data:extend(
 		count = 800,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1},
-			{"high-tech-science-pack", 1}
+			{"utility-science-pack", 1}
 		},
 		time = 60
 	},
@@ -1422,7 +1422,7 @@ data:extend(
 {
 	type = "technology",
 	name = "weapons-enrichment",
-	icon = "__xander-mod__/graphics/technology/refining/weapons-enrichment.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/weapons-enrichment.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1437,11 +1437,11 @@ data:extend(
 		count = 2000,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1},
-			{"high-tech-science-pack", 1}
+			{"utility-science-pack", 1}
 		},
 		time = 60
 	},
@@ -1455,7 +1455,7 @@ data:extend(
 {
 	type = "technology",
 	name = "sodium-processing",
-	icon = "__xander-mod__/graphics/technology/refining/sodium-processing.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/sodium-processing.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1474,8 +1474,8 @@ data:extend(
 		count = 100,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -1485,7 +1485,7 @@ data:extend(
 {
 	type = "technology",
 	name = "air-processing",
-	icon = "__xander-mod__/graphics/technology/refining/air-processing.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/air-processing.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1512,8 +1512,8 @@ data:extend(
 		count = 150,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -1523,7 +1523,7 @@ data:extend(
 {
 	type = "technology",
 	name = "kiln-soda",
-	icon = "__xander-mod__/graphics/technology/refining/kiln-soda.png",
+	icon = "__xander-mod-th__/graphics/technology/refining/kiln-soda.png",
 	icon_size = 128,
 	effects =
 	{

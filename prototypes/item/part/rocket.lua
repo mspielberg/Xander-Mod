@@ -29,9 +29,9 @@ data:extend(
 {
 	type = "item",
 	name = "fuel-pellet",
-	icon = "__xander-mod__/graphics/item/part/rocket/fuel-pellet.png",
+	icon = "__xander-mod-th__/graphics/item/part/rocket/fuel-pellet.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
+	flags = {},
 	subgroup = "intermediate-product",
 	order = "0",
 	stack_size = 100
@@ -50,9 +50,9 @@ data:extend(
 {
 	type = "item",
 	name = "rocket-mechanism",
-	icon = "__xander-mod__/graphics/item/part/rocket/rocket-mechanism.png",
+	icon = "__xander-mod-th__/graphics/item/part/rocket/rocket-mechanism.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
+	flags = {},
 	subgroup = "intermediate-product",
 	order = "6",
 	stack_size = 100
@@ -61,9 +61,9 @@ data:extend(
 {
 	type = "item",
 	name = "rocket-thermal",
-	icon = "__xander-mod__/graphics/item/part/rocket/rocket-thermal.png",
+	icon = "__xander-mod-th__/graphics/item/part/rocket/rocket-thermal.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
+	flags = {},
 	subgroup = "intermediate-product",
 	order = "6",
 	stack_size = 100

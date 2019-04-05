@@ -5,13 +5,13 @@ function xm_item(name_arg, flags_arg, group_no, subgroup_no, item_no, place_as_e
 	--Set the subgroup
 	out.subgroup = xm_all_subgroups[group_no][subgroup_no][1]
 	--Construct and set the file path for the icon
-	out.icon = "__xander-mod__/graphics/item/" .. xm_groups[group_no] .. "/" .. xm_all_subgroups[group_no][subgroup_no][1] .. "/" .. name_arg .. ".png"
+	out.icon = "__xander-mod-th__/graphics/item/" .. xm_groups[group_no] .. "/" .. xm_all_subgroups[group_no][subgroup_no][1] .. "/" .. name_arg .. ".png"
 	out.icon_size = 32
 	--Default flag is "goes-to-main-inventory", detect if special other flags given as input and use that list instead
 	if flags_arg then
 		out.flags = flags_arg
 	else
-		out.flags = {"goes-to-main-inventory"}
+		out.flags = {}
 	end
 	--Set the order string, adding the appropriate zeroes to the group_no, subgroup_no, and item_no
 	local order_group_no = group_no
@@ -51,8 +51,8 @@ function xm_special_item(name_arg, flags_arg, group_no, subgroup_no, item_no, pl
 	--Create a list for output item parameters, started with the type and name
 	local out = xm_item(name_arg, flags_arg, group_no, subgroup_no, item_no, place_as_entity)
 	--Determine what type the thing actually is and add the parameters needed for each specific type
-	local typ = "item"
 	if string.find(name_arg, "axe") then --special contains: {damage_amount, durability, speed}
+		do return nil end
 		out.type = "mining-tool"
 		out.action = {
 			type = "direct",
@@ -110,7 +110,7 @@ function xm_modify_base_item(name_arg, group_no, subgroup_no, item_no)--icon
 	--[[
 	--Check if a new icon is indicated, and if so, then reassign the base item's icon to use the XM computed path
 	if icon then
-		local icon = "__xander-mod__/graphics/item/" .. xm_groups[group_no] .. "/" .. xm_all_subgroups[group_no][subgroup_no][1] .. "/" .. name_arg .. ".png"
+		local icon = "__xander-mod-th__/graphics/item/" .. xm_groups[group_no] .. "/" .. xm_all_subgroups[group_no][subgroup_no][1] .. "/" .. name_arg .. ".png"
 		data.raw.item[name_arg].icon = icon
 	end
 	]]--

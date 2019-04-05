@@ -57,9 +57,9 @@ data:extend(
 {
 	type = "gun",
 	name = "artillery-cannon",
-	icon = "__xander-mod__/graphics/item/combat/gun/artillery-cannon.png",
+	icon = "__xander-mod-th__/graphics/item/combat/gun/artillery-cannon.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory", "hidden"},
+	flags = {"hidden"},
 	subgroup = "gun",
 	order = "12",
 	stack_size = 1,
@@ -88,7 +88,7 @@ data:extend(
 	name = "tank-railgun",
 	icon = "__base__/graphics/icons/railgun.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory", "hidden"},
+	flags = {"hidden"},
 	subgroup = "gun",
 	order = "13",
 	attack_parameters =

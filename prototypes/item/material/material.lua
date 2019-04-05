@@ -7,7 +7,7 @@ for i, entry in ipairs(xm_terrain_items) do
 end
 
 --Base Override - Landfill
-data.raw.item["landfill"].icon = "__xander-mod__/graphics/item/material/terrain/landfill.png"
+data.raw.item["landfill"].icon = "__xander-mod-th__/graphics/item/material/terrain/landfill.png"
 data.raw.item["landfill"].place_as_tile = {result = "gravel", condition_size = 1, condition = {"ground-tile"}}
 
 --==========raw-resource
@@ -29,9 +29,9 @@ data.raw.item["coal"].icon = "__base__/graphics/icons/icons-new/coal.png"
 data.raw.item["coal"].fuel_value = "16MJ"
 data.raw.item["coal"].fuel_category = "crude"
 --Copper Ore
-data.raw.item["copper-ore"].icon = "__xander-mod__/graphics/item/material/raw-resource/copper-ore.png"
+data.raw.item["copper-ore"].icon = "__xander-mod-th__/graphics/item/material/raw-resource/copper-ore.png"
 --Iron Ore
-data.raw.item["iron-ore"].icon = "__xander-mod__/graphics/item/material/raw-resource/iron-ore.png"
+data.raw.item["iron-ore"].icon = "__xander-mod-th__/graphics/item/material/raw-resource/iron-ore.png"
 --Stone
 data.raw.item["stone"].icon = "__base__/graphics/icons/icons-new/stone.png"
 
@@ -87,7 +87,7 @@ for i, entry in ipairs(xm_plate_items) do
 	end
 end
 --Steel Plate
-data.raw.item["steel-plate"].icon = "__xander-mod__/graphics/item/material/plate/steel-plate.png"
+data.raw.item["steel-plate"].icon = "__xander-mod-th__/graphics/item/material/plate/steel-plate.png"
 data.raw.item["steel-plate"].place_as_tile =
 {
 	result = "steel",
@@ -111,9 +111,9 @@ for i, entry in ipairs(xm_ingot_items) do
 	end
 end
 --Uranium 238 Ingot
-data.raw.item["uranium-238"].icon = "__xander-mod__/graphics/item/material/ingot/uranium-238.png"
+data.raw.item["uranium-238"].icon = "__xander-mod-th__/graphics/item/material/ingot/uranium-238.png"
 --Uranium 235 Ingot (actually weapons-grade, 50% U-235)
-data.raw.item["uranium-235"].icon = "__xander-mod__/graphics/item/material/ingot/uranium-235.png"
+data.raw.item["uranium-235"].icon = "__xander-mod-th__/graphics/item/material/ingot/uranium-235.png"
 
 
 --==========billet
@@ -233,7 +233,7 @@ end
 --Solid Fuel
 data.raw.item["solid-fuel"].fuel_value = "32MJ"
 --Explosives
-data.raw.item["explosives"].icon = "__xander-mod__/graphics/item/material/energetic/trinitrotoluene.png"
+data.raw.item["explosives"].icon = "__xander-mod-th__/graphics/item/material/energetic/trinitrotoluene.png"
 
 
 --==========waste

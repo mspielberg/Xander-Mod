@@ -28,7 +28,6 @@ require("misc")
 require("prototypes.autoplace-control.autoplace-control")
 
 --Entities
-require("prototypes.entity.resource.particle")
 require("prototypes.entity.resource.resource")
 
 
@@ -193,8 +192,3 @@ require("prototypes.equipment.equipment")
 
 --Technologies
 require("prototypes.technology.combat")
-
-
---==========  Bonuses  ==========
-
-require("prototypes.technology.bonus")

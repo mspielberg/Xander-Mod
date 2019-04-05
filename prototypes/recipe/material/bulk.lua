@@ -15,7 +15,7 @@ data.raw.recipe["solid-fuel-from-petroleum-gas"].energy_required = 2
 data.raw.recipe["solid-fuel-from-petroleum-gas"].ingredients = {{type = "fluid", name = "petroleum-gas", amount = 60}}
 
 --Base "explosives"
-data.raw.recipe["explosives"].icon = "__xander-mod__/graphics/recipe/organic/explosives.png"
+data.raw.recipe["explosives"].icon = "__xander-mod-th__/graphics/recipe/organic/explosives.png"
 data.raw.recipe["explosives"].icon_size = 32
 data.raw.recipe["explosives"].subgroup = "organic"
 data.raw.recipe["explosives"].normal =
@@ -43,9 +43,6 @@ data.raw.recipe["lubricant"].energy_required = 10
 data.raw.recipe["lubricant"].ingredients = {{type = "fluid", name = "heavy-oil", amount = 90}, {type = "fluid", name = "light-oil", amount = 20}}
 data.raw.recipe["lubricant"].results = {{type = "fluid", name = "lubricant", amount = 100}}
 
---Base "wood"
-data.raw.recipe["wood"].energy_required = 1
-
 --Base "heavy-oil-cracking"
 data.raw.recipe["heavy-oil-cracking"].energy_required = 4
 data.raw.recipe["heavy-oil-cracking"].ingredients = {{type = "fluid", name = "heavy-oil", amount = 10}, {type = "fluid", name = "steam", amount = 10}}
@@ -62,7 +59,7 @@ data.raw.recipe["sulfur"].ingredients = {{type = "fluid", name = "hydrogen-sulfi
 data.raw.recipe["sulfur"].results = {{"sulfur", 3}}
 
 --Base "sulfuric-acid"
-data.raw.recipe["sulfuric-acid"].icon = "__xander-mod__/graphics/recipe/compound/sulfuric-acid-a.png"
+data.raw.recipe["sulfuric-acid"].icon = "__xander-mod-th__/graphics/recipe/compound/sulfuric-acid-a.png"
 data.raw.recipe["sulfuric-acid"].icon_size = 32
 data.raw.recipe["sulfuric-acid"].category = "basic-chemistry"
 data.raw.recipe["sulfuric-acid"].energy_required = 20
@@ -439,7 +436,7 @@ data:extend(
 {
 	type = "recipe",
     name = "sodium-chloride-conversion",
-	icon = "__xander-mod__/graphics/recipe/salt/sodium-chloride-conversion.png",
+	icon = "__xander-mod-th__/graphics/recipe/salt/sodium-chloride-conversion.png",
 	icon_size = 32,
 	category = "basic-chemistry",
 	energy_required = 2,
@@ -458,7 +455,7 @@ data:extend(
 {
 	type = "recipe",
     name = "calcium-chloride-conversion",
-	icon = "__xander-mod__/graphics/recipe/salt/calcium-chloride-conversion.png",
+	icon = "__xander-mod-th__/graphics/recipe/salt/calcium-chloride-conversion.png",
 	icon_size = 32,
 	category = "chemistry",
 	crafting_machine_tint =
@@ -477,7 +474,7 @@ data:extend(
 {
 	type = "recipe",
     name = "leblanc-process",
-	icon = "__xander-mod__/graphics/recipe/salt/leblanc-process.png",
+	icon = "__xander-mod-th__/graphics/recipe/salt/leblanc-process.png",
 	icon_size = 32,
 	category = "smelting",
 	energy_required = 4,
@@ -496,7 +493,7 @@ data:extend(
 {
 	type = "recipe",
     name = "solvay-process",
-	icon = "__xander-mod__/graphics/recipe/salt/solvay-process.png",
+	icon = "__xander-mod-th__/graphics/recipe/salt/solvay-process.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 40,
@@ -515,7 +512,7 @@ data:extend(
 {
 	type = "recipe",
     name = "sodium-hydroxide",
-	icon = "__xander-mod__/graphics/recipe/salt/sodium-hydroxide.png",
+	icon = "__xander-mod-th__/graphics/recipe/salt/sodium-hydroxide.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 10,
@@ -559,7 +556,7 @@ data:extend(
 {
 	type = "recipe",
     name = "cryolite-mixture",
-	icon = "__xander-mod__/graphics/recipe/salt/cryolite-mixture.png",
+	icon = "__xander-mod-th__/graphics/recipe/salt/cryolite-mixture.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 4,
@@ -578,7 +575,7 @@ data:extend(
 {
 	type = "recipe",
     name = "lithium-tetrafluoroborate",
-	icon = "__xander-mod__/graphics/recipe/salt/lithium-tetrafluoroborate.png",
+	icon = "__xander-mod-th__/graphics/recipe/salt/lithium-tetrafluoroborate.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 40,
@@ -597,7 +594,7 @@ data:extend(
 {
 	type = "recipe",
     name = "lithium-perchlorate",
-	icon = "__xander-mod__/graphics/recipe/salt/lithium-perchlorate.png",
+	icon = "__xander-mod-th__/graphics/recipe/salt/lithium-perchlorate.png",
 	icon_size = 32,
 	category = "electrolysis",
 	energy_required = 10,
@@ -646,7 +643,7 @@ data:extend(
 {
 	type = "recipe",
     name = "nitrocellulose",
-	icon = "__xander-mod__/graphics/recipe/organic/nitrocellulose.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/nitrocellulose.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 10,
@@ -717,7 +714,7 @@ data:extend(
 {
 	type = "recipe",
     name = "uncured-resol",
-	icon = "__xander-mod__/graphics/recipe/organic/uncured-resol.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/uncured-resol.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 5,
@@ -736,7 +733,7 @@ data:extend(
 {
 	type = "recipe",
     name = "uncured-epoxy",
-	icon = "__xander-mod__/graphics/recipe/organic/uncured-epoxy.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/uncured-epoxy.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 10,
@@ -755,7 +752,7 @@ data:extend(
 {
 	type = "recipe",
     name = "surfactant-a",
-	icon = "__xander-mod__/graphics/recipe/organic/surfactant-a.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/surfactant-a.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 20,
@@ -774,7 +771,7 @@ data:extend(
 {
 	type = "recipe",
     name = "surfactant-b",
-	icon = "__xander-mod__/graphics/recipe/organic/surfactant-b.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/surfactant-b.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 20,
@@ -821,7 +818,7 @@ data:extend(
 {
 	type = "recipe",
     name = "blasting-fluid",
-	icon = "__xander-mod__/graphics/fluid/other-organic/blasting-fluid.png",
+	icon = "__xander-mod-th__/graphics/fluid/other-organic/blasting-fluid.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 2,
@@ -840,7 +837,7 @@ data:extend(
 {
 	type = "recipe",
     name = "lubricant-b",
-	icon = "__xander-mod__/graphics/recipe/organic/lubricant-b.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/lubricant-b.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 40,
@@ -859,7 +856,7 @@ data:extend(
 {
 	type = "recipe",
     name = "carbon-tetrafluoride",
-	icon = "__xander-mod__/graphics/recipe/organic/carbon-tetrafluoride.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/carbon-tetrafluoride.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 10,
@@ -878,7 +875,7 @@ data:extend(
 {
 	type = "recipe",
     name = "dimethyl-carbonate",
-	icon = "__xander-mod__/graphics/recipe/organic/dimethyl-carbonate.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/dimethyl-carbonate.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 20,
@@ -913,8 +910,8 @@ data:extend(
 	category = "temp-logging",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"raw-wood", 10}, {type = "fluid", name = "water", amount = 50}},
-	result = "raw-wood",
+	ingredients = {{"wood", 10}, {type = "fluid", name = "water", amount = 50}},
+	result = "wood",
 	result_count = 12
 },
 --Cotton
@@ -931,12 +928,12 @@ data:extend(
 {
 	type = "recipe",
     name = "wood-resin",
-	icon = "__xander-mod__/graphics/recipe/organic/wood-resin.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/wood-resin.png",
 	icon_size = 32,
 	category = "basic-chemistry",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"raw-wood", 20}, {type = "fluid", name = "steam", amount = 10}},
+	ingredients = {{"wood", 20}, {type = "fluid", name = "steam", amount = 10}},
 	result = "wood-resin",
 	result_count = 10,
 	crafting_machine_tint =
@@ -950,12 +947,12 @@ data:extend(
 {
 	type = "recipe",
     name = "methanol-a",
-	icon = "__xander-mod__/graphics/recipe/organic/methanol-a.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/methanol-a.png",
 	icon_size = 32,
 	category = "basic-chemistry",
 	energy_required = 4,
 	enabled = false,
-	ingredients = {{"wood", 4}},
+	ingredients = {{"wood", 1}},
 	results = {{type = "fluid", name = "methanol", amount = 10}},
 	subgroup = "carbohydrate",
 	crafting_machine_tint =
@@ -969,7 +966,7 @@ data:extend(
 {
 	type = "recipe",
     name = "formaldehyde-a",
-	icon = "__xander-mod__/graphics/recipe/organic/formaldehyde-a.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/formaldehyde-a.png",
 	icon_size = 32,
 	category = "basic-chemistry",
 	energy_required = 20,
@@ -988,12 +985,12 @@ data:extend(
 {
 	type = "recipe",
     name = "formic-acid",
-	icon = "__xander-mod__/graphics/recipe/organic/formic-acid.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/formic-acid.png",
 	icon_size = 32,
 	category = "basic-chemistry",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"raw-wood", 4}, {type = "fluid", name = "water", amount = 20}, {"skarn", 1}, {"iron-ore", 1}},
+	ingredients = {{"wood", 1}, {type = "fluid", name = "water", amount = 20}, {"skarn", 1}, {"iron-ore", 1}},
 	results = {{type = "fluid", name = "formic-acid", amount = 20}},
 	subgroup = "carbohydrate",
 	crafting_machine_tint =
@@ -1010,7 +1007,7 @@ data:extend(
 	category = "chemistry",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"raw-wood", 10}, {type = "fluid", name = "formic-acid", amount = 10}},
+	ingredients = {{"wood", 2}, {type = "fluid", name = "formic-acid", amount = 10}},
 	result = "latex",
 	crafting_machine_tint =
 	{
@@ -1040,7 +1037,7 @@ data:extend(
 {
 	type = "recipe",
     name = "phenol-a",
-	icon = "__xander-mod__/graphics/recipe/organic/phenol-a.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/phenol-a.png",
 	icon_size = 32,
 	category = "basic-chemistry",
 	energy_required = 5,
@@ -1059,7 +1056,7 @@ data:extend(
 {
 	type = "recipe",
     name = "phenol-b",
-	icon = "__xander-mod__/graphics/recipe/organic/phenol-b.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/phenol-b.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 2,
@@ -1078,7 +1075,7 @@ data:extend(
 {
 	type = "recipe",
     name = "methanol-b",
-	icon = "__xander-mod__/graphics/recipe/organic/methanol-b.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/methanol-b.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 10,
@@ -1097,7 +1094,7 @@ data:extend(
 {
 	type = "recipe",
     name = "formaldehyde-b",
-	icon = "__xander-mod__/graphics/recipe/organic/formaldehyde-b.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/formaldehyde-b.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 20,
@@ -1116,7 +1113,7 @@ data:extend(
 {
 	type = "recipe",
     name = "coal-gasification",
-	icon = "__xander-mod__/graphics/recipe/organic/coal-gasification.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/coal-gasification.png",
 	icon_size = 32,
 	category = "refining",
 	energy_required = 8,
@@ -1129,7 +1126,7 @@ data:extend(
 {
 	type = "recipe",
     name = "methane-gasification",
-	icon = "__xander-mod__/graphics/recipe/organic/methane-gasification.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/methane-gasification.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 2,
@@ -1148,7 +1145,7 @@ data:extend(
 {
 	type = "recipe",
     name = "methane-cracking",
-	icon = "__xander-mod__/graphics/recipe/organic/methane-cracking.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/methane-cracking.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 5,
@@ -1171,7 +1168,7 @@ data:extend(
 {
 	type = "recipe",
     name = "naptha-heavy",
-	icon = "__xander-mod__/graphics/recipe/organic/naptha-heavy.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/naptha-heavy.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 10,
@@ -1190,7 +1187,7 @@ data:extend(
 {
 	type = "recipe",
     name = "naptha-benzene",
-	icon = "__xander-mod__/graphics/recipe/organic/naptha-benzene.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/naptha-benzene.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 4,
@@ -1209,7 +1206,7 @@ data:extend(
 {
 	type = "recipe",
     name = "light-propylene",
-	icon = "__xander-mod__/graphics/recipe/organic/light-propylene.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/light-propylene.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 4,
@@ -1228,7 +1225,7 @@ data:extend(
 {
 	type = "recipe",
     name = "propylene-ethylene",
-	icon = "__xander-mod__/graphics/recipe/organic/propylene-ethylene.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/propylene-ethylene.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 4,
@@ -1247,7 +1244,7 @@ data:extend(
 {
 	type = "recipe",
     name = "ethylene-methane",
-	icon = "__xander-mod__/graphics/recipe/organic/ethylene-methane.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/ethylene-methane.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 4,
@@ -1266,7 +1263,7 @@ data:extend(
 {
 	type = "recipe",
     name = "methane-ethylene",
-	icon = "__xander-mod__/graphics/recipe/organic/methane-ethylene.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/methane-ethylene.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 5,
@@ -1285,7 +1282,7 @@ data:extend(
 {
 	type = "recipe",
     name = "ethylene-propylene",
-	icon = "__xander-mod__/graphics/recipe/organic/ethylene-propylene.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/ethylene-propylene.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 10,
@@ -1304,7 +1301,7 @@ data:extend(
 {
 	type = "recipe",
     name = "ethylene-butadiene",
-	icon = "__xander-mod__/graphics/recipe/organic/ethylene-butadiene.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/ethylene-butadiene.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 5,
@@ -1323,7 +1320,7 @@ data:extend(
 {
 	type = "recipe",
     name = "light-benzene",
-	icon = "__xander-mod__/graphics/recipe/organic/light-benzene.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/light-benzene.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 10,
@@ -1342,7 +1339,7 @@ data:extend(
 {
 	type = "recipe",
     name = "styrene",
-	icon = "__xander-mod__/graphics/recipe/organic/styrene.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/styrene.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 5,
@@ -1364,7 +1361,7 @@ data:extend(
 {
 	type = "recipe",
     name = "chlorobenzene",
-	icon = "__xander-mod__/graphics/recipe/organic/chlorobenzene.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/chlorobenzene.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 5,
@@ -1383,7 +1380,7 @@ data:extend(
 {
 	type = "recipe",
     name = "epichlorohydrin",
-	icon = "__xander-mod__/graphics/recipe/organic/epichlorohydrin.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/epichlorohydrin.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 20,
@@ -1402,7 +1399,7 @@ data:extend(
 {
 	type = "recipe",
     name = "epoxy-resin",
-	icon = "__xander-mod__/graphics/recipe/organic/epoxy-resin.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/epoxy-resin.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 5,
@@ -1421,7 +1418,7 @@ data:extend(
 {
 	type = "recipe",
     name = "ethylene-dichloride",
-	icon = "__xander-mod__/graphics/recipe/organic/ethylene-dichloride.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/ethylene-dichloride.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 10,
@@ -1440,7 +1437,7 @@ data:extend(
 {
 	type = "recipe",
     name = "epoxy-hardener",
-	icon = "__xander-mod__/graphics/recipe/organic/epoxy-hardener.png",
+	icon = "__xander-mod-th__/graphics/recipe/organic/epoxy-hardener.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 10,
@@ -1497,7 +1494,7 @@ data:extend(
 {
 	type = "recipe",
     name = "electrolysis-water-a",
-	icon = "__xander-mod__/graphics/recipe/element/electrolysis-water-a.png",
+	icon = "__xander-mod-th__/graphics/recipe/element/electrolysis-water-a.png",
 	icon_size = 32,
 	category = "electrolysis",
 	energy_required = 100,
@@ -1516,7 +1513,7 @@ data:extend(
 {
 	type = "recipe",
     name = "electrolysis-water-b",
-	icon = "__xander-mod__/graphics/recipe/element/electrolysis-water-b.png",
+	icon = "__xander-mod-th__/graphics/recipe/element/electrolysis-water-b.png",
 	icon_size = 32,
 	category = "electrolysis",
 	energy_required = 50,
@@ -1535,7 +1532,7 @@ data:extend(
 {
 	type = "recipe",
     name = "electrolysis-salt-water",
-	icon = "__xander-mod__/graphics/recipe/element/electrolysis-salt-water.png",
+	icon = "__xander-mod-th__/graphics/recipe/element/electrolysis-salt-water.png",
 	icon_size = 32,
 	category = "electrolysis",
 	energy_required = 20,
@@ -1554,7 +1551,7 @@ data:extend(
 {
 	type = "recipe",
     name = "electrolysis-hcl",
-	icon = "__xander-mod__/graphics/recipe/element/electrolysis-hcl.png",
+	icon = "__xander-mod-th__/graphics/recipe/element/electrolysis-hcl.png",
 	icon_size = 32,
 	category = "electrolysis",
 	energy_required = 100,
@@ -1574,7 +1571,7 @@ data:extend(
 {
 	type = "recipe",
     name = "coke-b",
-	icon = "__xander-mod__/graphics/recipe/element/coke-b.png",
+	icon = "__xander-mod-th__/graphics/recipe/element/coke-b.png",
 	icon_size = 32,
 	category = "refining",
 	energy_required = 160,
@@ -1587,7 +1584,7 @@ data:extend(
 {
 	type = "recipe",
     name = "kvaerner-process",
-	icon = "__xander-mod__/graphics/recipe/element/kvaerner-process.png",
+	icon = "__xander-mod-th__/graphics/recipe/element/kvaerner-process.png",
 	icon_size = 32,
 	category = "refining",
 	energy_required = 12,
@@ -1612,7 +1609,7 @@ data:extend(
 {
 	type = "recipe",
     name = "activated-carbon",
-	icon = "__xander-mod__/graphics/recipe/element/activated-carbon.png",
+	icon = "__xander-mod-th__/graphics/recipe/element/activated-carbon.png",
 	icon_size = 32,
 	category = "forge",
 	energy_required = 5,
@@ -1628,7 +1625,7 @@ data:extend(
 {
 	type = "recipe",
     name = "ultrapure-powder",
-	icon = "__xander-mod__/graphics/recipe/element/ultrapure-powder.png",
+	icon = "__xander-mod-th__/graphics/recipe/element/ultrapure-powder.png",
 	icon_size = 32,
 	category = "forge",
 	energy_required = 10,
@@ -1644,7 +1641,7 @@ data:extend(
 {
 	type = "recipe",
     name = "distilled-water",
-	icon = "__xander-mod__/graphics/recipe/compound/distilled-water.png",
+	icon = "__xander-mod-th__/graphics/recipe/compound/distilled-water.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 2,
@@ -1663,7 +1660,7 @@ data:extend(
 {
 	type = "recipe",
     name = "oleum",
-	icon = "__xander-mod__/graphics/recipe/compound/oleum.png",
+	icon = "__xander-mod-th__/graphics/recipe/compound/oleum.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 2,
@@ -1682,7 +1679,7 @@ data:extend(
 {
 	type = "recipe",
     name = "sulfuric-acid-b",
-	icon = "__xander-mod__/graphics/recipe/compound/sulfuric-acid-b.png",
+	icon = "__xander-mod-th__/graphics/recipe/compound/sulfuric-acid-b.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 1,
@@ -1701,7 +1698,7 @@ data:extend(
 {
 	type = "recipe",
     name = "nitric-acid-a",
-	icon = "__xander-mod__/graphics/recipe/compound/nitric-acid-a.png",
+	icon = "__xander-mod-th__/graphics/recipe/compound/nitric-acid-a.png",
 	icon_size = 32,
 	category = "basic-chemistry",
 	energy_required = 10,
@@ -1720,7 +1717,7 @@ data:extend(
 {
 	type = "recipe",
     name = "ostwald-b",
-	icon = "__xander-mod__/graphics/recipe/compound/ostwald-b.png",
+	icon = "__xander-mod-th__/graphics/recipe/compound/ostwald-b.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 4,
@@ -1739,7 +1736,7 @@ data:extend(
 {
 	type = "recipe",
     name = "nitric-sulfuric",
-	icon = "__xander-mod__/graphics/recipe/compound/nitric-sulfuric.png",
+	icon = "__xander-mod-th__/graphics/recipe/compound/nitric-sulfuric.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 2,
@@ -1760,7 +1757,7 @@ data:extend(
 	type = "recipe",
     name = "silicon-tetrachloride",
 	icon_size = 32,
-	icon = "__xander-mod__/graphics/recipe/compound/silicon-tetrachloride.png",
+	icon = "__xander-mod-th__/graphics/recipe/compound/silicon-tetrachloride.png",
 	icon_size = 32,
 	icon_size = 32,
 	category = "refining",
@@ -1778,7 +1775,7 @@ data:extend(
 {
 	type = "recipe",
     name = "water-gas",
-	icon = "__xander-mod__/graphics/recipe/compound/water-gas.png",
+	icon = "__xander-mod-th__/graphics/recipe/compound/water-gas.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 5,
@@ -1797,7 +1794,7 @@ data:extend(
 {
 	type = "recipe",
     name = "bodouard-reaction",
-	icon = "__xander-mod__/graphics/recipe/compound/bodouard-reaction.png",
+	icon = "__xander-mod-th__/graphics/recipe/compound/bodouard-reaction.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 2,
@@ -1816,7 +1813,7 @@ data:extend(
 {
 	type = "recipe",
     name = "ostwald-a",
-	icon = "__xander-mod__/graphics/recipe/compound/ostwald-a.png",
+	icon = "__xander-mod-th__/graphics/recipe/compound/ostwald-a.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 20,
@@ -1835,7 +1832,7 @@ data:extend(
 {
 	type = "recipe",
     name = "nitrogen-dioxide",
-	icon = "__xander-mod__/graphics/recipe/compound/nitrogen-dioxide.png",
+	icon = "__xander-mod-th__/graphics/recipe/compound/nitrogen-dioxide.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 2,
@@ -1854,7 +1851,7 @@ data:extend(
 {
 	type = "recipe",
     name = "sulfur-dioxide",
-	icon = "__xander-mod__/graphics/recipe/compound/sulfur-dioxide.png",
+	icon = "__xander-mod-th__/graphics/recipe/compound/sulfur-dioxide.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 10,
@@ -1873,7 +1870,7 @@ data:extend(
 {
 	type = "recipe",
     name = "sulfur-trioxide",
-	icon = "__xander-mod__/graphics/recipe/compound/sulfur-trioxide.png",
+	icon = "__xander-mod-th__/graphics/recipe/compound/sulfur-trioxide.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 10,
@@ -1893,7 +1890,7 @@ data:extend(
 {
 	type = "recipe",
     name = "sand-recovery",
-	icon = "__xander-mod__/graphics/recipe/compound/sand-recovery.png",
+	icon = "__xander-mod-th__/graphics/recipe/compound/sand-recovery.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 2,
@@ -1914,7 +1911,7 @@ data:extend(
 {
 	type = "recipe",
     name = "haber-process",
-	icon = "__xander-mod__/graphics/recipe/compound/haber-process.png",
+	icon = "__xander-mod-th__/graphics/recipe/compound/haber-process.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 10,
@@ -1933,7 +1930,7 @@ data:extend(
 {
 	type = "recipe",
     name = "hydrogen-chloride",
-	icon = "__xander-mod__/graphics/recipe/compound/hydrogen-chloride.png",
+	icon = "__xander-mod-th__/graphics/recipe/compound/hydrogen-chloride.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 2,
@@ -1952,7 +1949,7 @@ data:extend(
 {
 	type = "recipe",
     name = "hydrogen-sulfide",
-	icon = "__xander-mod__/graphics/recipe/compound/hydrogen-sulfide.png",
+	icon = "__xander-mod-th__/graphics/recipe/compound/hydrogen-sulfide.png",
 	icon_size = 32,
 	category = "chemistry",
 	energy_required = 4,
@@ -1972,7 +1969,7 @@ data:extend(
 {
 	type = "recipe",
     name = "silane",
-	icon = "__xander-mod__/graphics/recipe/compound/silane.png",
+	icon = "__xander-mod-th__/graphics/recipe/compound/silane.png",
 	icon_size = 32,
 	category = "chemical-plant",
 	energy_required = 5,

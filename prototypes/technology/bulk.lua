@@ -2,7 +2,7 @@
 
 --Base "steel-processing"
 data.raw.technology["steel-processing"].effects = {{type = "unlock-recipe", recipe = "steel-plate"}, {type = "unlock-recipe", recipe = "forging-steel-a"}, 
-	{type = "unlock-recipe", recipe = "blank-3-a"}, {type = "unlock-recipe", recipe = "steel-axe"}}
+	{type = "unlock-recipe", recipe = "blank-3-a"}}
 data.raw.technology["steel-processing"].prerequisites = {"coke-a"}
 data.raw.technology["steel-processing"].unit.count = 20
 data.raw.technology["steel-processing"].unit.ingredients = {{"science-pack-0", 1}}
@@ -16,7 +16,7 @@ data.raw.technology["concrete"].effects = {{type = "unlock-recipe", recipe = "co
 data.raw.technology["concrete"].order = "02-20"
 
 --Base "landfill"
-data.raw.technology["landfill"].icon = "__xander-mod__/graphics/technology/bulk/landfill.png"
+data.raw.technology["landfill"].icon = "__xander-mod-th__/graphics/technology/bulk/landfill.png"
 data.raw.technology["landfill"].icon_size = 128
 data.raw.technology["landfill"].prerequisites = {"bauxite-sediment"}
 data.raw.technology["landfill"].effects = {{type = "unlock-recipe", recipe = "landfill"}, {type = "unlock-recipe", recipe = "modified-a"}}
@@ -37,7 +37,7 @@ data:extend(
 {
 	type = "technology",
 	name = "fiber-carbon",
-	icon = "__xander-mod__/graphics/technology/part/fiber-carbon.png",
+	icon = "__xander-mod-th__/graphics/technology/part/fiber-carbon.png",
 	icon_size = 128,
 	effects =
 	{
@@ -52,11 +52,11 @@ data:extend(
 		count = 400,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1},
-			{"high-tech-science-pack", 1}
+			{"utility-science-pack", 1}
 		},
 		time = 45
 	},
@@ -66,7 +66,7 @@ data:extend(
 {
 	type = "technology",
 	name = "tungsten-cermet",
-	icon = "__xander-mod__/graphics/technology/part/tungsten-cermet.png",
+	icon = "__xander-mod-th__/graphics/technology/part/tungsten-cermet.png",
 	icon_size = 128,
 	effects =
 	{
@@ -85,9 +85,9 @@ data:extend(
 		count = 400,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 45
 	},
@@ -104,7 +104,7 @@ data:extend(
 {
 	type = "technology",
 	name = "forging-iron",
-	icon = "__xander-mod__/graphics/technology/bulk/forging-iron.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/forging-iron.png",
 	icon_size = 128,
 	effects =
 	{
@@ -127,8 +127,8 @@ data:extend(
 		count = 150,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -140,7 +140,7 @@ data:extend(
 {
 	type = "technology",
 	name = "bessemer-process",
-	icon = "__xander-mod__/graphics/technology/bulk/bessemer-process.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/bessemer-process.png",
 	icon_size = 128,
 	effects =
 	{
@@ -155,8 +155,8 @@ data:extend(
 		count = 40,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 20
 	},
@@ -166,7 +166,7 @@ data:extend(
 {
 	type = "technology",
 	name = "forging-steel",
-	icon = "__xander-mod__/graphics/technology/bulk/forging-steel.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/forging-steel.png",
 	icon_size = 128,
 	effects =
 	{
@@ -189,8 +189,8 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -200,7 +200,7 @@ data:extend(
 {
 	type = "technology",
 	name = "forging-aluminum",
-	icon = "__xander-mod__/graphics/technology/bulk/forging-aluminum.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/forging-aluminum.png",
 	icon_size = 128,
 	effects =
 	{
@@ -215,9 +215,9 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 45
 	},
@@ -227,7 +227,7 @@ data:extend(
 {
 	type = "technology",
 	name = "forging-alloy-a",
-	icon = "__xander-mod__/graphics/technology/bulk/forging-alloy-a.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/forging-alloy-a.png",
 	icon_size = 128,
 	effects =
 	{
@@ -239,10 +239,10 @@ data:extend(
 			type = "unlock-recipe",
 			recipe = "blank-4"
 		},
-		{
-			type = "unlock-recipe",
-			recipe = "axe-4"
-		}
+		-- {
+		-- 	type = "unlock-recipe",
+		-- 	recipe = "axe-4"
+		-- }
 	},
 	prerequisites = {"forging-steel", "nickel-refining", "tungsten-refining"},
 	unit =
@@ -250,8 +250,8 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 45
 	},
@@ -261,7 +261,7 @@ data:extend(
 {
 	type = "technology",
 	name = "forging-alloy-b",
-	icon = "__xander-mod__/graphics/technology/bulk/forging-alloy-b.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/forging-alloy-b.png",
 	icon_size = 128,
 	effects =
 	{
@@ -276,9 +276,9 @@ data:extend(
 		count = 400,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -289,7 +289,7 @@ data:extend(
 {
 	type = "technology",
 	name = "forging-stainless",
-	icon = "__xander-mod__/graphics/technology/bulk/forging-stainless.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/forging-stainless.png",
 	icon_size = 128,
 	effects =
 	{
@@ -304,8 +304,8 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -315,7 +315,7 @@ data:extend(
 {
 	type = "technology",
 	name = "forging-titanium",
-	icon = "__xander-mod__/graphics/technology/bulk/forging-titanium.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/forging-titanium.png",
 	icon_size = 128,
 	effects =
 	{
@@ -334,9 +334,9 @@ data:extend(
 		count = 300,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -347,7 +347,7 @@ data:extend(
 {
 	type = "technology",
 	name = "forging-superalloy",
-	icon = "__xander-mod__/graphics/technology/bulk/forging-superalloy.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/forging-superalloy.png",
 	icon_size = 128,
 	effects =
 	{
@@ -362,9 +362,9 @@ data:extend(
 		count = 400,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -375,7 +375,7 @@ data:extend(
 {
 	type = "technology",
 	name = "phosphor-bronze",
-	icon = "__xander-mod__/graphics/technology/bulk/phosphor-bronze.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/phosphor-bronze.png",
 	icon_size = 128,
 	effects =
 	{
@@ -390,8 +390,8 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 45
 	},
@@ -401,7 +401,7 @@ data:extend(
 {
 	type = "technology",
 	name = "lead-brass",
-	icon = "__xander-mod__/graphics/technology/bulk/lead-brass.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/lead-brass.png",
 	icon_size = 128,
 	effects =
 	{
@@ -424,8 +424,8 @@ data:extend(
 		count = 150,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -435,7 +435,7 @@ data:extend(
 {
 	type = "technology",
 	name = "monel-metal",
-	icon = "__xander-mod__/graphics/technology/bulk/monel-metal.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/monel-metal.png",
 	icon_size = 128,
 	effects =
 	{
@@ -450,8 +450,8 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -461,7 +461,7 @@ data:extend(
 {
 	type = "technology",
 	name = "silicon-boule-a",
-	icon = "__xander-mod__/graphics/technology/bulk/silicon-boule.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/silicon-boule.png",
 	icon_size = 128,
 	effects =
 	{
@@ -476,8 +476,8 @@ data:extend(
 		count = 500,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 60
 	},
@@ -487,7 +487,7 @@ data:extend(
 {
 	type = "technology",
 	name = "silicon-boule-b",
-	icon = "__xander-mod__/graphics/technology/bulk/silicon-boule.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/silicon-boule.png",
 	icon_size = 128,
 	effects =
 	{
@@ -502,9 +502,9 @@ data:extend(
 		count = 1000,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -515,7 +515,7 @@ data:extend(
 {
 	type = "technology",
 	name = "brick-clay",
-	icon = "__xander-mod__/graphics/technology/bulk/brick-clay.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/brick-clay.png",
 	icon_size = 128,
 	effects =
 	{
@@ -530,8 +530,8 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -541,7 +541,7 @@ data:extend(
 {
 	type = "technology",
 	name = "brick-spinel",
-	icon = "__xander-mod__/graphics/technology/bulk/brick-spinel.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/brick-spinel.png",
 	icon_size = 128,
 	effects =
 	{
@@ -564,9 +564,9 @@ data:extend(
 		count = 350,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 45
 	},
@@ -576,7 +576,7 @@ data:extend(
 {
 	type = "technology",
 	name = "brick-zirconia",
-	icon = "__xander-mod__/graphics/technology/bulk/brick-zirconia.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/brick-zirconia.png",
 	icon_size = 128,
 	effects =
 	{
@@ -591,9 +591,9 @@ data:extend(
 		count = 500,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -604,7 +604,7 @@ data:extend(
 {
 	type = "technology",
 	name = "cement-a",
-	icon = "__xander-mod__/graphics/technology/bulk/cement-a.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/cement-a.png",
 	icon_size = 128,
 	effects =
 	{
@@ -619,8 +619,8 @@ data:extend(
 		count = 150,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -630,7 +630,7 @@ data:extend(
 {
 	type = "technology",
 	name = "cement-b",
-	icon = "__xander-mod__/graphics/technology/bulk/cement-b.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/cement-b.png",
 	icon_size = 128,
 	effects =
 	{
@@ -645,9 +645,9 @@ data:extend(
 		count = 350,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -662,7 +662,7 @@ data:extend(
 {
 	type = "technology",
 	name = "landfill-b",
-	icon = "__xander-mod__/graphics/technology/bulk/landfill.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/landfill.png",
 	icon_size = 128,
 	effects =
 	{
@@ -681,9 +681,9 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 30
@@ -694,7 +694,7 @@ data:extend(
 {
 	type = "technology",
 	name = "basalt-a",
-	icon = "__xander-mod__/graphics/technology/bulk/basalt-a.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/basalt-a.png",
 	icon_size = 128,
 	effects =
 	{
@@ -709,9 +709,9 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 30
 	},
@@ -721,7 +721,7 @@ data:extend(
 {
 	type = "technology",
 	name = "basalt-b",
-	icon = "__xander-mod__/graphics/technology/bulk/basalt-b.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/basalt-b.png",
 	icon_size = 128,
 	effects =
 	{
@@ -736,9 +736,9 @@ data:extend(
 		count = 400,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -749,7 +749,7 @@ data:extend(
 {
 	type = "technology",
 	name = "leblanc-process",
-	icon = "__xander-mod__/graphics/technology/bulk/leblanc-process.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/leblanc-process.png",
 	icon_size = 128,
 	effects =
 	{
@@ -772,8 +772,8 @@ data:extend(
 		count = 80,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 20
 	},
@@ -783,7 +783,7 @@ data:extend(
 {
 	type = "technology",
 	name = "solvay-process",
-	icon = "__xander-mod__/graphics/technology/bulk/solvay-process.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/solvay-process.png",
 	icon_size = 128,
 	effects =
 	{
@@ -798,9 +798,9 @@ data:extend(
 		count = 300,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 45
 	},
@@ -810,7 +810,7 @@ data:extend(
 {
 	type = "technology",
 	name = "electrolysis-salt-water",
-	icon = "__xander-mod__/graphics/technology/bulk/electrolysis-salt-water.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/electrolysis-salt-water.png",
 	icon_size = 128,
 	effects =
 	{
@@ -829,8 +829,8 @@ data:extend(
 		count = 300,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -840,7 +840,7 @@ data:extend(
 {
 	type = "technology",
 	name = "advanced-lithium",
-	icon = "__xander-mod__/graphics/technology/bulk/advanced-lithium.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/advanced-lithium.png",
 	icon_size = 128,
 	effects =
 	{
@@ -863,9 +863,9 @@ data:extend(
 		count = 600,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -876,7 +876,7 @@ data:extend(
 {
 	type = "technology",
 	name = "silicon-nitride",
-	icon = "__xander-mod__/graphics/technology/bulk/silicon-nitride.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/silicon-nitride.png",
 	icon_size = 128,
 	effects =
 	{
@@ -895,9 +895,9 @@ data:extend(
 		count = 500,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -908,7 +908,7 @@ data:extend(
 {
 	type = "technology",
 	name = "electrolysis-water-a",
-	icon = "__xander-mod__/graphics/technology/bulk/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -923,8 +923,8 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -934,7 +934,7 @@ data:extend(
 {
 	type = "technology",
 	name = "electrolysis-water-b",
-	icon = "__xander-mod__/graphics/technology/bulk/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -949,9 +949,9 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 30
 	},
@@ -961,7 +961,7 @@ data:extend(
 {
 	type = "technology",
 	name = "carbon-processing",
-	icon = "__xander-mod__/graphics/technology/bulk/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -984,8 +984,8 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -995,7 +995,7 @@ data:extend(
 {
 	type = "technology",
 	name = "kvaerner-process",
-	icon = "__xander-mod__/graphics/technology/bulk/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1010,9 +1010,9 @@ data:extend(
 		count = 500,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 60
 	},
@@ -1024,7 +1024,7 @@ data:extend(
 {
 	type = "technology",
 	name = "electrolysis-hcl",
-	icon = "__xander-mod__/graphics/technology/bulk/electrolysis-hcl.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/electrolysis-hcl.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1039,9 +1039,9 @@ data:extend(
 		count = 350,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 45
@@ -1052,7 +1052,7 @@ data:extend(
 {
 	type = "technology",
 	name = "activated-carbon",
-	icon = "__xander-mod__/graphics/technology/bulk/activated-carbon.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/activated-carbon.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1071,10 +1071,10 @@ data:extend(
 		count = 500,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
-			{"high-tech-science-pack", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
+			{"utility-science-pack", 1}
 		},
 		time = 60
 	},
@@ -1084,7 +1084,7 @@ data:extend(
 {
 	type = "technology",
 	name = "ultrapure-silicon",
-	icon = "__xander-mod__/graphics/technology/bulk/ultrapure-silicon.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/ultrapure-silicon.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1107,11 +1107,11 @@ data:extend(
 		count = 800,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1},
-			{"high-tech-science-pack", 1}
+			{"utility-science-pack", 1}
 		},
 		time = 100
 	},
@@ -1121,7 +1121,7 @@ data:extend(
 {
 	type = "technology",
 	name = "sulfuric-acid-a",
-	icon = "__xander-mod__/graphics/technology/bulk/sulfuric-acid-a.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/sulfuric-acid-a.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1146,7 +1146,7 @@ data:extend(
 {
 	type = "technology",
 	name = "sulfuric-acid-b",
-	icon = "__xander-mod__/graphics/technology/bulk/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1169,8 +1169,8 @@ data:extend(
 		count = 150,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -1180,7 +1180,7 @@ data:extend(
 {
 	type = "technology",
 	name = "nitric-acid-a",
-	icon = "__xander-mod__/graphics/technology/bulk/nitric-acid-a.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/nitric-acid-a.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1199,7 +1199,7 @@ data:extend(
 		count = 50,
 		ingredients =
 		{
-			{"science-pack-1", 1}
+			{"automation-science-pack", 1}
 		},
 		time = 10
 	},
@@ -1209,7 +1209,7 @@ data:extend(
 {
 	type = "technology",
 	name = "nitric-acid-b",
-	icon = "__xander-mod__/graphics/technology/bulk/nitric-acid-b.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/nitric-acid-b.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1232,8 +1232,8 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 45
 	},
@@ -1243,7 +1243,7 @@ data:extend(
 {
 	type = "technology",
 	name = "carbon-oxides",
-	icon = "__xander-mod__/graphics/technology/bulk/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1262,8 +1262,8 @@ data:extend(
 		count = 450,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 45
 	},
@@ -1273,7 +1273,7 @@ data:extend(
 {
 	type = "technology",
 	name = "haber-process",
-	icon = "__xander-mod__/graphics/technology/bulk/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1288,8 +1288,8 @@ data:extend(
 		count = 400,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 45
 	},
@@ -1299,7 +1299,7 @@ data:extend(
 {
 	type = "technology",
 	name = "water-clarifying",
-	icon = "__xander-mod__/graphics/technology/bulk/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1322,8 +1322,8 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 60
 	},
@@ -1333,7 +1333,7 @@ data:extend(
 {
 	type = "technology",
 	name = "gas-scrubbing",
-	icon = "__xander-mod__/graphics/technology/bulk/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1348,8 +1348,8 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 60
 	},
@@ -1359,7 +1359,7 @@ data:extend(
 {
 	type = "technology",
 	name = "slag-use",
-	icon = "__xander-mod__/graphics/technology/bulk/slag-use.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/slag-use.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1374,9 +1374,9 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 60
 	},
@@ -1386,7 +1386,7 @@ data:extend(
 {
 	type = "technology",
 	name = "sulfate-cracking",
-	icon = "__xander-mod__/graphics/technology/bulk/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1401,9 +1401,9 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -1414,7 +1414,7 @@ data:extend(
 {
 	type = "technology",
 	name = "chloride-conversion",
-	icon = "__xander-mod__/graphics/technology/bulk/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1429,9 +1429,9 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 60
 	},
@@ -1441,7 +1441,7 @@ data:extend(
 {
 	type = "technology",
 	name = "iron-recycling",
-	icon = "__xander-mod__/graphics/technology/bulk/iron-recycling.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/iron-recycling.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1468,8 +1468,8 @@ data:extend(
 		count = 100,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -1479,7 +1479,7 @@ data:extend(
 {
 	type = "technology",
 	name = "waste-burial",
-	icon = "__xander-mod__/graphics/technology/bulk/waste-burial.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/waste-burial.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1522,8 +1522,8 @@ data:extend(
 		count = 500,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -1533,7 +1533,7 @@ data:extend(
 {
 	type = "technology",
 	name = "waste-venting",
-	icon = "__xander-mod__/graphics/technology/bulk/temp-placeholder.png",
+	icon = "__xander-mod-th__/graphics/technology/bulk/temp-placeholder.png",
 	icon_size = 128,
 	effects =
 	{
@@ -1568,8 +1568,8 @@ data:extend(
 		count = 500,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
