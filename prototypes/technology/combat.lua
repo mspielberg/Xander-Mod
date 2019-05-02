@@ -174,9 +174,9 @@ data.raw.technology["personal-roboport-equipment"].order = "08-51"
 
 --Base "personal-roboport-equipment-2"
 --null
-data.raw.technology["personal-roboport-equipment-2"].prerequisites = {"personal-roboport-equipment", "machines_3", "battery_3"}
+data.raw.technology["personal-roboport-mk2-equipment"].prerequisites = {"personal-roboport-equipment", "machines_3", "battery_3"}
 --null
-data.raw.technology["personal-roboport-equipment-2"].order = "08-52"
+data.raw.technology["personal-roboport-mk2-equipment"].order = "08-52"
 
 --Base "solar-panel-equipment"
 --null
@@ -212,9 +212,9 @@ data.raw.technology["power-armor"].order = "08-60"
 
 --Base "power-armor-2"
 --null
-data.raw.technology["power-armor-2"].prerequisites = {"power-armor", "effectivity-module-3", "machines_3", "optics_2"}
+data.raw.technology["power-armor-mk2"].prerequisites = {"power-armor", "effectivity-module-3", "machines_3", "optics_2"}
 --null
-data.raw.technology["power-armor-2"].order = "08-61"
+data.raw.technology["power-armor-mk2"].order = "08-61"
 
 --Base "night-vision-equipment"
 --null
@@ -997,7 +997,7 @@ data:extend(
 --Personal Roboport Mark 3
 {
 	type = "technology",
-	name = "personal-roboport-equipment-3",
+	name = "personal-roboport-mk3-equipment",
 	icon = "__base__/graphics/technology/personal-roboport-equipment.png",
 	icon_size = 128,
 	effects =
@@ -1007,7 +1007,7 @@ data:extend(
 			recipe = "personal-roboport-mk3-equipment"
 		}
 	},
-	prerequisites = {"personal-roboport-equipment-2", "radar_3"},
+	prerequisites = {"personal-roboport-mk2-equipment", "radar_3"},
 	unit =
 	{
 		count = 500,
@@ -1130,7 +1130,7 @@ data:extend(
 			recipe = "power-armor-mk3"
 		}
 	},
-	prerequisites = {"power-armor-2", "speed-module-3", "optics_3", "silicon-nitride"},
+	prerequisites = {"power-armor-mk2", "speed-module-3", "optics_3", "silicon-nitride"},
 	unit =
 	{
 		count = 100,
