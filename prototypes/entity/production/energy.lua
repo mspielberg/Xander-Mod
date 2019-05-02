@@ -184,59 +184,52 @@ xmutil.clone("generator", "steam-turbine",
 --Base "nuclear-reactor" placeholder
 --Base "solar-panel" placeholder
 --Dense Solar Panel
-{
-	type = "solar-panel",
-	name = "solar-panel-2",
-	icon = "__xander-mod-th__/graphics/item/production/energy/solar-panel-2.png",
-	icon_size = 32,
-	flags = {"placeable-neutral", "player-creation"},
-	minable = {result = "solar-panel-2"},
-	max_health = 200,
-	corpse = "big-remnants",
-	collision_box = {{-1.9, -1.9}, {1.9, 1.9}},
-	selection_box = {{-2, -2}, {2, 2}},
-	energy_source =
-	{
-		type = "electric",
-		usage_priority = "solar"
-	},
-	picture =
-	{
-		filename = "__xander-mod-th-graphics-0__/graphics/entity/production/solar-panel-2/2.png",
-		priority = "high",
-		width = 139,
-		height = 128
-	},
-	vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
-	production = "160kW"
-},
+xmutil.clone("solar-panel", "solar-panel",
+  {},
+  {
+    name = "solar-panel-2",
+    icon = "__xander-mod-th__/graphics/item/production/energy/solar-panel-2.png",
+    minable = {result = "solar-panel-2"},
+    max_health = 200,
+    collision_box = {{-1.9, -1.9}, {1.9, 1.9}},
+    selection_box = {{-2, -2}, {2, 2}},
+    picture =
+    {
+      layers = xmutil.NIL,
+      filename = "__xander-mod-th-graphics-0__/graphics/entity/production/solar-panel-2/2.png",
+      priority = "high",
+      width = 139,
+      height = 128
+    },
+    overlay = xmutil.NIL,
+    vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
+    production = "160kW",
+  }
+),
 --High-Efficiency Solar Panel
-{
-	type = "solar-panel",
-	name = "solar-panel-3",
-	icon = "__xander-mod-th__/graphics/item/production/energy/solar-panel-3.png",
-	icon_size = 32,
-	flags = {"placeable-neutral", "player-creation"},
-	minable = {result = "solar-panel-3"},
-	max_health = 400,
-	corpse = "big-remnants",
-	collision_box = {{-1.9, -1.9}, {1.9, 1.9}},
-	selection_box = {{-2, -2}, {2, 2}},
-	energy_source =
-	{
-		type = "electric",
-		usage_priority = "solar"
-	},
-	picture =
-	{
-		filename = "__xander-mod-th-graphics-0__/graphics/entity/production/solar-panel-3/3.png",
-		priority = "high",
-		width = 139,
-		height = 128
-	},
-	vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
-	production = "240kW"
-},
+xmutil.clone("solar-panel", "solar-panel",
+  {},
+  {
+    name = "solar-panel-3",
+    icon = "__xander-mod-th__/graphics/item/production/energy/solar-panel-3.png",
+    minable = {result = "solar-panel-3"},
+    max_health = 400,
+    corpse = "big-remnants",
+    collision_box = {{-1.9, -1.9}, {1.9, 1.9}},
+    selection_box = {{-2, -2}, {2, 2}},
+    picture =
+    {
+      layers = xmutil.NIL,
+      filename = "__xander-mod-th-graphics-0__/graphics/entity/production/solar-panel-3/3.png",
+      priority = "high",
+      width = 139,
+      height = 128
+    },
+    overlay = xmutil.NIL,
+    vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
+    production = "240kW"
+  }
+),
 --Base "accumulator" placeholder
 --Silver Accumulator
 xmutil.clone("accumulator", "accumulator",

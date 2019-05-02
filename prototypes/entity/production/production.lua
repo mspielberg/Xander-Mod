@@ -92,7 +92,7 @@ local xm_assembler_4 = xmutil.clone("assembling-machine", "assembling-machine-3"
   {},
   {
     name = "assembling-machine-4",
-    icon = "__xander-mod-th__/graphics/item/production/production-machine/assembling-machine-4.png"
+    icon = "__xander-mod-th__/graphics/item/production/production-machine/assembling-machine-4.png",
     minable = {result = "assembling-machine-4"},
     max_health = 500,
     crafting_categories = {"crafting", "crafting-with-fluid", "advanced-crafting"},
@@ -284,71 +284,63 @@ xmutil.clone("assembling-machine", "assembling-machine-3",
 ),
 
 --Burner Lab
-{
-	type = "lab",
-	name = "lab-1",
-	icon = "__xander-mod-th__/graphics/item/production/production-machine/lab-1.png",
-	icon_size = 32,
-	flags = {"placeable-player", "player-creation"},
-	minable = {result = "lab-1"},
-	max_health = 100,
-	corpse = "big-remnants",
-	dying_explosion = "medium-explosion",
-	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
-	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-	light = {intensity = 0.75, size = 8, color = {r = 1.0, g = 1.0, b = 1.0}},
-	on_animation =
-	{
-		filename = "__xander-mod-th-graphics-0__/graphics/entity/production/lab-1/1.png",
-		width = 113,
-		height = 91,
-		frame_count = 33,
-		line_length = 11,
-		animation_speed = 1 / 3,
-		shift = {0.2, 0.15}
-	},
-	off_animation =
-	{
-		filename = "__xander-mod-th-graphics-0__/graphics/entity/production/lab-1/1.png",
-		width = 113,
-		height = 91,
-		frame_count = 1,
-		shift = {0.2, 0.15}
-	},
-	working_sound =
-	{
-		sound = {filename = "__base__/sound/lab.ogg", volume = 0.7},
-		apparent_volume = 1
-	},
-	vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
-	energy_source =
-	{
-		type = "burner",
-		fuel_categories = {"crude", "chemical"},
-		effectivity = 1,
-		fuel_inventory_size = 1,
-		emissions = 0.01,
-		smoke =
-		{
-			{
-				name = "smoke",
-				deviation = {0.1, 0.1},
-				frequency = 5,
-				position = {0.0, -0.8},
-				starting_vertical_speed = 0.08,
-				starting_frame_deviation = 60
-			}
-		}
-	},
-	energy_usage = "100kW",
-	researching_speed = 0.5,
-	inputs =
-	{
-		"science-pack-0",
-		"automation-science-pack",
-		"logistic-science-pack"
-	}
-}
+xmutil.clone("lab", "lab",
+  {
+  },
+  {
+    name = "lab-1",
+    icon = "__xander-mod-th__/graphics/item/production/production-machine/lab-1.png",
+    minable = {result = "lab-1"},
+    max_health = 100,
+    on_animation =
+    {
+      layers = xmutil.NIL,
+      filename = "__xander-mod-th-graphics-0__/graphics/entity/production/lab-1/1.png",
+      width = 113,
+      height = 91,
+      frame_count = 33,
+      line_length = 11,
+      animation_speed = 1 / 3,
+      shift = {0.2, 0.15}
+    },
+    off_animation =
+    {
+      layers = xmutil.NIL,
+      filename = "__xander-mod-th-graphics-0__/graphics/entity/production/lab-1/1.png",
+      width = 113,
+      height = 91,
+      frame_count = 1,
+      shift = {0.2, 0.15}
+    },
+    energy_source =
+    {
+      type = "burner",
+      fuel_categories = {"crude", "chemical"},
+      effectivity = 1,
+      fuel_inventory_size = 1,
+      emissions = 0.01,
+      smoke =
+      {
+        {
+          name = "smoke",
+          deviation = {0.1, 0.1},
+          frequency = 5,
+          position = {0.0, -0.8},
+          starting_vertical_speed = 0.08,
+          starting_frame_deviation = 60
+        }
+      }
+    },
+    energy_usage = "100kW",
+    researching_speed = 0.5,
+    inputs =
+    {
+      "science-pack-0",
+      "automation-science-pack",
+      "logistic-science-pack"
+    },
+  }
+)
 --Base "lab" placeholder
 --Base "beacon" placeholder
 --Base "rocket-silo" placeholder
