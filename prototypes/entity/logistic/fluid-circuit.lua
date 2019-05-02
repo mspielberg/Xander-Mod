@@ -391,7 +391,7 @@ local function xm_pipe(material, max_health)
 		{
 			name = "pipe-"..material,
 			icon = "__xander-mod-th__/graphics/item/logistic/pipe/pipe-"..material..".png",
-			minable = {hardness = 0.2, mining_time = 0.5, result = "pipe-"..material},
+			minable = {result = "pipe-"..material},
 			max_health = max_health,
 			pictures = xm_pipe_pictures(material),
 		})
@@ -403,7 +403,7 @@ local function xm_pipe_to_ground(material, max_health, max_underground_distance)
 		{
 			name = "pipe-to-ground-"..material,
 			icon = "__xander-mod-th__/graphics/item/logistic/pipe/pipe-to-ground-"..material..".png",
-			minable = {hardness = 0.2, mining_time = 0.5, result = "pipe-to-ground-"..material},
+			minable = {result = "pipe-to-ground-"..material},
 			max_health = max_health,
 			pictures = xm_pipe_to_ground_pictures(material),
 			fluid_box = {
@@ -479,7 +479,7 @@ xmutil.clone("storage-tank", "storage-tank",
 	{
 		name = "storage-tank-2",
 		icon = "__xander-mod-th__/graphics/item/logistic/plumbing/storage-tank-2.png",
-		minable = {mining_time = 1.5, result = "storage-tank-2"},
+		minable = {result = "storage-tank-2"},
 		max_health = 1000,
 		fluid_box = {
 			base_area = 500,
@@ -507,7 +507,7 @@ xmutil.clone("pump", "pump",
 	{
 		name = "pump-2",
 		icon = "__xander-mod-th__/graphics/item/logistic/plumbing/pump-2.png",
-		minable = {mining_time = 1, result = "pump-2"},
+		minable = {result = "pump-2"},
 		max_health = 400,
 		energy_source = { emissions = 0.002 },
 		energy_usage = "50kW",
@@ -539,7 +539,7 @@ xmutil.clone("pump", "pump",
 	{
 		name = "pump-3",
 		icon = "__xander-mod-th__/graphics/item/logistic/plumbing/pump-3.png",
-		minable = {mining_time = 1, result = "pump-3"},
+		minable = {result = "pump-3"},
 		max_health = 400,
 		energy_source = { emissions = 0.002 },
 		energy_usage = "50kW",

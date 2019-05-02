@@ -301,7 +301,7 @@ xmutil.clone("tile", "stone-path",
 	},
 	{
 		name = "brick",
-		minable = {hardness = 0.2, mining_time = 0.5, result = "brick-clay"},
+		minable = {result = "brick-clay"},
 		transitions = brick_transitions,
 		transitions_between_transitions = brick_transitions_between_transitions,
 		map_color = {r = 140, g = 38, b = 25}
@@ -362,7 +362,7 @@ xmutil.clone("tile", "concrete",
 	},
 	{
 		name = "basalt",
-		minable = {hardness = 0.2, mining_time = 0.5, result = "fused-basalt"},
+		minable = {result = "fused-basalt"},
 		walking_speed_modifier = 1.5,
 		layer = 63,
 		transitions = basalt_transitions,
@@ -371,89 +371,6 @@ xmutil.clone("tile", "concrete",
 		vehicle_friction_modifier = 1.5
 	}
 ),
---[[
-{
-	type = "tile",
-	name = "basalt",
-	needs_correction = false,
-	minable = {hardness = 0.2, mining_time = 1, result = "fused-basalt"},
-	mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"},
-	collision_mask = {"ground-tile"},
-	walking_speed_modifier = 1.5,
-	layer = 62,
-	decorative_removal_probability = 1,
-	variants =
-	{
-		main =
-		{
-			{
-				picture = "__xander-mod-th-graphics-1__/graphics/tile/basalt/1.png",
-				count = 1,
-				size = 1
-			},
-			{
-				picture = "__xander-mod-th-graphics-1__/graphics/tile/basalt/2.png",
-				count = 1,
-				size = 2,
-				probability = 0.39,
-			},
-			{
-				picture = "__xander-mod-th-graphics-1__/graphics/tile/basalt/4.png",
-				count = 1,
-				size = 4,
-				probability = 1,
-			},
-		},
-		inner_corner =
-		{
-			picture = "__xander-mod-th-graphics-1__/graphics/tile/basalt/inner-corner.png",
-			count = 1
-		},
-		outer_corner =
-		{
-			picture = "__xander-mod-th-graphics-1__/graphics/tile/basalt/outer-corner.png",
-			count = 1
-		},
-		side =
-		{
-			picture = "__xander-mod-th-graphics-1__/graphics/tile/basalt/side.png",
-			count = 1
-		},
-		u_transition =
-		{
-			picture = "__xander-mod-th-graphics-1__/graphics/tile/basalt/u.png",
-			count = 1
-		},
-		o_transition =
-		{
-			picture = "__xander-mod-th-graphics-1__/graphics/tile/basalt/o.png",
-			count = 1
-		}
-	},
-	walking_sound =
-	{
-		{
-			filename = "__base__/sound/walking/concrete-01.ogg",
-			volume = 1.2
-		},
-		{
-			filename = "__base__/sound/walking/concrete-02.ogg",
-			volume = 1.2
-		},
-		{
-			filename = "__base__/sound/walking/concrete-03.ogg",
-			volume = 1.2
-		},
-		{
-			filename = "__base__/sound/walking/concrete-04.ogg",
-			volume = 1.2
-		}
-	},
-	map_color={r=50, g=50, b=50},
-	ageing=0,
-	vehicle_friction_modifier = concrete_vehicle_speed_modifier
-},
-]]--
 --Fused Quartz
 xmutil.clone("tile", "concrete",
 	{
@@ -508,7 +425,7 @@ xmutil.clone("tile", "concrete",
 	},
 	{
 		name = "quartz",
-		minable = {hardness = 0.2, mining_time = 0.5, result = "fused-quartz"},
+		minable = {result = "fused-quartz"},
 		walking_speed_modifier = 1.5,
 		layer = 63,
 		transitions = quartz_transitions,
@@ -571,7 +488,7 @@ xmutil.clone("tile", "concrete",
 	},
 	{
 		name = "steel",
-		minable = {hardness = 0.2, mining_time = 0.5, result = "steel-plate"},
+		minable = {result = "steel-plate"},
 		walking_speed_modifier = 1.5,
 		layer = 64,
 		transitions = steel_transitions,

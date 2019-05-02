@@ -1,9 +1,8 @@
 local xmutil = require("xmutil")
-
 --assembling-machine-0 (Burner)
 local xm_assembler_0 = xm_copy("assembling-machine", "assembling-machine-1", "assembling-machine-0")
 xm_assembler_0.icon = "__base__/graphics/icons/assembling-machine-1.png"
-xm_assembler_0.minable = {hardness = 0.2, mining_time = 0.5, result = "assembling-machine-0"}
+xm_assembler_0.minable = {result = "assembling-machine-0"}
 xm_assembler_0.max_health = 100
 xm_assembler_0.crafting_categories = {"basic-crafting", "crafting"}
 xm_assembler_0.crafting_speed = 0.5
@@ -92,22 +91,27 @@ data.raw["assembling-machine"]["assembling-machine-3"].module_specification.modu
 
 
 --Assembling Machine 4
-local xm_assembler_4 = xm_copy("assembling-machine", "assembling-machine-3", "assembling-machine-4")
-xm_assembler_4.icon = "__xander-mod-th__/graphics/item/production/production-machine/assembling-machine-4.png"
-xm_assembler_4.minable = {hardness = 0.2, mining_time = 0.5, result = "assembling-machine-4"}
-xm_assembler_4.max_health = 500
-xm_assembler_4.crafting_categories = {"crafting", "crafting-with-fluid", "advanced-crafting"}
-xm_assembler_4.crafting_speed = 4
-xm_assembler_4.energy_source.emissions = 0.002
-xm_assembler_4.energy_usage = "400kW"
-xm_assembler_4.ingredient_count = 8
-xm_assembler_4.layers =
-{
-	{
-		filename = "__xander-mod-th-graphics-0__/graphics/entity/production/assembling-machine-4/4.png",
-		hr_version = { filename = "__xander-mod-th-graphics-0__/graphics/entity/production/assembling-machine-4/hr-4.png" },
-	},
-}
+local xm_assembler_4 = xmutil.clone("assembling-machine", "assembling-machine-3",
+  {},
+  {
+    name = "assembling-machine-4",
+    icon = "__xander-mod-th__/graphics/item/production/production-machine/assembling-machine-4.png"
+    minable = {result = "assembling-machine-4"},
+    max_health = 500,
+    crafting_categories = {"crafting", "crafting-with-fluid", "advanced-crafting"},
+    crafting_speed = 4,
+    energy_source = {emissions = 0.002},
+    energy_usage = "400kW",
+    ingredient_count = 8,
+    layers =
+    {
+    	{
+    		filename = "__xander-mod-th-graphics-0__/graphics/entity/production/assembling-machine-4/4.png",
+    		hr_version = { filename = "__xander-mod-th-graphics-0__/graphics/entity/production/assembling-machine-4/hr-4.png" },
+    	},
+    },
+  }
+)
 data:extend({xm_assembler_4})
 
 
@@ -120,7 +124,7 @@ xmutil.clone("assembling-machine", "assembling-machine-1",
 	{
 		name = "machine-tool-0",
 		icon = "__xander-mod-th__/graphics/item/production/production-machine/machine-tool-0.png",
-		minable = {hardness = 0.2, mining_time = 0.5, result = "machine-tool-0"},
+		minable = {result = "machine-tool-0"},
 		max_health = 50,
 		crafting_categories = {"basic-machine", "machine"},
 		crafting_speed = 0.5,
@@ -161,7 +165,7 @@ xmutil.clone("assembling-machine", "assembling-machine-1",
 	{
 		name = "machine-tool-1",
 		icon = "__xander-mod-th__/graphics/item/production/production-machine/machine-tool-1.png",
-		minable = {hardness = 0.2, mining_time = 0.5, result = "machine-tool-1"},
+		minable = {result = "machine-tool-1"},
 		max_health = 100,
 		fluid_boxes = xmutil.assembler_fluid_boxes("machine-tool-1"),
 		crafting_categories = {"basic-machine", "machine"},
@@ -185,7 +189,7 @@ xmutil.clone("assembling-machine", "assembling-machine-2",
 	{
 		name = "machine-tool-2",
 		icon = "__xander-mod-th__/graphics/item/production/production-machine/machine-tool-2.png",
-		minable = {hardness = 0.2, mining_time = 0.5, result = "machine-tool-2"},
+		minable = {result = "machine-tool-2"},
 		max_health = 200,
 		fluid_boxes = xmutil.assembler_fluid_boxes("machine-tool-2"),
 		crafting_categories = {"basic-machine", "machine", "advanced-machine"},
@@ -208,7 +212,7 @@ xmutil.clone("assembling-machine", "assembling-machine-3",
 	{
 		name = "machine-tool-3",
 		icon = "__xander-mod-th__/graphics/item/production/production-machine/machine-tool-3.png",
-		minable = {hardness = 0.2, mining_time = 0.5, result = "machine-tool-3"},
+		minable = {result = "machine-tool-3"},
 		max_health = 500,
 		fluid_boxes = xmutil.assembler_fluid_boxes("machine-tool-3"),
 		crafting_categories = {"basic-machine", "machine", "advanced-machine"},
@@ -233,7 +237,7 @@ xmutil.clone("assembling-machine", "assembling-machine-1",
 	{
 		name = "assembling-machine-0",
 		icon = "__base__/graphics/icons/assembling-machine-1.png",
-		minable = {hardness = 0.2, mining_time = 0.5, result = "assembling-machine-0"},
+		minable = {result = "assembling-machine-0"},
 		max_health = 100,
 		crafting_categories = {"basic-crafting", "crafting"},
 		crafting_speed = 0.5,
@@ -271,7 +275,7 @@ xmutil.clone("assembling-machine", "assembling-machine-3",
 	{
 		name = "assembling-machine-4",
 		icon = "__xander-mod-th__/graphics/item/production/production-machine/assembling-machine-4.png",
-		minable = {hardness = 0.2, mining_time = 0.5, result = "assembling-machine-4"},
+		minable = {result = "assembling-machine-4"},
 		max_health = 500,
 		fluid_boxes = xmutil.assembler_fluid_boxes("assembling-machine-4"),
 		crafting_categories = {"crafting", "crafting-with-fluid", "advanced-crafting"},
@@ -295,7 +299,7 @@ xmutil.clone("assembling-machine", "assembling-machine-3",
 	icon = "__xander-mod-th__/graphics/item/production/production-machine/lab-1.png",
 	icon_size = 32,
 	flags = {"placeable-player", "player-creation"},
-	minable = {mining_time = 1, result = "lab-1"},
+	minable = {result = "lab-1"},
 	max_health = 100,
 	corpse = "big-remnants",
 	dying_explosion = "medium-explosion",

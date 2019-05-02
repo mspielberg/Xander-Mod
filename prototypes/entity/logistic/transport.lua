@@ -11,18 +11,15 @@ local xmutil = require("xmutil")
 --Base "rail-chain-signal"
 
 --Base "cargo-wagon"
-data.raw["cargo-wagon"]["cargo-wagon"].minable = {mining_time = 5, result = "cargo-wagon"}
 data.raw["cargo-wagon"]["cargo-wagon"].max_speed = 1
 data.raw["cargo-wagon"]["cargo-wagon"].air_resistance = 0.005
 
 --Base "fluid-wagon"
-data.raw["fluid-wagon"]["fluid-wagon"].minable = {mining_time = 5, result = "fluid-wagon"}
 data.raw["fluid-wagon"]["fluid-wagon"].weight = 1000
 data.raw["fluid-wagon"]["fluid-wagon"].max_speed = 1
 data.raw["fluid-wagon"]["fluid-wagon"].air_resistance = 0.005
 
 --Base "locomotive"
-data.raw.locomotive["locomotive"].minable = {mining_time = 5, result = "locomotive"}
 data.raw.locomotive["locomotive"].max_speed = 0.8
 data.raw.locomotive["locomotive"].max_power = "1MW"
 data.raw.locomotive["locomotive"].air_resistance = 0.01
@@ -57,7 +54,7 @@ xmutil.clone("cargo-wagon", "cargo-wagon",
 		name = "cargo-wagon-2",
 		icon = "__xander-mod-th__/graphics/item/logistic/transport/cargo-wagon-2.png",
 		inventory_size = 80,
-		minable = {mining_time = 5, result = "cargo-wagon-2"},
+		minable = {result = "cargo-wagon-2"},
 		max_health = 1000,
 		weight = 2000,
 		max_speed = 2,
@@ -81,7 +78,7 @@ xmutil.clone("fluid-wagon", "fluid-wagon",
 	{
 		name = "fluid-wagon-2",
 		icon = "__xander-mod-th__/graphics/item/logistic/transport/fluid-wagon-2.png",
-		minable = {mining_time = 5, result = "fluid-wagon-2"},
+		minable = {result = "fluid-wagon-2"},
 		max_health = 1000,
 		capacity = 50000,
 		weight = 2000,
@@ -97,7 +94,7 @@ xmutil.clone("locomotive", "locomotive",
 	{
 		name = "locomotive-2",
 		icon = "__xander-mod-th__/graphics/item/logistic/transport/locomotive-2.png",
-		minable = {mining_time = 5, result = "locomotive-2"},
+		minable = {result = "locomotive-2"},
 		max_health = 2000,
 		weight = 4000,
 		max_speed = 1.5,
@@ -113,7 +110,7 @@ xmutil.clone("locomotive", "locomotive",
 	{
 		name = "locomotive-3",
 		icon = "__xander-mod-th__/graphics/item/logistic/transport/locomotive-3.png",
-		minable = {mining_time = 5, result = "locomotive-3"},
+		minable = {result = "locomotive-3"},
 		max_health = 2000,
 		weight = 4000,
 		max_speed = 2,
