@@ -42,7 +42,6 @@ xmutil.clone("furnace", "stone-furnace",
 		crafting_speed = 0.5,
 		energy_source = { fuel_categories = {"crude", "chemical"} },
 		energy_usage = "500kW",
-		ingredient_count = 4
 	}
 ),
 --Clay Brick Furnace (Assembler-Type)
@@ -66,7 +65,6 @@ xmutil.clone("furnace", "stone-furnace",
 		crafting_categories = {"kiln", "smelting"},
 		crafting_speed = 1,
 		energy_usage = "1MW",
-		ingredient_count = 4
 	}
 ),
 --Base "steel-furnace" placeholder - disabled via no item to place it
@@ -83,7 +81,6 @@ xmutil.clone("furnace", "steel-furnace",
 		crafting_speed = 2,
 		energy_source = { emissions = 0.004, },
 		energy_usage = "2MW",
-		ingredient_count = 4
 	}
 ),
 --Electric Refining Furnace
@@ -109,7 +106,6 @@ xmutil.clone("furnace", "electric-furnace",
 		crafting_speed = 2,
 		energy_source = { emissions = 0.002 },
 		energy_usage = "1MW",
-		ingredient_count = 6,
 	}
 ),
 --Base "electric-furnace" placeholder - disabled via no item to place it
@@ -128,7 +124,6 @@ xmutil.clone("furnace", "electric-furnace",
 		crafting_speed = 2,
 			energy_source = { emissions = 0.002 },
 		energy_usage = "1MW",
-		ingredient_count = 6,
 	}
 ),
 --Arc Furnace
@@ -158,7 +153,6 @@ xmutil.clone("furnace", "electric-furnace",
 		crafting_speed = 4,
 		energy_source = { emissions = 0.0008 },
 		energy_usage = "2MW",
-		ingredient_count = 8,
 		module_specification = { module_slots = 4 },
 	}
 ),

@@ -99,7 +99,6 @@ xmutil.clone("assembling-machine", "chemical-plant",
 			emissions = 0.002
 		},
 		energy_usage = "400kW",
-		ingredient_count = 6,
 		fast_replaceable_group = "reactor",
 	}
 ),
@@ -129,7 +128,6 @@ xmutil.clone("assembling-machine", "chemical-plant",
 			emissions = 0.002
 		},
 		energy_usage = "500kW",
-		ingredient_count = 4,
 		crafting_categories = {"electrolysis"},
 		fast_replaceable_group = "electrolyzer",
 	}
@@ -161,7 +159,6 @@ xmutil.clone("assembling-machine", "chemical-plant",
 			emissions = 0.0008
 		},
 		energy_usage = "1MW",
-		ingredient_count = 6,
 		crafting_categories = {"electrolysis"},
 		fast_replaceable_group = "electrolyzer",
 	}
@@ -197,7 +194,6 @@ xmutil.clone("assembling-machine", "oil-refinery",
 		crafting_speed = 4,
 		energy_source = { emissions = 0.004 },
 		energy_usage = "1MW",
-		ingredient_count = 8,
 		fluid_boxes = {
 			[1] = { pipe_connections = { { position = {-2, 3} } } },
 			[2] = { pipe_connections = { { position = { 2, 3} } } },

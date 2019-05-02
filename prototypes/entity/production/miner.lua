@@ -94,7 +94,6 @@ xmutil.clone("assembling-machine", "assembling-machine-2",
 			}
 		},
 		energy_usage = "200kW",
-		ingredient_count = 2,
 		module_specification = xmutil.NIL,
 	}
 ),
@@ -209,7 +208,6 @@ xmutil.clone("assembling-machine", "chemical-plant",
 			}
 		},
 		energy_usage = "200kW",
-		ingredient_count = 2,
 		crafting_categories = {"basic-sluice"},
 	}
 ),
@@ -234,7 +232,6 @@ xmutil.clone("assembling-machine", "chemical-plant",
 		crafting_speed = 1,
 		energy_source = { emissions = 0.02 },
 		energy_usage = "100kW",
-		ingredient_count = 6,
 		crafting_categories = {"basic-sluice", "sluice"},
 	}
 ),
@@ -267,7 +264,6 @@ xmutil.clone("assembling-machine", "oil-refinery",
 		crafting_speed = 2,
 		energy_source = { emissions = 0.01 },
 		energy_usage = "400kW",
-		ingredient_count = 6,
 		fluid_boxes = {
 			[1] = { pipe_connections = { { position = {-2, 3} } } },
 			[2] = { pipe_connections = { { position = { 2, 3} } } },

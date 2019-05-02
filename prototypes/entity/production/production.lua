@@ -26,7 +26,6 @@ xm_assembler_0.energy_source =
 	}
 }
 xm_assembler_0.energy_usage = "100kW"
-xm_assembler_0.ingredient_count = 4
 data:extend({xm_assembler_0})
 
 --assembling-machine-1
@@ -45,7 +44,6 @@ data.raw["assembling-machine"]["assembling-machine-1"].animation = xmutil.merge{
 }
 data.raw["assembling-machine"]["assembling-machine-1"].energy_source.emissions = 0.01
 data.raw["assembling-machine"]["assembling-machine-1"].energy_usage = "50kW"
-data.raw["assembling-machine"]["assembling-machine-1"].ingredient_count = 4
 data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories = {"basic-crafting", "crafting", "crafting-with-fluid"}
 data.raw["assembling-machine"]["assembling-machine-1"].fluid_boxes = xmutil.assembler_fluid_boxes("assembling-machine-1")
 
@@ -68,7 +66,6 @@ data.raw["assembling-machine"]["assembling-machine-2"].animation = xmutil.merge{
 data.raw["assembling-machine"]["assembling-machine-2"].crafting_speed = 1
 data.raw["assembling-machine"]["assembling-machine-2"].energy_source.emissions = 0.008
 data.raw["assembling-machine"]["assembling-machine-2"].energy_usage = "100kW"
-data.raw["assembling-machine"]["assembling-machine-2"].ingredient_count = 6
 
 --Base "assembling-machine-3"
 data.raw["assembling-machine"]["assembling-machine-3"].icon = "__xander-mod-th__/graphics/item/production/production-machine/assembling-machine-3.png"
@@ -102,7 +99,6 @@ local xm_assembler_4 = xmutil.clone("assembling-machine", "assembling-machine-3"
     crafting_speed = 4,
     energy_source = {emissions = 0.002},
     energy_usage = "400kW",
-    ingredient_count = 8,
     layers =
     {
     	{
@@ -148,7 +144,6 @@ xmutil.clone("assembling-machine", "assembling-machine-1",
 			}
 		},
 		energy_usage = "200kW",
-		ingredient_count = 4,
 		animation = {
 			layers = {
 				{
@@ -172,7 +167,6 @@ xmutil.clone("assembling-machine", "assembling-machine-1",
 		crafting_speed = 1,
 		energy_source = { emissions = 0.01 },
 		energy_usage = "100kW",
-		ingredient_count = 4,
 		animation = {
 			layers = {
 				{
@@ -219,7 +213,6 @@ xmutil.clone("assembling-machine", "assembling-machine-3",
 		crafting_speed = 4,
 		energy_source = { emissions = 0.002 },
 		energy_usage = "400kW",
-		ingredient_count = 8,
 		animation = {
 			layers = {
 				{
@@ -261,7 +254,6 @@ xmutil.clone("assembling-machine", "assembling-machine-1",
 			}
 		},
 		energy_usage = "100kW",
-		ingredient_count = 4,
 	}
 ),
 --Base "assembling-machine-1" placeholder
@@ -282,7 +274,6 @@ xmutil.clone("assembling-machine", "assembling-machine-3",
 		crafting_speed = 4,
 		energy_source = { emissions = 0.002 },
 		energy_usage = "400kW",
-		ingredient_count = 8,
 		layers = {
 			{
 				filename = "__xander-mod-th-graphics-0__/graphics/entity/production/assembling-machine-4/4.png",
@@ -376,7 +367,6 @@ data.raw.lab["lab"].energy_usage = "50kW"
 data.raw.beacon["beacon"].energy_usage = "500kW"
 
 --Base "rocket-silo"
-data.raw["rocket-silo"]["rocket-silo"].ingredient_count = 5
 data.raw["rocket-silo"]["rocket-silo"].energy_usage = "2MW"
 data.raw["rocket-silo"]["rocket-silo"].idle_energy_usage = "30kW"
 data.raw["rocket-silo"]["rocket-silo"].lamp_energy_usage = "20kW"
