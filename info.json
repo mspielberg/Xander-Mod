@@ -5,6 +5,6 @@
   "title": "Xander Mod (Therax)",
   "author": "Therax",
   "homepage": "https://forums.factorio.com/viewtopic.php?f=97&t=51868",
-  "dependencies": ["base", "xander-mod-th-graphics-0 >= 0.2.0", "xander-mod-th-graphics-1 >= 0.1.0", "? LoaderRedux", "? rso-mod"],
+  "dependencies": ["base >= 0.17.35", "xander-mod-th-graphics-0 >= 0.2.0", "xander-mod-th-graphics-1 >= 0.1.0", "? LoaderRedux", "? rso-mod"],
   "description": "A fork of Repofme1's Xander Mod."
 }
