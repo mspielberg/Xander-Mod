@@ -1,15 +1,11 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.2.0
-Date: x. x. 2018
-  Bugfixes:
-    - Bugfix 1
+Date: 2019-05-02
   Changes:
-    - Change 1
-  Features:
-    - Feature 1
+    - Initial release of Therax's port of Xander-Mod.
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.1
-Date: 20. 7. 2018
+Date: 2018-07-20
   Changes:
     - Improvements to content structure (lists and organization of items and recipes, mainly in bulk materials)
     - Some assorted fixes and smoothing early gameplay
