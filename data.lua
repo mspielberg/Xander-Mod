@@ -123,6 +123,7 @@ require("prototypes.entity.production.production")
 
 --Technologies
 require("prototypes.technology.production")
+require("prototypes.technology.tool")
 
 
 --==========  Logistics  ==========
