@@ -265,12 +265,13 @@ data:extend(
 --Transferred
 --Crude Nickel Smelting
 {
-	type = "recipe",
-    name = "smelting-nickel",
-	category = "basic-refining",
-	energy_required = 8,
-	ingredients = {{"magnetic", 2}, {"limestone", 1}},
-	result = "nickel-ingot"
+  type = "recipe",
+  name = "smelting-nickel",
+  category = "basic-refining",
+  energy_required = 8,
+  enabled = false,
+  ingredients = {{"magnetic", 2}, {"limestone", 1}},
+  result = "nickel-ingot"
 },
 --Proper Nickel Smelting
 {
