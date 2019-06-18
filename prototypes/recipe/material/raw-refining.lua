@@ -457,7 +457,7 @@ data:extend(
 --Pure Titanium Dioxide via Titanium Tetrachloride Hydrolysis
 {
 	type = "recipe",
-    name = "titanium-oxide",
+  name = "titanium-oxide",
 	icon = "__xander-mod-th__/graphics/recipe/refining/titanium-oxide.png",
 	icon_size = 32,
 	category = "refining",
@@ -465,6 +465,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{type = "fluid", name = "titanium-tetrachloride", amount = 10}, {type = "fluid", name = "water", amount = 40}},
 	results = {{"titanium-oxide", 1}, {type = "fluid", name = "hydrogen-chloride", amount = 40}},
+	main_product = "titanium-oxide",
 	subgroup = "raw-material"
 },
 --Kroll Process, Titanium
@@ -518,6 +519,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{"zirconium-tetrachloride", 1}, {type = "fluid", name = "water", amount = 40}},
 	results = {{"zirconium-oxide", 1}, {type = "fluid", name = "hydrogen-chloride", amount = 40}},
+	main_product = "zirconium-oxide",
 	subgroup = "raw-material"
 },
 --Kroll Process, Zirconium

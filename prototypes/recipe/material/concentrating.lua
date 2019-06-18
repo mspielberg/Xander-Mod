@@ -379,7 +379,7 @@ data:extend(
 --Crude Saltpeter
 {
 	type = "recipe",
-    name = "hand-saltpeter",
+  name = "hand-saltpeter",
 	category = "basic-sluice",
 	energy_required = 2,
 	enabled = false,
@@ -390,7 +390,7 @@ data:extend(
 --Improved Saltpeter
 {
 	type = "recipe",
-    name = "water-saltpeter",
+  name = "water-saltpeter",
 	icon = "__xander-mod-th__/graphics/recipe/salt/water-saltpeter.png",
 	icon_size = 32,
 	category = "sluice",
@@ -403,7 +403,8 @@ data:extend(
 	energy_required = 4,
 	enabled = false,
 	ingredients = {{"evaporites", 10}, {"sodium-carbonate", 1}},
-	results = {{"saltpeter", 5}, {type = "fluid", name = "gray-water", amount = 50}},
+	results = {{"saltpeter", 10}, {type = "fluid", name = "gray-water", amount = 50}},
+	main_product = "saltpeter",
 	subgroup = "raw-resource"
 },
 --Transferred

@@ -563,6 +563,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{"aluminum-hydroxide", 1}, {"sodium-hydroxide", 2}, {type = "fluid", name = "hydrogen-fluoride", amount = 50}},
 	results = {{"cryolite-mixture", 1}, {type = "fluid", name = "waste-water", amount = 50}},
+	main_product = "cryolite-mixture",
 	subgroup = "salt",
 	crafting_machine_tint =
 	{
@@ -1092,22 +1093,23 @@ data:extend(
 },
 --Improved Formaldehyde Synthesis (process via methyl formate)
 {
-	type = "recipe",
-    name = "formaldehyde-b",
-	icon = "__xander-mod-th__/graphics/recipe/organic/formaldehyde-b.png",
-	icon_size = 32,
-	category = "chemistry",
-	energy_required = 20,
-	enabled = false,
-	ingredients = {{"sodium-hydroxide", 1}, {type = "fluid", name = "methanol", amount = 110}, {type = "fluid", name = "carbon-monoxide", amount = 100}},
-	results = {{type = "fluid", name = "formaldehyde", amount = 100}, {type = "fluid", name = "methanol", amount = 100}},
-	subgroup = "carbohydrate",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	}
+  type = "recipe",
+  name = "formaldehyde-b",
+  icon = "__xander-mod-th__/graphics/recipe/organic/formaldehyde-b.png",
+  icon_size = 32,
+  category = "chemistry",
+  energy_required = 20,
+  enabled = false,
+  ingredients = {{"sodium-hydroxide", 1}, {type = "fluid", name = "methanol", amount = 110}, {type = "fluid", name = "carbon-monoxide", amount = 100}},
+  results = {{type = "fluid", name = "formaldehyde", amount = 100}, {type = "fluid", name = "methanol", amount = 100}},
+  main_product = "formaldehyde",
+  subgroup = "carbohydrate",
+  crafting_machine_tint =
+  {
+    primary = {r = 0.000, g = 0.110, b = 0.588},
+    secondary = {r = 0.564, g = 0.795, b = 0.000},
+    tertiary = {r = 0.678, g = 0.565, b = 0.478}
+  }
 },
 --Coal Gasification
 {
@@ -1319,7 +1321,7 @@ data:extend(
 --Light Oil Reforming to Benzene
 {
 	type = "recipe",
-    name = "light-benzene",
+  name = "light-benzene",
 	icon = "__xander-mod-th__/graphics/recipe/organic/light-benzene.png",
 	icon_size = 32,
 	category = "chemistry",
@@ -1327,6 +1329,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{type = "fluid", name = "light-oil", amount = 10}},
 	results = {{type = "fluid", name = "benzene", amount = 10}, {type = "fluid", name = "hydrogen", amount = 30}},
+	main_product = "benzene",
 	subgroup = "fluid-recipes",
 	crafting_machine_tint =
 	{
@@ -1378,22 +1381,23 @@ data:extend(
 },
 --Epichlorohydrin Synthesis
 {
-	type = "recipe",
-    name = "epichlorohydrin",
-	icon = "__xander-mod-th__/graphics/recipe/organic/epichlorohydrin.png",
-	icon_size = 32,
-	category = "chemistry",
-	energy_required = 20,
-	enabled = false,
-	ingredients = {{type = "fluid", name = "propylene", amount = 10}, {type = "fluid", name = "chlorine", amount = 20}, {"sodium-hydroxide", 1}},
-	results = {{type = "fluid", name = "epichlorohydrin", amount = 10}, {type = "fluid", name = "hydrogen-chloride", amount = 10}, {"sodium-chloride", 1}},
-	subgroup = "other-organic",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	}
+  type = "recipe",
+  name = "epichlorohydrin",
+  icon = "__xander-mod-th__/graphics/recipe/organic/epichlorohydrin.png",
+  icon_size = 32,
+  category = "chemistry",
+  energy_required = 20,
+  enabled = false,
+  ingredients = {{type = "fluid", name = "propylene", amount = 10}, {type = "fluid", name = "chlorine", amount = 20}, {"sodium-hydroxide", 1}},
+  results = {{type = "fluid", name = "epichlorohydrin", amount = 10}, {type = "fluid", name = "hydrogen-chloride", amount = 10}, {"sodium-chloride", 1}},
+  main_product = "epichlorhydrin",
+  subgroup = "other-organic",
+  crafting_machine_tint =
+  {
+    primary = {r = 0.000, g = 0.110, b = 0.588},
+    secondary = {r = 0.564, g = 0.795, b = 0.000},
+    tertiary = {r = 0.678, g = 0.565, b = 0.478}
+  }
 },
 --Epoxy Resin Component
 {
