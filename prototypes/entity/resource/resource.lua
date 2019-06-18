@@ -199,7 +199,10 @@ local solid_resources = {
   ["stone"]           = {  4, {r=0.69, g=0.61, b=0.43},  true, 5 },
 }
 
---Add new XM resources
+-- preserve coal graphics
+local coal_pictures = data.raw.item.coal.pictures
+
+-- Add new XM resources
 for name, params in pairs(solid_resources) do
   create_resource(name, params)
   create_particle(name)
@@ -211,6 +214,7 @@ data.raw.resource.coal.stages.sheet.filename = "__base__/graphics/entity/coal/co
 data.raw.resource.coal.stages.sheet.tint = nil
 data.raw.resource.coal.stages.sheet.hr_version.filename = "__base__/graphics/entity/coal/hr-coal.png"
 data.raw.resource.coal.stages.sheet.hr_version.tint = nil
+data.raw.item.coal.pictures = coal_pictures
 
 local natural_gas = xm.clone("resource", "crude-oil",
   {
