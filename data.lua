@@ -53,7 +53,6 @@ require("prototypes.recipe.material.raw-refining")
 require("prototypes.recipe.material.waste")
 
 --Tiles
-require("prototypes.tile.noise-layer")
 require("prototypes.tile.tile")
 
 --Technologies

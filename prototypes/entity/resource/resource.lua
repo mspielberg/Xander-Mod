@@ -137,6 +137,52 @@ local function create_particle(name, tint)
   data.raw.particle[particle_name] = particle
 end
 
+-- by sheet_index
+local item_pictures = {
+  "copper-ore",
+  "coal",
+  "iron-ore",
+  "uranium-ore",
+  "stone",
+}
+local function item(resource_parameters)
+  local sheet = item_pictures[resource_parameters.sheet_index]
+  local pictures = {}
+  for i=1,4 do
+    local filename = "__xander-mod-th__/graphics/item/material/raw-resource/mip/" .. sheet .. "-" .. i-1 .. ".png"
+    if i == 1 then 
+      filename = "__xander-mod-th__/graphics/item/material/raw-resource/mip/" .. sheet .. ".png"
+    end
+    pictures[i] = {
+      size = 64,
+      filename = filename,
+      scale = 0.25,
+      mipmap_count = 4,
+      tint = resource_parameters.tint,
+    }
+  end
+  return
+  {
+    type = "item",
+    name = resource_parameters.name,
+    icon = "__xander-mod-th__/graphics/item/material/raw-resource/" .. resource_parameters.name .. ".png",
+    icon_size = 32,
+    icon_mipmaps = 4,
+    pictures = pictures,
+    subgroup = "raw-resource",
+    order = "b["..resource_parameters.name.."]",
+    stack_size = 50,
+  }
+end
+
+local function create_item(name, params)
+  data.raw.item[name] = item{
+    name = name,
+    sheet_index = params[4],
+    tint = params[2],
+  }
+end
+
 local solid_resources = {
   -- [name]           = base_density, map_color, is_starting, sheet_index
   ["coal"]            = { 12, {r=0.00, g=0.00, b=0.00},  true, 2 },
@@ -157,6 +203,7 @@ local solid_resources = {
 for name, params in pairs(solid_resources) do
   create_resource(name, params)
   create_particle(name)
+  create_item(name, params)
 end
 
 -- fixup coal graphics

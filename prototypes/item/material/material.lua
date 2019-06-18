@@ -12,6 +12,7 @@ data.raw.item["landfill"].place_as_tile = {result = "gravel", condition_size = 1
 
 --==========raw-resource
 --Group 3, subgroup 2
+--[[
 for i, name in ipairs(xm_all_resources) do
 	if xm_resources_xm_new[i] and xm_reources_solid[i] then
 		data:extend({xm_item(name, nil, 3, 2, i - 1, false)})
@@ -24,16 +25,17 @@ for i, name in ipairs(xm_all_resources) do
 		xm_modify_base_item(name, 3, 2, i - 1)
 	end
 end
+]]
 --Coal
-data.raw.item["coal"].icon = "__base__/graphics/icons/icons-new/coal.png"
 data.raw.item["coal"].fuel_value = "16MJ"
 data.raw.item["coal"].fuel_category = "crude"
 --Copper Ore
 data.raw.item["copper-ore"].icon = "__xander-mod-th__/graphics/item/material/raw-resource/copper-ore.png"
+data.raw.item["copper-ore"].icon_size = 32
 --Iron Ore
 data.raw.item["iron-ore"].icon = "__xander-mod-th__/graphics/item/material/raw-resource/iron-ore.png"
---Stone
-data.raw.item["stone"].icon = "__base__/graphics/icons/icons-new/stone.png"
+data.raw.item["iron-ore"].icon_size = 32
+
 
 
 --==========milled-resource

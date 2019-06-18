@@ -234,25 +234,17 @@ xmutil.clone("solar-panel", "solar-panel",
 --Silver Accumulator
 xmutil.clone("accumulator", "accumulator",
 	{
-		{
-			"__base__/graphics/icon/accumulator.png",
-			"__xander-mod-th__/graphics/item/production/energy/accumulator-2.png",
-		},
-		{
-			"__base__/graphics/entity/accumulator/accumulator.png",
-			"__xander-mod-th-graphics-0__/graphics/entity/production/accumulator-2/2.png",
-		},
-		{
-			"__base__/graphics/entity/accumulator/accumulator-charge-animation.png",
-			"__xander-mod-th-graphics-0__/graphics/entity/production/accumulator-2/charge.png",
-		},
-		{
-			"__base__/graphics/entity/accumulator/accumulator-discharge-animation.png",
-			"__xander-mod-th-graphics-0__/graphics/entity/production/accumulator-2/discharge.png",
-		},
 	},
 	{
 		name = "accumulator-2",
+		icon = xmutil.NIL,
+		icons = {
+		  {
+		    --icon = "__xander-mod-th__/graphics/item/production/energy/accumulator-2.png",
+		    icon = data.raw.accumulator.accumulator.icon,
+		    tint = {r=198,g=255,b=170},
+		  },
+		},
 		minable = {result = "accumulator-2"},
 		max_health = 200,
 		energy_source =
@@ -263,6 +255,9 @@ xmutil.clone("accumulator", "accumulator",
 			input_flow_limit = "500kW",
 			output_flow_limit = "500kW"
 		},
+		picture             = {              layers = { { tint = {r=198,g=255,b=170}, hr_version = {tint = {r=198,g=255,b=170}}}}},
+		charge_animation    = { layers = { { layers = { { tint = {r=198,g=255,b=170}, hr_version = {tint = {r=198,g=255,b=170}}}}}}},
+		discharge_animation = { layers = { { layers = { { tint = {r=198,g=255,b=170}, hr_version = {tint = {r=198,g=255,b=170}}}}}}},
 	}
 ),
 --Base "small-lamp" placeholder
