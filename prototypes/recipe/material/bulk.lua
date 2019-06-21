@@ -1390,7 +1390,7 @@ data:extend(
   enabled = false,
   ingredients = {{type = "fluid", name = "propylene", amount = 10}, {type = "fluid", name = "chlorine", amount = 20}, {"sodium-hydroxide", 1}},
   results = {{type = "fluid", name = "epichlorohydrin", amount = 10}, {type = "fluid", name = "hydrogen-chloride", amount = 10}, {"sodium-chloride", 1}},
-  main_product = "epichlorhydrin",
+  main_product = "epichlorohydrin",
   subgroup = "other-organic",
   crafting_machine_tint =
   {
