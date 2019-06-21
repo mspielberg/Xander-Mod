@@ -242,7 +242,7 @@ xmutil.clone("accumulator", "accumulator",
 		  {
 		    --icon = "__xander-mod-th__/graphics/item/production/energy/accumulator-2.png",
 		    icon = data.raw.accumulator.accumulator.icon,
-		    tint = {r=198,g=255,b=170},
+		    tint = {r=198,g=255,b=170,a=255},
 		  },
 		},
 		minable = {result = "accumulator-2"},
@@ -255,9 +255,9 @@ xmutil.clone("accumulator", "accumulator",
 			input_flow_limit = "500kW",
 			output_flow_limit = "500kW"
 		},
-		picture             = {              layers = { { tint = {r=198,g=255,b=170}, hr_version = {tint = {r=198,g=255,b=170}}}}},
-		charge_animation    = { layers = { { layers = { { tint = {r=198,g=255,b=170}, hr_version = {tint = {r=198,g=255,b=170}}}}}}},
-		discharge_animation = { layers = { { layers = { { tint = {r=198,g=255,b=170}, hr_version = {tint = {r=198,g=255,b=170}}}}}}},
+		picture             = {              layers = { { tint = {r=198,g=255,b=170,a=255}, hr_version = {tint = {r=198,g=255,b=170,a=255}}}}},
+		charge_animation    = { layers = { { layers = { { tint = {r=198,g=255,b=170,a=255}, hr_version = {tint = {r=198,g=255,b=170,a=255}}}}}}},
+		discharge_animation = { layers = { { layers = { { tint = {r=198,g=255,b=170,a=255}, hr_version = {tint = {r=198,g=255,b=170,a=255}}}}}}},
 	}
 ),
 --Base "small-lamp" placeholder
@@ -288,3 +288,5 @@ xmutil.clone("lamp", "small-lamp",
 	}
 ),
 }
+
+log(serpent.block(data.raw.accumulator["accumulator-2"]))
