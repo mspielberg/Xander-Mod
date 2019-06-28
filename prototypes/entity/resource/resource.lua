@@ -1,4 +1,4 @@
-local resource_autoplace = require("__base__.prototypes.entity.demo-resource-autoplace")
+local resource_autoplace = require("resource-autoplace")
 local xm = require("xmutil")
 
 --- resource_sheet creates a sprite sheet reference for a minable solid resource
@@ -49,7 +49,6 @@ local function resource(resource_parameters, autoplace_parameters)
       order = resource_parameters.order,
       base_density = autoplace_parameters.base_density,
       has_starting_area_placement = autoplace_parameters.has_starting_area_placement,
-      resource_index = resource_autoplace.get_next_resource_index(),
       regular_rq_factor_multiplier = autoplace_parameters.regular_rq_factor_multiplier;
       starting_rq_factor_multiplier = autoplace_parameters.starting_rq_factor_multiplier;
     },
@@ -68,10 +67,11 @@ local function create_resource(name, params)
   local is_starting = params[3]
   local sheet_index = params[4]
 
+  resource_autoplace.initialize_patch_set(name, is_starting)
   data.raw.resource[name] = resource(
     {
       name = name,
-      order = "b",
+      order = name,
       map_color = map_color,
       mining_time = 1,
       sheet_index = sheet_index,
@@ -226,70 +226,21 @@ local natural_gas = xm.clone("resource", "crude-oil",
   {
     name = "natural-gas",
     icon = "__xander-mod-th__/graphics/fluid/resource/natural-gas.png",
-    autoplace = {
-      name = "natural-gas",
-      order = "d",
-    },
+    autoplace = xm.NIL,
     minable = { results = { { name = "natural-gas" } } },
-    map_color = {r=0.00,g=1.00,b=1.00},
+    map_color = {r=1.00,g=1.00,b=0.00},
   }
 )
+natural_gas.autoplace = resource_autoplace.resource_autoplace_settings{
+  name = "natural-gas",
+  order = "natural-gas",
+  base_density = 8.1,
+  base_sports_per_km2 = 1.8,
+  random_probability = 1/48,
+  random_spot_size_minimum = 1,
+  random_spot_size_maximum = 1,
+  additional_richness = 220000,
+  has_starting_area_placement = false,
+  regular_rq_factor_multiplier = 1,
+}
 data:extend{natural_gas}
-
-local function find_expression_fields(ne, name, out)
-  if not out then out = {} end
-  for k,v in pairs(ne) do
-    if k == name then
-      out[#out+1] = v
-    elseif type(v) == "table" then
-      find_expression_fields(v, name, out)
-    end
-  end
-  return out
-end
-
-local starting_resources = {}
-local non_starting_resources = {}
-local function is_starting(resource)
-  return #find_expression_fields(resource.autoplace.probability_expression, "skip_span") > 1
-end
-
-for name, resource in pairs(data.raw.resource) do
-  if is_starting(resource) then
-    table.insert(starting_resources, resource)
-  else
-    table.insert(non_starting_resources, resource)
-  end
-end
-
-local starting_resource_count = #starting_resources
-local all_resource_count = starting_resource_count + #non_starting_resources
-
-local function renumber_noise_expression(ne, index)
-  for _, expr in pairs(find_expression_fields(ne, "skip_offset")) do
-    expr.literal_value = index
-  end
-  local span_fields = find_expression_fields(ne, "skip_span")
-  if #span_fields > 1 then
-    span_fields[1].literal_value = starting_resource_count
-  end
-  span_fields[#span_fields].literal_value = all_resource_count
-end
-
-local function renumber_resource(resource, index)
-  renumber_noise_expression(resource.autoplace.probability_expression, index)
-  renumber_noise_expression(resource.autoplace.richness_expression, index)
-end
-
-local index = 0
-for name, resource in pairs(starting_resources) do
-  log("renumbering starting resource "..resource.name.." to index "..index)
-  renumber_resource(resource, index)
-  index = index + 1
-end
-for name, resource in pairs(non_starting_resources) do
-  log("renumbering non starting resource "..resource.name.." to index "..index)
-  renumber_resource(resource, index)
-  index = index + 1
-end
-
