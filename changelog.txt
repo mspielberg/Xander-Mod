@@ -1,3 +1,14 @@
+Version: 2.2.1
+Date: 2019-06-28
+  Bugfixes:
+    - Fix accumulator-2 graphics.
+    - Fix some broken localizations.
+  Compatibility:
+    - Fix compatibility with Factorio 0.17.51+.
+  Minor changes:
+    - Rename several recipes after their main product to improve searchability.
+    - Add compatibility with ore variations on belts from Factorio 0.17.46+.
+    - Add axe research for improved mining speed.
 ---------------------------------------------------------------------------------------------------
 Version: 2.2.0
 Date: 2019-05-02
