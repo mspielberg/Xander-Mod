@@ -288,5 +288,3 @@ xmutil.clone("lamp", "small-lamp",
 	}
 ),
 }
-
-log(serpent.block(data.raw.accumulator["accumulator-2"]))
