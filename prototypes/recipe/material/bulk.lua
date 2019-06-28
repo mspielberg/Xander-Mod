@@ -23,14 +23,16 @@ data.raw.recipe["explosives"].normal =
 	energy_required = 10,
 	enabled = false,
 	ingredients = {{"unstable-explosives", 1}, {type = "fluid", name = "distilled-water", amount = 50}},
-	results = {{"explosives", 1}, {type = "fluid", name = "waste-water", amount = 50}}
+	results = {{"explosives", 1}, {type = "fluid", name = "waste-water", amount = 50}},
+	main_product = "explosives",
 }
 data.raw.recipe["explosives"].expensive =
 {
 	energy_required = 10,
 	enabled = false,
 	ingredients = {{"unstable-explosives", 1}, {type = "fluid", name = "water", amount = 80}},
-	results = {{"explosives", 1}, {type = "fluid", name = "waste-slurry", amount = 40}}
+	results = {{"explosives", 1}, {type = "fluid", name = "waste-slurry", amount = 40}},
+	main_product = "explosives",
 }
 
 --Base "plastic-bar"
@@ -65,6 +67,7 @@ data.raw.recipe["sulfuric-acid"].category = "basic-chemistry"
 data.raw.recipe["sulfuric-acid"].energy_required = 20
 data.raw.recipe["sulfuric-acid"].ingredients = {{"saltpeter", 20}, {"sulfur", 20}, {type = "fluid", name = "water", amount = 500}}
 data.raw.recipe["sulfuric-acid"].results = {{type = "fluid", name = "sulfuric-acid", amount = 100}, {type = "fluid", name = "waste-water", amount = 10}}
+data.raw.recipe["sulfuric-acid"].main_product = "sulfuric-acid"
 
 
 data:extend(
@@ -443,6 +446,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{"sodium-chloride", 2}, {type = "fluid", name = "sulfuric-acid", amount = 10}},
 	results = {{"sodium-sulfate", 1}, {type = "fluid", name = "hydrogen-chloride", amount = 20}},
+	main_product = "sodium-sulfate",
 	subgroup = "salt",
 	crafting_machine_tint =
 	{
@@ -468,6 +472,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{"calcium-chloride", 10}, {type = "fluid", name = "sulfuric-acid", amount = 100}},
 	results = {{"calcium-sulfate", 10}, {type = "fluid", name = "hydrogen-chloride", amount = 200}},
+	main_product = "calcium-sulfate",
 	subgroup = "salt"
 },
 --LeBlanc Process Step B
@@ -500,6 +505,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{"limestone", 20}, {"sodium-chloride", 40}, {type = "fluid", name = "distilled-water", amount = 10}, {type = "fluid", name = "ammonia", amount = 10}},
 	results = {{"sodium-carbonate", 20}, {"calcium-chloride", 20}, {type = "fluid", name = "waste-water", amount = 50}},
+	main_product = "sodium-carbonate",
 	subgroup = "salt",
 	crafting_machine_tint =
 	{
@@ -519,6 +525,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{"sodium-carbonate", 1}, {"calcium-oxide", 1}, {type = "fluid", name = "distilled-water", amount = 10}},
 	results = {{"sodium-hydroxide", 2}, {"limestone", 1}, {type = "fluid", name = "gray-water", amount = 10}},
+	main_product = "sodium-hydroxide",
 	subgroup = "salt",
 	crafting_machine_tint =
 	{
@@ -583,6 +590,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{"boron-oxide", 5}, {type = "fluid", name = "hydrogen-fluoride", amount = 400}, {"lithium-hydroxide", 10}, {type = "fluid", name = "sulfur-dioxide", amount = 20}},
 	results = {{"lithium-tetrafluoroborate", 10}, {type = "fluid", name = "waste-water", amount = 200}},
+	main_product = "lithium-tetrafluoroborate",
 	subgroup = "salt",
 	crafting_machine_tint =
 	{
@@ -602,6 +610,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{type = "fluid", name = "chlorine", amount = 30}, {type = "fluid", name = "water", amount = 10}, {"lithium-hydroxide", 6}, {"sodium-hydroxide", 5}},
 	results = {{"lithium-perchlorate", 1}, {"sodium-chloride", 5}, {"lithium-hydroxide", 5}, {type = "fluid", name = "waste-water", amount = 50}, {type = "fluid", name = "hydrogen", amount = 10}},
+	main_product = "lithium-perchlorate",
 	subgroup = "salt",
 	crafting_machine_tint =
 	{
@@ -651,6 +660,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{"cotton", 1}, {type = "fluid", name = "nitric-sulfuric", amount = 30}, {type = "fluid", name = "water", amount = 40}},
 	results = {{"nitrocellulose", 1}, {type = "fluid", name = "waste-water", amount = 50}},
+	main_product = "nitrocellulose",
 	subgroup = "organic",
 	crafting_machine_tint =
 	{
@@ -779,6 +789,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{"sulfur", 4}, {"sodium-hydroxide", 1}, {type = "fluid", name = "methane", amount = 10}, {type = "fluid", name = "methanol", amount = 10}},
 	results = {{"surfactant", 1}, {type = "fluid", name = "hydrogen-sulfide", amount = 20}},
+	main_product = "surfactant",
 	subgroup = "organic",
 	crafting_machine_tint =
 	{
@@ -864,6 +875,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{type = "fluid", name = "carbon-dioxide", amount = 10}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}},
 	results = {{type = "fluid", name = "carbon-tetrafluoride", amount = 10}, {type = "fluid", name = "waste-water", amount = 20}},
+	main_product = "carbon-tetrafluoride",
 	subgroup = "organic",
 	crafting_machine_tint =
 	{
@@ -883,6 +895,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{type = "fluid", name = "carbon-dioxide", amount = 10}, {type = "fluid", name = "methanol", amount = 20}},
 	results = {{type = "fluid", name = "dimethyl-carbonate", amount = 10}, {type = "fluid", name = "waste-water", amount = 10}},
+	main_product = "dimethyl-carbonate",
 	subgroup = "organic",
 	crafting_machine_tint =
 	{
@@ -1045,6 +1058,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{"coke", 8}, {type = "fluid", name = "water", amount = 50}},
 	results = {{"phenol", 1}, {type = "fluid", name = "waste-water", amount = 50}},
+	main_product = "phenol",
 	subgroup = "carbohydrate",
 	crafting_machine_tint =
 	{
@@ -1064,6 +1078,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{type = "fluid", name = "chlorobenzene", amount = 10}, {type = "fluid", name = "water", amount = 10}},
 	results = {{"phenol", 1}, {type = "fluid", name = "hydrogen-chloride", amount = 10}},
+	main_product = "phenol",
 	subgroup = "carbohydrate",
 	crafting_machine_tint =
 	{
@@ -1196,6 +1211,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{type = "fluid", name = "heavy-naptha", amount = 10}, {type = "fluid", name = "steam", amount = 10}},
 	results = {{type = "fluid", name = "benzene", amount = 20}, {type = "fluid", name = "hydrogen", amount = 30}},
+	main_product = "benzene",
 	subgroup = "fluid-recipes",
 	crafting_machine_tint =
 	{
@@ -1272,6 +1288,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{type = "fluid", name = "methane", amount = 20}},
 	results = {{type = "fluid", name = "petroleum-gas", amount = 10}, {type = "fluid", name = "hydrogen", amount = 20}},
+	main_product = "petroleum-gas",
 	subgroup = "fluid-recipes",
 	crafting_machine_tint =
 	{
@@ -1310,6 +1327,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{type = "fluid", name = "petroleum-gas", amount = 20}},
 	results = {{type = "fluid", name = "butadiene", amount = 10}, {type = "fluid", name = "hydrogen", amount = 10}},
+	main_product = "butadiene",
 	subgroup = "fluid-recipes",
 	crafting_machine_tint =
 	{
@@ -1349,6 +1367,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{type = "fluid", name = "benzene", amount = 10}, {type = "fluid", name = "petroleum-gas", amount = 10}},
 	results = {{type = "fluid", name = "styrene", amount = 10}, {type = "fluid", name = "hydrogen", amount = 10}},
+	main_product = "styrene",
 	subgroup = "fluid-recipes",
 	crafting_machine_tint =
 	{
@@ -1371,6 +1390,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{type = "fluid", name = "benzene", amount = 10}, {type = "fluid", name = "chlorine", amount = 10}},
 	results = {{type = "fluid", name = "chlorobenzene", amount = 10}, {type = "fluid", name = "hydrogen-chloride", amount = 10}},
+	main_product = "chlorobenzene",
 	subgroup = "other-organic",
 	crafting_machine_tint =
 	{
@@ -1448,6 +1468,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{type = "fluid", name = "ethylene-dichloride", amount = 20}, {type = "fluid", name = "ammonia", amount = 30}},
 	results = {{type = "fluid", name = "epoxy-hardener", amount = 10}, {type = "fluid", name = "hydrogen-chloride", amount = 40}},
+	main_product = "epoxy-hardener",
 	subgroup = "other-organic",
 	crafting_machine_tint =
 	{
@@ -1619,13 +1640,11 @@ data:extend(
 	energy_required = 5,
 	enabled = false,
 	ingredients = {{"silicon-carbide", 1}, {type = "fluid", name = "chlorine", amount = 20}},
-	--icon_size = 32,
 	results = {{"activated-carbon", 1}, {type = "fluid", name = "silicon-tetrachloride", amount = 10}},
-	--icon_size = 32,
+	main_product = "activated-carbon",
 	subgroup = "nonmetal"
 },
 --Ultra-Pure Silicon Powder
-	icon_size = 32,
 {
 	type = "recipe",
     name = "ultrapure-powder",
@@ -1636,6 +1655,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{type = "fluid", name = "silane", amount = 10}},
 	results = {{"semiconductor-silicon-powder", 1}, {type = "fluid", name = "hydrogen", amount = 20}},
+	main_product = "semiconductor-silicon-powder",
 	subgroup = "nonmetal"
 },
 
@@ -1728,6 +1748,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{type = "fluid", name = "nitrogen-dioxide", amount = 30}, {type = "fluid", name = "water", amount = 10}},
 	results = {{type = "fluid", name = "nitric-acid", amount = 20}, {type = "fluid", name = "nitrogen-monoxide", amount = 10}},
+	main_product = "nitric-acid",
 	subgroup = "compound",
 	crafting_machine_tint =
 	{
@@ -1756,20 +1777,16 @@ data:extend(
 	}
 },
 --Silicon Tetrachloride
-	icon_size = 32,
 {
 	type = "recipe",
     name = "silicon-tetrachloride",
 	icon_size = 32,
 	icon = "__xander-mod-th__/graphics/recipe/compound/silicon-tetrachloride.png",
-	icon_size = 32,
-	icon_size = 32,
 	category = "refining",
 	energy_required = 2,
 	enabled = false,
 	ingredients = {{"silicon-powder", 1}, {type = "fluid", name = "chlorine", amount = 20}},
 	results = {{type = "fluid", name = "silicon-tetrachloride", amount = 10}},
-	icon_size = 32,
 	subgroup = "compound"
 },
 
@@ -1881,6 +1898,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{type = "fluid", name = "sulfur-dioxide", amount = 20}, {type = "fluid", name = "oxygen", amount = 10}, {"vanadium-oxide", 1}},
 	results = {{type = "fluid", name = "sulfur-trioxide", amount = 20}, {"vanadium-oxide", 1}},
+	main_product = "sulfur-trioxide",
 	subgroup = "compound",
 	crafting_machine_tint =
 	{
@@ -1981,6 +1999,7 @@ data:extend(
 	ingredients = {{type = "fluid", name = "silicon-tetrachloride", amount = 10}, {type = "fluid", name = "hydrogen", amount = 40}},
 	icon_size = 32,
 	results = {{type = "fluid", name = "silane", amount = 10}, {type = "fluid", name = "hydrogen-chloride", amount = 40}},
+	main_product = "silane",
 	subgroup = "compound"
 }
 
