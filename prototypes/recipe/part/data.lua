@@ -16,9 +16,9 @@ data.raw.recipe["advanced-circuit"].expensive = {energy_required = 5, enabled = 
 --Base "processing-unit"
 data.raw.recipe["processing-unit"].category = "advanced-crafting"
 data.raw.recipe["processing-unit"].normal = {energy_required = 10, enabled = false, ingredients = {{"etched-3", 1}, {"wire-solder-2", 2}, 
-	{"components-3", 1}, {"aluminum-ingot", 2}, {"plastic-bar", 2}}, result = "processing-unit"}
+	{"components-3", 1}, {"aluminum-ingot", 2}, {"wafer-3", 1}}, result = "processing-unit"}
 data.raw.recipe["processing-unit"].expensive = {energy_required = 10, enabled = false, ingredients = {{"etched-3", 1}, {"wire-solder-2", 4}, 
-	{"components-3", 4}, {"aluminum-ingot", 4}, {"plastic-bar", 4}}, result = "processing-unit"}
+	{"components-3", 4}, {"aluminum-ingot", 4}, {"wafer-3", 1}}, result = "processing-unit"}
 
 
 data:extend(
