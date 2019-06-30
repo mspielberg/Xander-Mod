@@ -294,8 +294,8 @@ local xm_data_technologies_recipes = {{"wire-copper", "wire-tinned", "solder-flu
 {"wafer-1", "wafer-2", "components-2-b"}, 
 {"wafer-3"}, 
 {"components-1-a", "electronic-circuit", "control-1"}, 
-{"components-2-a", "advanced-circuit", "control-2", "chemical-science-pack"}, 
-{"components-3", "processing-unit", "control-3", "utility-science-pack"}}
+{"components-2-a", "advanced-circuit", "control-2"}, 
+{"components-3", "processing-unit", "control-3"}}
 local xm_data_technologies_prerequisites = {{"soldering_1"}, 
 {"wire_1", "gold-refining", "silver-refining", "machine-tool_1"}, 
 {"machine-tool_0", "reactor_0"}, 

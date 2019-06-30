@@ -28,8 +28,7 @@ data.raw.technology["automation"].order = "07-22"
 --Base "automation-2"
 data.raw.technology["automation-2"].icon = "__xander-mod-th__/graphics/technology/production/automation-2.png"
 data.raw.technology["automation-2"].icon_size = 128
-data.raw.technology["automation-2"].effects = {{type = "unlock-recipe", recipe = "assembling-machine-2"}, 
-	{type = "unlock-recipe", recipe = "production-science-pack"}}
+data.raw.technology["automation-2"].effects = {{type = "unlock-recipe", recipe = "assembling-machine-2"}}
 data.raw.technology["automation-2"].prerequisites = {"automation", "machines_1", "inserter-fast"}
 data.raw.technology["automation-2"].unit = {count = 100, ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}}, time = 30}
 data.raw.technology["automation-2"].order = "07-23"
@@ -408,10 +407,6 @@ data:extend(
 			type = "unlock-recipe",
 			recipe = "furnace-4-a"
 		},
-		{
-			type = "unlock-recipe",
-			recipe = "production-science-pack"
-		}
 	},
 	prerequisites = {"advanced-material-processing", "pump_1"},
 	unit =

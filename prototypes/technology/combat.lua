@@ -10,7 +10,7 @@ data.raw.technology["military"].order = "08-01"
 
 --Base "military-2"
 data.raw.technology["military-2"].effects = {{type = "unlock-recipe", recipe = "bullet-2"}, {type = "unlock-recipe", recipe = "casing-2"}, 
-	{type = "unlock-recipe", recipe = "piercing-rounds-magazine"}, {type = "unlock-recipe", recipe = "military-science-pack"}}
+	{type = "unlock-recipe", recipe = "piercing-rounds-magazine"}}
 data.raw.technology["military-2"].prerequisites = {"military", "steel-processing", "powder_2"}
 data.raw.technology["military-2"].unit = {count = 50, ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}}, time = 15}
 data.raw.technology["military-2"].order = "08-02"

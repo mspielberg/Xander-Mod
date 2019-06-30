@@ -92,6 +92,7 @@ require("prototypes.technology.part.mechanical")
 require("prototypes.technology.part.electromagnetic")
 require("prototypes.technology.part.data")
 require("prototypes.technology.part.rocket")
+require("prototypes.technology.part.science")
 
 
 --==========  Production  ==========
