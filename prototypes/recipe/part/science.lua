@@ -11,7 +11,7 @@ data.raw.recipe["logistic-science-pack"].ingredients = {{"inserter", 1}, {"trans
 
 --Base "chemical-science-pack"
 data.raw.recipe["chemical-science-pack"].energy_required = 15
-data.raw.recipe["chemical-science-pack"].ingredients = {{"advanced-circuit", 4}, {"transformer-1", 1}, {"engine-unit", 1}, {"electric-mining-drill", 1}}
+data.raw.recipe["chemical-science-pack"].ingredients = {{"advanced-circuit", 4}, {"transformer-1", 1}, {"engine-unit", 1}}
 
 --Base "military-science-pack"
 data.raw.recipe["military-science-pack"].ingredients = {{"piercing-rounds-magazine", 1}, {"grenade", 1}, {"gun-turret", 1}, {"stone-wall", 2}}
@@ -22,7 +22,7 @@ data.raw.recipe["production-science-pack"].ingredients = {{"reactor-1", 1}, {"pu
 
 --Base "utility-science-pack"
 data.raw.recipe["utility-science-pack"].energy_required = 20
-data.raw.recipe["utility-science-pack"].ingredients = {{"cell-2", 2}, {"control-3", 1}, {"speed-module", 2}, {"crystal-quartz", 2}, 
+data.raw.recipe["utility-science-pack"].ingredients = {{"cell-2", 2}, {"control-3", 1}, {"crystal-quartz", 2}, 
 	{"mechanism-2", 1}}
 
 data:extend(
