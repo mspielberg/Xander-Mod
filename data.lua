@@ -193,3 +193,7 @@ require("prototypes.equipment.equipment")
 
 --Technologies
 require("prototypes.technology.combat")
+
+--==========  Compatibility  ==========
+
+require("prototypes.compatibility")
