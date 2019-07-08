@@ -178,7 +178,7 @@ data:extend(
 {
 	type = "recipe",
     name = "components-1-a",
-	category = "basic-machine",
+	category = "basic-crafting",
 	energy_required = 4,
 	enabled = false,
 	ingredients = {{"iron-stick", 1}, {"iron-gear-wheel", 1}, {"wire-copper", 8}, {"graphite-block", 1}},
@@ -189,7 +189,7 @@ data:extend(
 {
 	type = "recipe",
     name = "components-1-b",
-	category = "machine",
+	category = "crafting",
 	energy_required = 2,
 	enabled = false,
 	ingredients = {{"rod-2", 1}, {"gear-2", 1}, {"wire-copper", 8}, {"graphite-powder", 2}},
@@ -200,7 +200,7 @@ data:extend(
 {
 	type = "recipe",
     name = "components-2-a",
-	category = "machine",
+	category = "crafting",
 	energy_required = 4,
 	enabled = false,
 	ingredients = {{"nickel-ingot", 2}, {"tungsten-ingot", 1}, {"glass", 1}, {"wire-copper", 4}},
@@ -210,7 +210,7 @@ data:extend(
 {
 	type = "recipe",
     name = "components-2-b",
-	category = "machine",
+	category = "crafting",
 	energy_required = 4,
 	enabled = false,
 	ingredients = {{"monel-billet", 1}, {"wire-tungsten", 1}, {"wafer-2", 1}, {"plastic-bar", 1}, {"wire-tinned", 2}},
@@ -220,7 +220,7 @@ data:extend(
 {
 	type = "recipe",
     name = "components-3",
-	category = "advanced-machine",
+	category = "advanced-crafting",
 	energy_required = 5,
 	enabled = false,
 	ingredients = {{"wire-gold", 2}, {"crystal-quartz", 1}, {"plastic-bar", 1}},--more ingredients - 6 permissible
