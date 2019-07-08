@@ -23,7 +23,8 @@ data.raw["fluid-wagon"]["fluid-wagon"].air_resistance = 0.005
 data.raw.locomotive["locomotive"].max_speed = 0.8
 data.raw.locomotive["locomotive"].max_power = "1MW"
 data.raw.locomotive["locomotive"].air_resistance = 0.01
-data.raw.locomotive["locomotive"].burner.fuel_category = "crude"
+data.raw.locomotive["locomotive"].burner.fuel_category = nil
+data.raw.locomotive["locomotive"].burner.fuel_categories = {"crude", "chemical"}
 data.raw.locomotive["locomotive"].burner.effectivity = 0.5
 data.raw.locomotive["locomotive"].burner.fuel_inventory_size = 2
 
