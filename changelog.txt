@@ -1,3 +1,15 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.2.2
+Date: 2019-07-19
+  Changes:
+    - Change recipe names to match main products.
+    - Circuit component sets are now made in assemblers instead of machined.
+    - Locomotives can use chemical fuel.
+    - Science packs are unlocked with their dedicated technologies.
+    - Processing units require VLSI wafers.
+  Compatibility:
+    - Add recipes for Flare Stack.
+---------------------------------------------------------------------------------------------------
 Version: 2.2.1
 Date: 2019-06-28
   Bugfixes:
