@@ -55,7 +55,7 @@ data:extend(
 },
 --Base "copper-cable" placeholder
 	--order = "04"
---Insulated Copper Cable 
+--Insulated Copper Cable
 {
 	type = "item",
 	name = "cable-insulated",

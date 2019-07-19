@@ -3,7 +3,7 @@
 
 --Base "plastics"
 data.raw.technology["plastics"].prerequisites = {"heavy-reforming", "light-cracking"}
-data.raw.technology["plastics"].effects = {{type = "unlock-recipe", recipe = "styrene"}, {type = "unlock-recipe", recipe = "plastic-bar"}, 
+data.raw.technology["plastics"].effects = {{type = "unlock-recipe", recipe = "styrene"}, {type = "unlock-recipe", recipe = "plastic-bar"},
 	{type = "unlock-recipe", recipe = "fiber-plastic"}, {type = "unlock-recipe", recipe = "xm-plastic-bar"}}
 data.raw.technology["plastics"].order = "03-06"
 
@@ -14,7 +14,7 @@ data.raw.technology["explosives"].unit = {count = 200, ingredients = {{"automati
 data.raw.technology["explosives"].order = "03-08"
 
 --Base "flammables" placeholder
-data.raw.technology["flammables"].effects = {{type = "unlock-recipe", recipe = "solid-fuel-from-light-oil"}, 
+data.raw.technology["flammables"].effects = {{type = "unlock-recipe", recipe = "solid-fuel-from-light-oil"},
 	{type = "unlock-recipe", recipe = "solid-fuel-from-petroleum-gas"}, {type = "unlock-recipe", recipe = "solid-fuel-from-heavy-oil"}}
 data.raw.technology["flammables"].unit = {count = 150, ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}}, time = 30}
 data.raw.technology["flammables"].order = "03-12"

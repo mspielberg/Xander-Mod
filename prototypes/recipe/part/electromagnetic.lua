@@ -11,9 +11,9 @@ data.raw.recipe["electric-engine-unit"].energy_required = 4
 data.raw.recipe["electric-engine-unit"].ingredients = {{"iron-plate", 6}, {"shaft-0", 1}, {"coil-1", 2}, {"graphite-block", 1}}
 
 --Base "battery"
-data.raw.recipe["battery"].normal = {energy_required = 2, enabled = false, ingredients = {{"plastic-bar", 2}, {"lead-ingot", 2}, 
+data.raw.recipe["battery"].normal = {energy_required = 2, enabled = false, ingredients = {{"plastic-bar", 2}, {"lead-ingot", 2},
 	{type = "fluid", name = "sulfuric-acid", amount = 10}}, result = "battery"}
-data.raw.recipe["battery"].expensive = {energy_required = 2, enabled = false, ingredients = {{"plastic-bar", 4}, {"lead-ingot", 4}, 
+data.raw.recipe["battery"].expensive = {energy_required = 2, enabled = false, ingredients = {{"plastic-bar", 4}, {"lead-ingot", 4},
 	{type = "fluid", name = "sulfuric-acid", amount = 20}}, result = "battery"}
 
 
@@ -179,7 +179,7 @@ data:extend(
 	category = "crafting-with-fluid",
 	energy_required = 4,
 	enabled = false,
-	ingredients = {{"coil-2", 2}, {"insulator-2", 2}, {"forging-titanium", 1}, {"advanced-circuit", 4}, 
+	ingredients = {{"coil-2", 2}, {"insulator-2", 2}, {"forging-titanium", 1}, {"advanced-circuit", 4},
 		{type = "fluid", name = "heavy-oil", amount = 40}},
 	result = "transformer-2"
 },
@@ -190,7 +190,7 @@ data:extend(
 	category = "crafting-with-fluid",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"coil-3", 2}, {"insulator-2", 4}, {"forging-aluminum", 1}, {"processing-unit", 4}, 
+	ingredients = {{"coil-3", 2}, {"insulator-2", 4}, {"forging-aluminum", 1}, {"processing-unit", 4},
 		{type = "fluid", name = "heavy-oil", amount = 40}},
 	result = "transformer-3"
 },
@@ -217,7 +217,7 @@ data:extend(
 	category = "chemistry",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"plastic-bar", 2}, {"activated-carbon", 2}, {type = "fluid", name = "dimethyl-carbonate", amount = 10}, {"lithium-tetrafluoroborate", 1}, 
+	ingredients = {{"plastic-bar", 2}, {"activated-carbon", 2}, {type = "fluid", name = "dimethyl-carbonate", amount = 10}, {"lithium-tetrafluoroborate", 1},
 		{"lithium-titanate", 1}},
 	result = "cell-3"
 },

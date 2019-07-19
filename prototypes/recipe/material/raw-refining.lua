@@ -3,21 +3,21 @@
 --Base "coal-liquefaction"
 data.raw.recipe["coal-liquefaction"].category = "chemical-plant"
 data.raw.recipe["coal-liquefaction"].energy_required = 40
-data.raw.recipe["coal-liquefaction"].ingredients = {{"coal", 18}, {type = "fluid", name = "heavy-oil", amount = 10}, 
+data.raw.recipe["coal-liquefaction"].ingredients = {{"coal", 18}, {type = "fluid", name = "heavy-oil", amount = 10},
 	{type = "fluid", name = "hydrogen", amount = 120}}
 data.raw.recipe["coal-liquefaction"].results = {{type = "fluid", name = "heavy-naptha", amount = 30}, {type = "fluid", name = "benzene", amount = 20}}
 data.raw.recipe["coal-liquefaction"].icon = "__xander-mod-th__/graphics/recipe/refining/bergius-process.png"
 
 --Base "basic-oil-processing"
 data.raw.recipe["basic-oil-processing"].energy_required = 10
-data.raw.recipe["basic-oil-processing"].results = {{type = "fluid", name = "heavy-oil", amount = 20}, {type = "fluid", name = "light-oil", amount = 40}, 
+data.raw.recipe["basic-oil-processing"].results = {{type = "fluid", name = "heavy-oil", amount = 20}, {type = "fluid", name = "light-oil", amount = 40},
 	{type = "fluid", name = "propylene", amount = 40}}
 
 --Base "advanced-oil-processing"
 data.raw.recipe["advanced-oil-processing"].category = "chemical-plant"
 data.raw.recipe["advanced-oil-processing"].energy_required = 20
 data.raw.recipe["advanced-oil-processing"].ingredients = {{type = "fluid", name = "crude-oil", amount = 100}, {type = "fluid", name = "steam", amount = 50}}
-data.raw.recipe["advanced-oil-processing"].results = {{type = "fluid", name = "heavy-oil", amount = 10}, {type = "fluid", name = "light-oil", amount = 50}, 
+data.raw.recipe["advanced-oil-processing"].results = {{type = "fluid", name = "heavy-oil", amount = 10}, {type = "fluid", name = "light-oil", amount = 50},
 	{type = "fluid", name = "propylene", amount = 60}}
 
 --Base "uranium-processing"
@@ -231,7 +231,7 @@ data:extend(
 	category = "ore-plant",
 	energy_required = 400,
 	enabled = false,
-	ingredients = {{"cuprous-oxide", 10}, {type = "fluid", name = "sulfuric-acid", amount = 20}, {type = "fluid", name = "ammonia", amount = 20}, 
+	ingredients = {{"cuprous-oxide", 10}, {type = "fluid", name = "sulfuric-acid", amount = 20}, {type = "fluid", name = "ammonia", amount = 20},
 		{"calcium-oxide", 10}, {type = "fluid", name = "oxygen", amount = 50}},
 	results = {{"copper-plate", 20}, {"cobalt-oxide", 2}, {type = "fluid", name = "waste-slurry", amount = 20}},
 	subgroup = "raw-material"
@@ -381,7 +381,7 @@ data:extend(
 	category = "sluice",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"scheelite", 1}, {"sodium-hydroxide", 2}, {type = "fluid", name = "hydrogen-chloride", amount = 20}, 
+	ingredients = {{"scheelite", 1}, {"sodium-hydroxide", 2}, {type = "fluid", name = "hydrogen-chloride", amount = 20},
 		{type = "fluid", name = "sulfuric-acid", amount = 10}},
 	results = {{"tungsten-oxide", 1}, {"calcium-sulfate", 1}, {"sodium-chloride", 2}, {type = "fluid", name = "waste-slurry", amount = 10}},
 	subgroup = "raw-material"
@@ -754,7 +754,7 @@ data:extend(
 	energy_required = 20,
 	enabled = false,
 	ingredients = {{type = "fluid", name = "natural-gas", amount = 40}},
-	results = {{type = "fluid", name = "propylene", amount = 10}, {type = "fluid", name = "petroleum-gas", amount = 10}, 
+	results = {{type = "fluid", name = "propylene", amount = 10}, {type = "fluid", name = "petroleum-gas", amount = 10},
 		{type = "fluid", name = "methane", amount = 30}},
 	subgroup = "raw-material"
 },
@@ -768,7 +768,7 @@ data:extend(
 	energy_required = 40,
 	enabled = false,
 	ingredients = {{type = "fluid", name = "natural-gas", amount = 40}, {type = "fluid", name = "steam", amount = 10}},
-	results = {{type = "fluid", name = "propylene", amount = 15}, {type = "fluid", name = "petroleum-gas", amount = 15}, 
+	results = {{type = "fluid", name = "propylene", amount = 15}, {type = "fluid", name = "petroleum-gas", amount = 15},
 		{type = "fluid", name = "methane", amount = 5}},
 	subgroup = "raw-material"
 },
@@ -1042,7 +1042,7 @@ data:extend(
 	energy_required = 200,
 	enabled = false,
 	ingredients = {{type = "fluid", name = "air", amount = 500}},
-	results = {{type = "fluid", name = "nitrogen", amount = 400}, {type = "fluid", name = "oxygen", amount = 100}, 
+	results = {{type = "fluid", name = "nitrogen", amount = 400}, {type = "fluid", name = "oxygen", amount = 100},
 		{type = "fluid", name = "carbon-dioxide", amount = 10}},
 	subgroup = "raw-material"
 },

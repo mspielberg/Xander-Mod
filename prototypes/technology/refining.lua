@@ -8,7 +8,7 @@ data.raw.technology["coal-liquefaction"].order = "01-07"
 data.raw.technology["oil-processing"].icon = "__xander-mod-th__/graphics/technology/refining/oil-processing.png"
 data.raw.technology["oil-processing"].icon_size = 128
 data.raw.technology["oil-processing"].prerequisites = {"pumpjack", "distillation-column"}
-data.raw.technology["oil-processing"].effects = {{type = "unlock-recipe", recipe = "basic-oil-processing"}, 
+data.raw.technology["oil-processing"].effects = {{type = "unlock-recipe", recipe = "basic-oil-processing"},
 	{type = "unlock-recipe", recipe = "lubricant"}}
 data.raw.technology["oil-processing"].unit.count = 150	
 data.raw.technology["oil-processing"].order = "01-11"
@@ -47,7 +47,7 @@ data:extend(
 			recipe = "cryolite-mixture"
 		}
 	},
-	prerequisites = {"flotation_1", "reactor_1", "sulfuric-acid-a"}, --"blasting", 
+	prerequisites = {"flotation_1", "reactor_1", "sulfuric-acid-a"}, --"blasting",
 	unit =
 	{
 		count = 250,
@@ -82,7 +82,7 @@ data:extend(
 			recipe = "phosphorus-smelting"
 		}
 	},
-	prerequisites = {"flotation_1", "sulfuric-acid-a"}, --"blasting", 
+	prerequisites = {"flotation_1", "sulfuric-acid-a"}, --"blasting",
 	unit =
 	{
 		count = 150,
@@ -399,7 +399,7 @@ data:extend(
 			recipe = "nickel-smelting"
 		}
 	},
-	prerequisites = {"ore-processor_1", "calcium-processing"}, --"blasting", 
+	prerequisites = {"ore-processor_1", "calcium-processing"}, --"blasting",
 	unit =
 	{
 		count = 250,
@@ -429,7 +429,7 @@ data:extend(
 			recipe = "platinum-smelting"
 		}
 	},
-	prerequisites = {"flotation_1", "boron-processing"}, --"blasting", 
+	prerequisites = {"flotation_1", "boron-processing"}, --"blasting",
 	unit =
 	{
 		count = 300,
@@ -1233,7 +1233,7 @@ data:extend(
 			recipe = "zinc-electrowinning"
 		}
 	},
-	prerequisites = {"flotation_1", "furnace_4", "electrolyzer_1"}, --"blasting", 
+	prerequisites = {"flotation_1", "furnace_4", "electrolyzer_1"}, --"blasting",
 	unit =
 	{
 		count = 150,
@@ -1267,7 +1267,7 @@ data:extend(
 			recipe = "fayalite-cracking"
 		}
 	},
-	prerequisites = {"ore-processor_1", "furnace_4"}, --"blasting", 
+	prerequisites = {"ore-processor_1", "furnace_4"}, --"blasting",
 	unit =
 	{
 		count = 250,
@@ -1330,7 +1330,7 @@ data:extend(
 			recipe = "re-reduction"
 		}
 	},
-	prerequisites = {"flotation_1", "haber-process", "magnesium-refining"}, --"blasting", 
+	prerequisites = {"flotation_1", "haber-process", "magnesium-refining"}, --"blasting",
 	unit =
 	{
 		count = 300,
@@ -1362,7 +1362,7 @@ data:extend(
 			recipe = "uranium-hexafluoride"
 		}
 	},
-	prerequisites = {"ore-processor_1", "nitric-acid-b", "fluorine-processing"}, --"blasting", 
+	prerequisites = {"ore-processor_1", "nitric-acid-b", "fluorine-processing"}, --"blasting",
 	unit =
 	{
 		count = 300,

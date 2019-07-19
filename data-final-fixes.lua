@@ -207,7 +207,7 @@ local function xm_items_analyze()
     local is_in_xm_list = false
     local matching_listname
 
-    for listname, itemnames in pairs(itemnames_per_list) do  
+    for listname, itemnames in pairs(itemnames_per_list) do
       if not itemnames then
         log("Warning: " .. listname .. " is nil")
       elseif is_in(itemnames, search_itemname) then
@@ -216,7 +216,7 @@ local function xm_items_analyze()
         break
       end
     end
-    
+
     if is_in_xm_list and matching_listname then
       xm_items[matching_listname][search_itemname] = xm_items[matching_listname][search_itemname] + 1
       count_xm_items = count_xm_items + 1
@@ -229,7 +229,7 @@ local function xm_items_analyze()
     local is_in_xm_list = false
     local matching_listname
 
-    for listname, recipenames in pairs(recipenames_per_list) do  
+    for listname, recipenames in pairs(recipenames_per_list) do
       if not recipenames then
         log("Warning: " .. listname .. " is nil")
       elseif is_in(recipenames, search_recipename) then
@@ -238,7 +238,7 @@ local function xm_items_analyze()
         break
       end
     end
-    
+
     if is_in_xm_list and matching_listname then
       xm_recipes[matching_listname][search_recipename] = xm_recipes[matching_listname][search_recipename] + 1
       count_xm_recipes = count_xm_recipes + 1

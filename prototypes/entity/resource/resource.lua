@@ -150,7 +150,7 @@ local function item(resource_parameters)
   local pictures = {}
   for i=1,4 do
     local filename = "__xander-mod-th__/graphics/item/material/raw-resource/mip/" .. sheet .. "-" .. i-1 .. ".png"
-    if i == 1 then 
+    if i == 1 then
       filename = "__xander-mod-th__/graphics/item/material/raw-resource/mip/" .. sheet .. ".png"
     end
     pictures[i] = {
