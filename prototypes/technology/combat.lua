@@ -281,7 +281,7 @@ data:extend(
 		count = 15,
 		ingredients =
 		{
-			{"automation-science-pack", 1}
+			{"science-pack-0", 1}
 		},
 		time = 10
 	},
