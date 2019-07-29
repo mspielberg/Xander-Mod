@@ -1,3 +1,7 @@
+data.raw.technology["logistic-science-pack"].prerequisites = {
+  "logistics",
+  "inserter-b",
+}
 data.raw.technology["chemical-science-pack"].prerequisites = {
   "advanced-electronics",
   "engine",

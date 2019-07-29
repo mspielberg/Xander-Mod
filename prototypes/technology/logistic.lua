@@ -12,6 +12,7 @@ data.raw.technology["electric-energy-distribution-2"].prerequisites = {"electric
 data.raw.technology["electric-energy-distribution-2"].order = "06-01"
 
 --Base "logistics"
+table.insert(data.raw.technology["logistics"].effects, 1, {type = "unlock-recipe", recipe = "transport-belt"})
 data.raw.technology["logistics"].prerequisites = {"parts_1", "logistics_0", "inserter-a"}
 data.raw.technology["logistics"].order = "06-04"
 
