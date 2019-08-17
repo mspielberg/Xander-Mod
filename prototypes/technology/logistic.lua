@@ -12,6 +12,8 @@ data.raw.technology["electric-energy-distribution-2"].prerequisites = {"electric
 data.raw.technology["electric-energy-distribution-2"].order = "06-01"
 
 --Base "logistics"
+data.raw.technology["logistics"].effects = {{type = "unlock-recipe", recipe = "transport-belt"}, 
+	{type = "unlock-recipe", recipe = "underground-belt"}, {type = "unlock-recipe", recipe = "splitter"}}
 data.raw.technology["logistics"].prerequisites = {"parts_1", "logistics_0", "inserter-a"}
 data.raw.technology["logistics"].order = "06-04"
 
