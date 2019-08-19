@@ -29,3 +29,9 @@ if data.raw.furnace["flare-stack"] then
     data.raw.technology["oil-processing"].effects,
     {type = "unlock-recipe", recipe = "vent-stack"})
 end
+
+if data.raw["assembling-machine"]["sqs-furnace"] then
+  table.insert(data.raw["assembling-machine"]["sqs-furnace"].crafting_categories, "kiln")
+  table.insert(data.raw["assembling-machine"]["sqs-furnace"].crafting_categories, "basic-refining")
+  table.insert(data.raw["assembling-machine"]["sqs-furnace"].crafting_categories, "refining")
+end
