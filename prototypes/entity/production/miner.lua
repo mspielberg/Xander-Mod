@@ -73,7 +73,7 @@ xmutil.clone("assembling-machine", "assembling-machine-2",
 				[2] = xmutil.NIL,
 			}
 		},
-		crafting_categories = {"temp-logging"},
+		crafting_categories = {"temp-logging", xmutil.NIL, xmutil.NIL, xmutil.NIL},
 		crafting_speed = 1,
 		energy_source = {
 			type = "burner",
