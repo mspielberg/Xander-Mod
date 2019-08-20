@@ -1,11 +1,8 @@
-script.on_event(defines.events.on_player_created, function(event)
-	local player = game.players[event.player_index]
-	--Can I check the "event" variable to see if it is the freeplay scenario?
-	--player.print({event.name})
-	player.insert{name = "iron-plate", count = 2}
-	player.insert{name = "copper-cable", count = 100}
-	player.insert{name = "forging-titanium", count = 10}
-	player.insert{name = "mechanism-0", count = 20}
-	player.insert{name = "electric-engine-unit", count = 10}
-	player.insert{name = "burner-mining-drill", count = 1}
+script.on_init(function()
+  if not remote.interfaces.freeplay then return end
+  local starting_items = remote.call("freeplay", "get_created_items")
+  starting_items["mechanism-0"] = 20
+  starting_items["copper-cable"] = 100
+  starting_items["electric-engine-unit"] = 10
+  remote.call("freeplay", "set_created_items", starting_items)
 end)
